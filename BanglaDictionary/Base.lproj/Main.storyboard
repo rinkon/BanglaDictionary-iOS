@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -44,13 +43,22 @@
                     <view key="view" contentMode="scaleToFill" id="88B-NK-2Bd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bangla Dictionary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8NX-zH-lVI">
+                                <rect key="frame" x="8" y="42" width="166" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10588235294117647" green="0.16078431372549018" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fNb-gO-Ydj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047" y="1064"/>
+            <point key="canvasLocation" x="1045.5999999999999" y="1063.7181409295354"/>
         </scene>
         <!--Meaning View Controller-->
         <scene sceneID="2xb-Or-79G">
@@ -66,7 +74,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="frx-zO-jiY">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.18694978952407837" green="0.23955479264259338" blue="0.29713466763496399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseId" id="9nG-nB-yBl">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -92,17 +100,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jFv-EC-G6l">
-                        <rightBarButtonItems>
-                            <barButtonItem title="Save" id="R93-2e-JfQ">
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <action selector="favoritePressed:" destination="rdD-hI-XgW" id="xYV-wC-e5r"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="play" id="BOT-m3-3xb">
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" id="R93-2e-JfQ">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="favoritePressed:" destination="rdD-hI-XgW" id="xYV-wC-e5r"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="favoriteButton" destination="R93-2e-JfQ" id="teN-X5-Iad"/>
@@ -143,7 +146,7 @@
                     <view key="view" contentMode="scaleToFill" id="gQO-ho-ENx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.90184700489044189" green="1" blue="0.71580308675765991" alpha="0.52946192781690138" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.10570857673883438" green="0.16119652986526489" blue="0.22673580050468445" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X89-Sf-Vr3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -164,7 +167,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gC3-FA-f0f">
                                 <rect key="frame" x="0.0" y="32" width="375" height="635"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.18694978952407837" green="0.23955479264259338" blue="0.29713466763496399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="historyReuseId" id="amc-uV-738">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -222,7 +225,7 @@
                             <constraint firstAttribute="trailing" secondItem="EqZ-bc-wOC" secondAttribute="trailing" id="USG-5d-87P"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="yUR-Lh-b9a"/>
+                    <navigationItem key="navigationItem" id="RhZ-hB-NSm"/>
                     <connections>
                         <outlet property="tabPageContainerView" destination="EqZ-bc-wOC" id="ORX-oM-Zxc"/>
                         <segue destination="rdD-hI-XgW" kind="show" identifier="ToMeaningViewController" animates="NO" id="7tA-ie-AHc"/>
@@ -245,25 +248,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" searchBarStyle="prominent" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="dXv-Do-aRW">
-                                <rect key="frame" x="0.0" y="32" width="335" height="44"/>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="dXv-Do-aRW">
+                                <rect key="frame" x="0.0" y="32" width="375" height="44"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.48874889964788731" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="barTintColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AWN-1l-AtX">
-                                <rect key="frame" x="0.0" y="132" width="375" height="535"/>
-                                <color key="backgroundColor" red="0.64700800180435181" green="0.6470874547958374" blue="0.64698094129562378" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
                             <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hoF-Up-81s">
                                 <rect key="frame" x="0.0" y="76" width="212" height="477"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.18693074584007263" green="0.23952734470367432" blue="0.29304522275924683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="477" id="7g2-ou-WH2"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseId" id="jnb-Vz-m5K">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseId" focusStyle="custom" id="jnb-Vz-m5K">
                                         <rect key="frame" x="0.0" y="28" width="212" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jnb-Vz-m5K" id="rfI-9n-Nlc">
@@ -286,41 +285,20 @@
                                     <segment title="English"/>
                                     <segment title="Bangla"/>
                                 </segments>
-                                <color key="tintColor" red="0.39493542909622192" green="0.3949236273765564" blue="0.39493030309677124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.99489795918367352" green="0.98979591836734693" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="languageChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="VBS-wZ-bko"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHf-kX-irU">
-                                <rect key="frame" x="340" y="32" width="35" height="44"/>
-                                <color key="backgroundColor" red="0.76941394805908203" green="0.76951158046722412" blue="0.76936167478561401" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="m87-jj-VZA"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="n7C-el-aNb"/>
-                                    <constraint firstAttribute="width" constant="35" id="q9f-bK-f0c"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="vtP-S3-ses"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <state key="normal" title="Ω">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.98958333333333337" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.23921568627450979" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="0Uh-8g-Z8Z" firstAttribute="top" secondItem="dXv-Do-aRW" secondAttribute="bottom" constant="11" id="0Qr-tk-XDW"/>
                             <constraint firstAttribute="trailing" secondItem="0Uh-8g-Z8Z" secondAttribute="trailing" constant="8" id="1qU-dI-aM3"/>
                             <constraint firstItem="hoF-Up-81s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2EX-QS-BL9"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AWN-1l-AtX" secondAttribute="bottom" id="5eH-kO-ulN"/>
-                            <constraint firstItem="0Uh-8g-Z8Z" firstAttribute="top" secondItem="CHf-kX-irU" secondAttribute="bottom" constant="11" id="79x-db-Pwi"/>
-                            <constraint firstAttribute="trailing" secondItem="AWN-1l-AtX" secondAttribute="trailing" id="Cp1-yk-mkH"/>
                             <constraint firstItem="dXv-Do-aRW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EBp-Dj-Pko"/>
                             <constraint firstItem="0Uh-8g-Z8Z" firstAttribute="leading" secondItem="hoF-Up-81s" secondAttribute="trailing" constant="10" id="F7R-Jq-XgP"/>
-                            <constraint firstItem="CHf-kX-irU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="32" id="Hgt-tN-zlu"/>
-                            <constraint firstAttribute="trailing" secondItem="dXv-Do-aRW" secondAttribute="trailing" constant="40" id="IPt-U0-AVG"/>
-                            <constraint firstItem="AWN-1l-AtX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RaA-9b-vCd"/>
-                            <constraint firstItem="CHf-kX-irU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="340" id="RqC-kb-ugx"/>
-                            <constraint firstItem="AWN-1l-AtX" firstAttribute="top" secondItem="0Uh-8g-Z8Z" secondAttribute="bottom" constant="17" id="UxE-j4-CQW"/>
+                            <constraint firstAttribute="trailing" secondItem="dXv-Do-aRW" secondAttribute="trailing" id="IPt-U0-AVG"/>
                             <constraint firstItem="dXv-Do-aRW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="32" id="fmL-ic-lG4"/>
                             <constraint firstItem="hoF-Up-81s" firstAttribute="top" secondItem="dXv-Do-aRW" secondAttribute="bottom" id="oqO-50-w5Z"/>
                         </constraints>
@@ -330,13 +308,10 @@
                     <connections>
                         <outlet property="languageSegmented" destination="0Uh-8g-Z8Z" id="j4u-Fo-Ufv"/>
                         <outlet property="languageSegmentedControl" destination="0Uh-8g-Z8Z" id="SGg-Lk-4I2"/>
-                        <outlet property="menuButtonTwo" destination="CHf-kX-irU" id="Piu-yZ-AgV"/>
-                        <outlet property="menuButtonTwoLeading" destination="RqC-kb-ugx" id="jJG-xU-q2w"/>
                         <outlet property="searchBar" destination="dXv-Do-aRW" id="WFC-4d-ciN"/>
                         <outlet property="searchBarLeadingSpace" destination="EBp-Dj-Pko" id="Dmq-fl-jUm"/>
                         <outlet property="searchBarTrailingConstraint" destination="IPt-U0-AVG" id="t5h-8B-BQE"/>
                         <outlet property="suggestionTableView" destination="hoF-Up-81s" id="Hbv-0a-6lf"/>
-                        <outlet property="uselessView" destination="AWN-1l-AtX" id="oSc-Pn-JZg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -357,7 +332,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ncl-10-CVM">
                                 <rect key="frame" x="0.0" y="32" width="375" height="635"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.18694978952407837" green="0.23955479264259338" blue="0.29713466763496399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoriteCellReuseId" id="Yhc-1i-IDe">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -396,10 +371,10 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YxG-Kz-kX2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedStatusBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="iky-2S-VkT">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="iky-2S-VkT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.6470588235294118" green="0.64675873517990112" blue="0.64676964282989502" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.18823529411764706" green="0.23921568627450979" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                             <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

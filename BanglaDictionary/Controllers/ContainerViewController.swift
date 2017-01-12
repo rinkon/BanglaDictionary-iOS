@@ -27,9 +27,9 @@ class ContainerViewController: UIViewController {
         vc1.containerViewController = self
         vc2.containerViewController = self
         vc3.containerViewController = self
-        tabPageViewController.tabItems = [(vc1, "Home"), (vc2, "Favorites"), (vc3, "History"), (vc4, "Settings")]
+        tabPageViewController.tabItems = [(vc1, "Home"), (vc2, "Saved Words"), (vc3, "History"), (vc4, "Settings")]
         tabPageViewController.view.frame = self.tabPageContainerView.frame
-        tabPageViewController.option.tabBackgroundColor = UIColor(red: 165.0/255.0, green: 165.0/255.0, blue: 165.0/255.0, alpha: 1.0)
+        tabPageViewController.option.tabBackgroundColor = UIColor(red: 48.0/255.0, green: 61.0/255.0, blue: 76.0/255.0, alpha: 1.0)
         tabPageViewController.option.currentColor = UIColor.white
         tabPageViewController.option.defaultColor = UIColor.white
         tabPageViewController.option.tabHeight = 32

@@ -34,7 +34,6 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
             var characterArray = Array(favoriteArray[index].characters)
             if(characterArray[0] == "p"){
                 favoriteArray[index].remove(at: favoriteArray[index].startIndex)
-                print("bong bong\((favoriteArray[index] as NSString).integerValue)")
                 word = DBManager.shared.fetchFavorite(tableName: "primary_word", wordId: (favoriteArray[index] as NSString).integerValue)
                 favoriteWordTableList.append(0)
                 favoriteWordIdList.append((favoriteArray[index] as NSString).integerValue)
@@ -55,12 +54,15 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "favoriteCellReuseId", for: indexPath)
-        cell.textLabel?.text = favoriteWordListArray[indexPath.row]
+        cell.textLabel?.text = favoriteWordListArray[indexPath.row].capitalized
+        cell.backgroundColor = UIColor(red: 48.0/255.0, green: 61.0/255.0, blue: 76.0/255.0, alpha: 1.0)
+        cell.textLabel?.textColor = UIColor.white
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var envelope = [Any]()
         envelope = [favoriteWordTableList[indexPath.row], favoriteWordIdList[indexPath.row]]
+        
         DispatchQueue.main.async {
             self.containerViewController.performSegue(withIdentifier: "ToMeaningViewController", sender: envelope)
         }

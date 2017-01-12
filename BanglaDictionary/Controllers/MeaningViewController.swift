@@ -35,7 +35,7 @@ class MeaningViewController: BaseViewController, UITableViewDelegate, UITableVie
             contentTypeName = content.singleContent
             valueToStore = "s\(wordId!)"
         }
-        var favoriteArray = UserDefaults.standard.value(forKey: Constants.FAVORITE_ARRAY_KEY) as! [String]
+        let favoriteArray = UserDefaults.standard.value(forKey: Constants.FAVORITE_ARRAY_KEY) as! [String]
         if(favoriteArray.contains(valueToStore)){
             favoriteButton.title = "Remove"
         }
@@ -46,6 +46,9 @@ class MeaningViewController: BaseViewController, UITableViewDelegate, UITableVie
         
         if(!historyArray.contains(valueToStore)){
             historyArray.append(valueToStore)
+            if(historyArray.count>20){
+                historyArray.removeFirst()
+            }
             UserDefaults.standard.set(historyArray, forKey: Constants.HISTORY_ARRAY_KEY)
         }
     }
@@ -70,15 +73,20 @@ class MeaningViewController: BaseViewController, UITableViewDelegate, UITableVie
         return 1
     }
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int){
-        view.tintColor = UIColor.init(red: 158.0/255.0, green: 158.0/255.0, blue: 158.0/255.0, alpha: 1.0)
+//        view.tintColor = UIColor(red: 68.0/255.0, green: 80.0/255.0, blue: 93.0/255.0, alpha: 1.0)
         let header = view as! UITableViewHeaderFooterView
         header.textLabel?.textColor = UIColor.white
-        header.layer.opacity = 1.0
+        header.isOpaque = true
+        header.backgroundView?.backgroundColor = UIColor(red: 68.0/255.0, green: 80.0/255.0, blue: 93.0/255.0, alpha: 1.0)
+//        header.backgroundView?.backgroundColor = UIColor(red: 27.0/255.0, green: 41.0/255.0, blue: 58.0/255.0, alpha: 1.0)
+//        header.layer.opacity = 1.0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         cell.textLabel?.text = contentDictionary[contentTypeName[indexPath.section]]
         cell.textLabel?.numberOfLines = 0
+        cell.textLabel?.textColor = UIColor.white
+        cell.backgroundColor = UIColor(red: 48.0/255.0, green: 61.0/255.0, blue: 76.0/255.0, alpha: 1.0)
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

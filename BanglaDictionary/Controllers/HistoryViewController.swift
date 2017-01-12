@@ -55,7 +55,9 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "historyReuseId", for: indexPath)
-        cell.textLabel?.text = historyWordListArray[indexPath.row]
+        cell.textLabel?.text = historyWordListArray[indexPath.row].capitalized
+        cell.backgroundColor = UIColor(red: 48.0/255.0, green: 61.0/255.0, blue: 76.0/255.0, alpha: 1.0)
+        cell.textLabel?.textColor = UIColor.white
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
