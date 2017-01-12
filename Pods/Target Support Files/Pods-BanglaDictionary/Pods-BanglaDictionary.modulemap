@@ -1,0 +1,6 @@
+framework module Pods_BanglaDictionary {
+  umbrella header "Pods-BanglaDictionary-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5205AB101DF3749700079A24 /* menu_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 5205AB0F1DF3749700079A24 /* menu_image.png */; };
+		52197AD41DF1D64E00AEF00C /* BanglaDictionary-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 52197AD31DF1D62100AEF00C /* BanglaDictionary-Bridging-Header.h */; };
+		52197AD51DF1D7AA00AEF00C /* BECustomSegue.h in Sources */ = {isa = PBXBuildFile; fileRef = 52F947FF1DF18BE4004BE59A /* BECustomSegue.h */; };
+		52197AD61DF1D7AA00AEF00C /* BEFoldMenuViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 52F948011DF18BE4004BE59A /* BEFoldMenuViewController.h */; };
+		52197AD71DF1D7AA00AEF00C /* UIView+Frame.h in Sources */ = {isa = PBXBuildFile; fileRef = 52F948031DF18BE4004BE59A /* UIView+Frame.h */; };
+		529321591DEDEA600074CDFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529321581DEDEA600074CDFA /* AppDelegate.swift */; };
+		5293215E1DEDEA600074CDFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5293215C1DEDEA600074CDFA /* Main.storyboard */; };
+		529321611DEDEA600074CDFA /* BanglaDictionary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5293215F1DEDEA600074CDFA /* BanglaDictionary.xcdatamodeld */; };
+		529321631DEDEA600074CDFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 529321621DEDEA600074CDFA /* Assets.xcassets */; };
+		529321661DEDEA600074CDFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529321641DEDEA600074CDFA /* LaunchScreen.storyboard */; };
+		52CBB83B1DF4982C0087F9C9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBB8381DF4982C0087F9C9 /* BaseViewController.swift */; };
+		52CBB83C1DF4982C0087F9C9 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBB8391DF4982C0087F9C9 /* ContainerViewController.swift */; };
+		52CBB83D1DF4982C0087F9C9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBB83A1DF4982C0087F9C9 /* HomeViewController.swift */; };
+		52CBB83F1DF49B220087F9C9 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBB83E1DF49B220087F9C9 /* FavoriteViewController.swift */; };
+		52CBB8451DF4B11C0087F9C9 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBB8441DF4B11C0087F9C9 /* HistoryViewController.swift */; };
+		52CBB8471DF4B1330087F9C9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBB8461DF4B1330087F9C9 /* SettingsViewController.swift */; };
+		52F947F91DF18B53004BE59A /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = 52F947F81DF18B53004BE59A /* left.png */; };
+		52F948051DF18BE4004BE59A /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 52F947FC1DF18BE4004BE59A /* .gitkeep */; };
+		52F948061DF18BE4004BE59A /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 52F947FE1DF18BE4004BE59A /* .gitkeep */; };
+		52F948071DF18BE4004BE59A /* BECustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F948001DF18BE4004BE59A /* BECustomSegue.m */; };
+		52F948081DF18BE4004BE59A /* BEFoldMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F948021DF18BE4004BE59A /* BEFoldMenuViewController.m */; };
+		52F948091DF18BE4004BE59A /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F948041DF18BE4004BE59A /* UIView+Frame.m */; };
+		AFE347FE8801E30D4301B723 /* Pods_BanglaDictionary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BAF6C9201BB2A11867383C /* Pods_BanglaDictionary.framework */; };
+		C01E02D41E1137BC001886B9 /* MeaningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01E02D31E1137BC001886B9 /* MeaningViewController.swift */; };
+		C031AEB81E09B718005BDDAE /* bangla.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C031AEB71E09B718005BDDAE /* bangla.sqlite */; };
+		C031AEBB1E09B775005BDDAE /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031AEBA1E09B775005BDDAE /* DBManager.swift */; };
+		C031AEC81E09B7B2005BDDAE /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C031AEBE1E09B7B2005BDDAE /* FMDatabase.m */; };
+		C031AEC91E09B7B2005BDDAE /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C031AEC01E09B7B2005BDDAE /* FMDatabaseAdditions.m */; };
+		C031AECA1E09B7B2005BDDAE /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = C031AEC21E09B7B2005BDDAE /* FMDatabasePool.m */; };
+		C031AECB1E09B7B2005BDDAE /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C031AEC41E09B7B2005BDDAE /* FMDatabaseQueue.m */; };
+		C031AECC1E09B7B2005BDDAE /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C031AEC71E09B7B2005BDDAE /* FMResultSet.m */; };
+		C031AECF1E09B8F1005BDDAE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C031AECD1E09B8F1005BDDAE /* libsqlite3.dylib */; };
+		C031AED01E09B8F1005BDDAE /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C031AECE1E09B8F1005BDDAE /* libz.1.dylib */; };
+		C0CD87E21E23E14F00C051AB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CD87E11E23E14F00C051AB /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0DEAACF4168FEAAFC68753B1 /* Pods-BanglaDictionary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BanglaDictionary.release.xcconfig"; path = "Pods/Target Support Files/Pods-BanglaDictionary/Pods-BanglaDictionary.release.xcconfig"; sourceTree = "<group>"; };
+		2A720C635560E86459E56C84 /* Pods-BanglaDictionary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BanglaDictionary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BanglaDictionary/Pods-BanglaDictionary.debug.xcconfig"; sourceTree = "<group>"; };
+		5205AB0F1DF3749700079A24 /* menu_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_image.png; sourceTree = "<group>"; };
+		52197AD31DF1D62100AEF00C /* BanglaDictionary-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BanglaDictionary-Bridging-Header.h"; sourceTree = "<group>"; };
+		529321551DEDEA5F0074CDFA /* BanglaDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BanglaDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		529321581DEDEA600074CDFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5293215D1DEDEA600074CDFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		529321601DEDEA600074CDFA /* BanglaDictionary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BanglaDictionary.xcdatamodel; sourceTree = "<group>"; };
+		529321621DEDEA600074CDFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		529321651DEDEA600074CDFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		529321671DEDEA600074CDFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52CBB8381DF4982C0087F9C9 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		52CBB8391DF4982C0087F9C9 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		52CBB83A1DF4982C0087F9C9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		52CBB83E1DF49B220087F9C9 /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		52CBB8441DF4B11C0087F9C9 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		52CBB8461DF4B1330087F9C9 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		52F947F81DF18B53004BE59A /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+		52F947FC1DF18BE4004BE59A /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		52F947FE1DF18BE4004BE59A /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		52F947FF1DF18BE4004BE59A /* BECustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BECustomSegue.h; sourceTree = "<group>"; };
+		52F948001DF18BE4004BE59A /* BECustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BECustomSegue.m; sourceTree = "<group>"; };
+		52F948011DF18BE4004BE59A /* BEFoldMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEFoldMenuViewController.h; sourceTree = "<group>"; };
+		52F948021DF18BE4004BE59A /* BEFoldMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEFoldMenuViewController.m; sourceTree = "<group>"; };
+		52F948031DF18BE4004BE59A /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		52F948041DF18BE4004BE59A /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		71BAF6C9201BB2A11867383C /* Pods_BanglaDictionary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BanglaDictionary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C01E02D31E1137BC001886B9 /* MeaningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeaningViewController.swift; sourceTree = "<group>"; };
+		C031AEB71E09B718005BDDAE /* bangla.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = bangla.sqlite; sourceTree = "<group>"; };
+		C031AEBA1E09B775005BDDAE /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		C031AEBD1E09B7B2005BDDAE /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		C031AEBE1E09B7B2005BDDAE /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		C031AEBF1E09B7B2005BDDAE /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		C031AEC01E09B7B2005BDDAE /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		C031AEC11E09B7B2005BDDAE /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		C031AEC21E09B7B2005BDDAE /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		C031AEC31E09B7B2005BDDAE /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		C031AEC41E09B7B2005BDDAE /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		C031AEC51E09B7B2005BDDAE /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		C031AEC61E09B7B2005BDDAE /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		C031AEC71E09B7B2005BDDAE /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		C031AECD1E09B8F1005BDDAE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		C031AECE1E09B8F1005BDDAE /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		C0CD87E11E23E14F00C051AB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		529321521DEDEA5F0074CDFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C031AECF1E09B8F1005BDDAE /* libsqlite3.dylib in Frameworks */,
+				C031AED01E09B8F1005BDDAE /* libz.1.dylib in Frameworks */,
+				AFE347FE8801E30D4301B723 /* Pods_BanglaDictionary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5293214C1DEDEA5F0074CDFA = {
+			isa = PBXGroup;
+			children = (
+				529321571DEDEA600074CDFA /* BanglaDictionary */,
+				529321561DEDEA5F0074CDFA /* Products */,
+				7C832E6F4DDE99DF4D64722E /* Pods */,
+				E46BE60967202DE0E59460A7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		529321561DEDEA5F0074CDFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				529321551DEDEA5F0074CDFA /* BanglaDictionary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		529321571DEDEA600074CDFA /* BanglaDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				C031AEBC1E09B7A4005BDDAE /* External Libraries */,
+				C031AEB91E09B74B005BDDAE /* Model */,
+				C031AEB61E09B6E8005BDDAE /* DB */,
+				C00C95A61DFB17F300FAE6D8 /* Images */,
+				52CBB8371DF4982C0087F9C9 /* Controllers */,
+				52F947FA1DF18BE4004BE59A /* BEFoldMenuViewController */,
+				529321581DEDEA600074CDFA /* AppDelegate.swift */,
+				5293215C1DEDEA600074CDFA /* Main.storyboard */,
+				529321621DEDEA600074CDFA /* Assets.xcassets */,
+				529321641DEDEA600074CDFA /* LaunchScreen.storyboard */,
+				529321671DEDEA600074CDFA /* Info.plist */,
+				5293215F1DEDEA600074CDFA /* BanglaDictionary.xcdatamodeld */,
+				52197AD31DF1D62100AEF00C /* BanglaDictionary-Bridging-Header.h */,
+			);
+			path = BanglaDictionary;
+			sourceTree = "<group>";
+		};
+		52CBB8371DF4982C0087F9C9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				52CBB8381DF4982C0087F9C9 /* BaseViewController.swift */,
+				52CBB8391DF4982C0087F9C9 /* ContainerViewController.swift */,
+				52CBB83A1DF4982C0087F9C9 /* HomeViewController.swift */,
+				52CBB83E1DF49B220087F9C9 /* FavoriteViewController.swift */,
+				52CBB8441DF4B11C0087F9C9 /* HistoryViewController.swift */,
+				52CBB8461DF4B1330087F9C9 /* SettingsViewController.swift */,
+				C01E02D31E1137BC001886B9 /* MeaningViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		52F947FA1DF18BE4004BE59A /* BEFoldMenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				52F947FB1DF18BE4004BE59A /* Assets */,
+				52F947FD1DF18BE4004BE59A /* Classes */,
+			);
+			path = BEFoldMenuViewController;
+			sourceTree = "<group>";
+		};
+		52F947FB1DF18BE4004BE59A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				52F947FC1DF18BE4004BE59A /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		52F947FD1DF18BE4004BE59A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				52F947FE1DF18BE4004BE59A /* .gitkeep */,
+				52F947FF1DF18BE4004BE59A /* BECustomSegue.h */,
+				52F948001DF18BE4004BE59A /* BECustomSegue.m */,
+				52F948011DF18BE4004BE59A /* BEFoldMenuViewController.h */,
+				52F948021DF18BE4004BE59A /* BEFoldMenuViewController.m */,
+				52F948031DF18BE4004BE59A /* UIView+Frame.h */,
+				52F948041DF18BE4004BE59A /* UIView+Frame.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7C832E6F4DDE99DF4D64722E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A720C635560E86459E56C84 /* Pods-BanglaDictionary.debug.xcconfig */,
+				0DEAACF4168FEAAFC68753B1 /* Pods-BanglaDictionary.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C00C95A61DFB17F300FAE6D8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				52F947F81DF18B53004BE59A /* left.png */,
+				5205AB0F1DF3749700079A24 /* menu_image.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		C031AEB61E09B6E8005BDDAE /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				C031AEB71E09B718005BDDAE /* bangla.sqlite */,
+			);
+			name = DB;
+			sourceTree = "<group>";
+		};
+		C031AEB91E09B74B005BDDAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C031AEBA1E09B775005BDDAE /* DBManager.swift */,
+				C0CD87E11E23E14F00C051AB /* Constants.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C031AEBC1E09B7A4005BDDAE /* External Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				C031AEBD1E09B7B2005BDDAE /* FMDatabase.h */,
+				C031AEBE1E09B7B2005BDDAE /* FMDatabase.m */,
+				C031AEBF1E09B7B2005BDDAE /* FMDatabaseAdditions.h */,
+				C031AEC01E09B7B2005BDDAE /* FMDatabaseAdditions.m */,
+				C031AEC11E09B7B2005BDDAE /* FMDatabasePool.h */,
+				C031AEC21E09B7B2005BDDAE /* FMDatabasePool.m */,
+				C031AEC31E09B7B2005BDDAE /* FMDatabaseQueue.h */,
+				C031AEC41E09B7B2005BDDAE /* FMDatabaseQueue.m */,
+				C031AEC51E09B7B2005BDDAE /* FMDB.h */,
+				C031AEC61E09B7B2005BDDAE /* FMResultSet.h */,
+				C031AEC71E09B7B2005BDDAE /* FMResultSet.m */,
+			);
+			name = "External Libraries";
+			sourceTree = "<group>";
+		};
+		E46BE60967202DE0E59460A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C031AECD1E09B8F1005BDDAE /* libsqlite3.dylib */,
+				C031AECE1E09B8F1005BDDAE /* libz.1.dylib */,
+				71BAF6C9201BB2A11867383C /* Pods_BanglaDictionary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		529321541DEDEA5F0074CDFA /* BanglaDictionary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5293216A1DEDEA600074CDFA /* Build configuration list for PBXNativeTarget "BanglaDictionary" */;
+			buildPhases = (
+				BC5708380B6C89A69E8272D1 /* [CP] Check Pods Manifest.lock */,
+				529321511DEDEA5F0074CDFA /* Sources */,
+				529321521DEDEA5F0074CDFA /* Frameworks */,
+				529321531DEDEA5F0074CDFA /* Resources */,
+				7BEF068BC8DC5787A5F70F91 /* [CP] Embed Pods Frameworks */,
+				90DB9AAC2AF56BC3317DC3AB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BanglaDictionary;
+			productName = BanglaDictionary;
+			productReference = 529321551DEDEA5F0074CDFA /* BanglaDictionary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5293214D1DEDEA5F0074CDFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = MacMan;
+				TargetAttributes = {
+					529321541DEDEA5F0074CDFA = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
+					};
+				};
+			};
+			buildConfigurationList = 529321501DEDEA5F0074CDFA /* Build configuration list for PBXProject "BanglaDictionary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5293214C1DEDEA5F0074CDFA;
+			productRefGroup = 529321561DEDEA5F0074CDFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				529321541DEDEA5F0074CDFA /* BanglaDictionary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		529321531DEDEA5F0074CDFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529321661DEDEA600074CDFA /* LaunchScreen.storyboard in Resources */,
+				529321631DEDEA600074CDFA /* Assets.xcassets in Resources */,
+				C031AEB81E09B718005BDDAE /* bangla.sqlite in Resources */,
+				52F948051DF18BE4004BE59A /* .gitkeep in Resources */,
+				52F948061DF18BE4004BE59A /* .gitkeep in Resources */,
+				52F947F91DF18B53004BE59A /* left.png in Resources */,
+				5205AB101DF3749700079A24 /* menu_image.png in Resources */,
+				5293215E1DEDEA600074CDFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7BEF068BC8DC5787A5F70F91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BanglaDictionary/Pods-BanglaDictionary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90DB9AAC2AF56BC3317DC3AB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BanglaDictionary/Pods-BanglaDictionary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC5708380B6C89A69E8272D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		529321511DEDEA5F0074CDFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52197AD51DF1D7AA00AEF00C /* BECustomSegue.h in Sources */,
+				52197AD61DF1D7AA00AEF00C /* BEFoldMenuViewController.h in Sources */,
+				C031AECA1E09B7B2005BDDAE /* FMDatabasePool.m in Sources */,
+				52197AD71DF1D7AA00AEF00C /* UIView+Frame.h in Sources */,
+				52CBB83C1DF4982C0087F9C9 /* ContainerViewController.swift in Sources */,
+				C031AECB1E09B7B2005BDDAE /* FMDatabaseQueue.m in Sources */,
+				C0CD87E21E23E14F00C051AB /* Constants.swift in Sources */,
+				C031AEC81E09B7B2005BDDAE /* FMDatabase.m in Sources */,
+				C031AEC91E09B7B2005BDDAE /* FMDatabaseAdditions.m in Sources */,
+				52197AD41DF1D64E00AEF00C /* BanglaDictionary-Bridging-Header.h in Sources */,
+				C031AECC1E09B7B2005BDDAE /* FMResultSet.m in Sources */,
+				52CBB8451DF4B11C0087F9C9 /* HistoryViewController.swift in Sources */,
+				529321611DEDEA600074CDFA /* BanglaDictionary.xcdatamodeld in Sources */,
+				52CBB83B1DF4982C0087F9C9 /* BaseViewController.swift in Sources */,
+				52CBB8471DF4B1330087F9C9 /* SettingsViewController.swift in Sources */,
+				52F948091DF18BE4004BE59A /* UIView+Frame.m in Sources */,
+				52F948071DF18BE4004BE59A /* BECustomSegue.m in Sources */,
+				C01E02D41E1137BC001886B9 /* MeaningViewController.swift in Sources */,
+				C031AEBB1E09B775005BDDAE /* DBManager.swift in Sources */,
+				52CBB83F1DF49B220087F9C9 /* FavoriteViewController.swift in Sources */,
+				529321591DEDEA600074CDFA /* AppDelegate.swift in Sources */,
+				52F948081DF18BE4004BE59A /* BEFoldMenuViewController.m in Sources */,
+				52CBB83D1DF4982C0087F9C9 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5293215C1DEDEA600074CDFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5293215D1DEDEA600074CDFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		529321641DEDEA600074CDFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				529321651DEDEA600074CDFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		529321681DEDEA600074CDFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		529321691DEDEA600074CDFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5293216B1DEDEA600074CDFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A720C635560E86459E56C84 /* Pods-BanglaDictionary.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BanglaDictionary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MacMan.BanglaDictionary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/aowalhome/Desktop/BACKUP/Projects/BanglaDictionary/BanglaDictionary/BanglaDictionary-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5293216C1DEDEA600074CDFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DEAACF4168FEAAFC68753B1 /* Pods-BanglaDictionary.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BanglaDictionary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MacMan.BanglaDictionary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/aowalhome/Desktop/BACKUP/Projects/BanglaDictionary/BanglaDictionary/BanglaDictionary-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		529321501DEDEA5F0074CDFA /* Build configuration list for PBXProject "BanglaDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529321681DEDEA600074CDFA /* Debug */,
+				529321691DEDEA600074CDFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5293216A1DEDEA600074CDFA /* Build configuration list for PBXNativeTarget "BanglaDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5293216B1DEDEA600074CDFA /* Debug */,
+				5293216C1DEDEA600074CDFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5293215F1DEDEA600074CDFA /* BanglaDictionary.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				529321601DEDEA600074CDFA /* BanglaDictionary.xcdatamodel */,
+			);
+			currentVersion = 529321601DEDEA600074CDFA /* BanglaDictionary.xcdatamodel */;
+			path = BanglaDictionary.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5293214D1DEDEA5F0074CDFA /* Project object */;
+}
