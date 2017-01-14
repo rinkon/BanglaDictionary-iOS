@@ -7,111 +7,159 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1572D3F680FB0C14CD4AC2F9A5BE494D /* TabCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCB61F8FB2F1440B0E7CEEAA73317BC /* TabCollectionCell.xib */; };
-		20A48F19FBC52DB79017EE68436A9151 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		3DC4966C74C35A1A3EB73470F6C4450A /* TabPageViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7351754C2031CD74CF234CA2D484B /* TabPageViewController-dummy.m */; };
-		41336F06FA96129291B91B9E7438FC36 /* Pods-BanglaDictionary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD2D50706ADC3B283F30B53BB8B08D2 /* Pods-BanglaDictionary-dummy.m */; };
-		4A814BC9816C87C9168BB5372E786D90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		4FBA31D05ACC6652FA8E21ED96E39233 /* TabPageOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF83E1A434F4B10B2549DB99FBFBD53 /* TabPageOption.swift */; };
-		54210E2801EEF5DF72E5211D631604E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		67C5506E24574F2BB5FDE7610E25EA73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
-		7570B594CB7809302CB43F3F87776D75 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC6FC3E59D8BD141187B144DAA26EF0A /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C8B12343EF4CA98D7D221BA76E143E2 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4866F314D2D05C87E9C22DDDF9F501 /* SwiftyJSON.swift */; };
-		9BEF66D5C974FEC15464F68D73EB2B4E /* TabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31179C7625129546136B9BA21976485C /* TabPageViewController.swift */; };
-		A733108F8422F34874D276BE8F926F69 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD3C703014E0195ED05012EF80A0E01 /* SwiftyJSON-dummy.m */; };
-		B23DD810A730873E6A336570BD0DB89A /* Pods-BanglaDictionary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE25C938F4CC416497F985BD585E960 /* Pods-BanglaDictionary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4F661A41A24A76B4F2AA26237890539 /* TabCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A29AC624D1B3D011C7CE58453D469 /* TabCollectionCell.swift */; };
-		DADAB5EA5CBCDB3CC7D7BB2F13EAAA84 /* TabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A7C9761A65B3D9527BDA84CDD3A213C /* TabView.xib */; };
-		DF69D370CD7A83BF7B805B49732E7DD5 /* TabPageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19CE912091AA8847C589AA0284FD5BAE /* TabPageViewController.storyboard */; };
-		F5FAAE571526FB9097D39D0CB9F0AF27 /* TabPageViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A732F1A7906ECC3E4AF27F28D2B4DD4 /* TabPageViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB3602B7A43FE8B0695E996504AE9516 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF23E2A498A04236E021A5A48CCDB544 /* TabView.swift */; };
+		01515F525BE155E063EBE794C42D10AF /* TabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568A2FEA9936DA4875AA887DD98E58D0 /* TabView.xib */; };
+		078FC74DF9F7082389F21DB999B9508A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F4E4BEBD81E25670314F58209E20C9 /* Reachability.swift */; };
+		10B890FBD807949FAB6F5B93ACBE41EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6A460683595C7E77B10249D4776D65 /* Foundation.framework */; };
+		14796C175A77A918AA5AEAA453D73F40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6A460683595C7E77B10249D4776D65 /* Foundation.framework */; };
+		1E4410E245529D7FF84C79BE4191A084 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF8EB68038964C855C2555279938665B /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B1A507DD9CBC43578F5DC4412D26D88 /* TabCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 823C994156571012AB2524CAD76ADDDD /* TabCollectionCell.xib */; };
+		320C3C378D2D17C43D2C40879C113438 /* TabPageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBDA2404965F3D99016F6030589B23AF /* TabPageViewController.storyboard */; };
+		3B9C4EDA56FF105C13707AE0057CA115 /* Pods-BanglaDictionary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD2D50706ADC3B283F30B53BB8B08D2 /* Pods-BanglaDictionary-dummy.m */; };
+		3DE4CD8242B54F708691BC83E271E997 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A62F7FBF2F9150ECD1E9463A5B3432 /* SwiftyJSON.swift */; };
+		4052F6B2ECBA824EDCE0E2D5C25FA393 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6A460683595C7E77B10249D4776D65 /* Foundation.framework */; };
+		571F3360BEF24C205961B26BF2E8FF1C /* TabPageViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B31E1EF33874C1417269E782E0A912BF /* TabPageViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7481AA8A77F983E03AF2D8B62F66A001 /* ReachabilitySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86073DD75AC050E013BBB4CDCA639E8E /* ReachabilitySwift-dummy.m */; };
+		7C8407B25BB5FFCA24B1A2D54B2C52B7 /* ReachabilitySwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1FD3533AE84CE6F49236ED3AE5CE0B1 /* ReachabilitySwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		899A59F73057C730395CD590CD27C9DC /* TabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061C77201EC7B88DF8758D40D06EDEB5 /* TabPageViewController.swift */; };
+		9F2090B1EC13B342A238FFB35F2CA55F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6874BDD7D0248B8A0B3EFC2498A5680F /* SystemConfiguration.framework */; };
+		A2C07BBDE54129FFDF6079C7A87B7B48 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A79627C66147B4EFB64F6E3C9AF658D4 /* SwiftyJSON-dummy.m */; };
+		B3584C94F4A9B1BC83D8B918A461CE60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6A460683595C7E77B10249D4776D65 /* Foundation.framework */; };
+		B6E56387C1044E183A6E0015C84893D9 /* Pods-BanglaDictionary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE25C938F4CC416497F985BD585E960 /* Pods-BanglaDictionary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF274805B6B7F356DA32A926EDC65B3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915DA5BF575294E4D2FADDA47577C3D0 /* UIKit.framework */; };
+		D2D8AA4818A9E57F549684B1C517B1C2 /* TabPageOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E7992073E0BEF11D31689A8761E99 /* TabPageOption.swift */; };
+		EA3C044E02FABFF2C393DD8E68349428 /* TabPageViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A60767E49728A5EB5C5936052C81142 /* TabPageViewController-dummy.m */; };
+		F39A167B5919490FE4F2B4C93BB863F5 /* TabCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B694239631FD1C632BA58580FCF3DB47 /* TabCollectionCell.swift */; };
+		F9F874034791707BFC29DD9776CFB75C /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25FA026A13C347CC3BF148D0D600891 /* TabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		21860A35907E24CDEE1551991AC41A55 /* PBXContainerItemProxy */ = {
+		0CB3169CF195BE7FD4F834FD06A306F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 97234832ADC17636A18E2232A49C6D8D;
-			remoteInfo = SwiftyJSON;
-		};
-		B684BDBE8697436A67EA44E9240C403E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CF256C81330AAE2EBCA5908F3518FB9B;
+			remoteGlobalIDString = 994117560BE3EF45D14ECB5FE834C197;
 			remoteInfo = TabPageViewController;
+		};
+		77A8D15C081D2B6BBFD4CEA5C47FFBFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6554EFFD05F2CD52B75DEAD73482CA5A;
+			remoteInfo = ReachabilitySwift;
+		};
+		A68332396CAE8F1118EF012D5965E620 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42C19FBD3EF6582B96C7E0CC4B59894C;
+			remoteInfo = SwiftyJSON;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A4866F314D2D05C87E9C22DDDF9F501 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		04C243908B2E928B416F11A3437FF3D0 /* TabPageViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TabPageViewController-prefix.pch"; sourceTree = "<group>"; };
+		061C77201EC7B88DF8758D40D06EDEB5 /* TabPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabPageViewController.swift; path = Pod/Classes/TabPageViewController.swift; sourceTree = "<group>"; };
+		069E7992073E0BEF11D31689A8761E99 /* TabPageOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabPageOption.swift; path = Pod/Classes/TabPageOption.swift; sourceTree = "<group>"; };
+		0E11D5915545C273BD9ABFF412D1EB6B /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE25C938F4CC416497F985BD585E960 /* Pods-BanglaDictionary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BanglaDictionary-umbrella.h"; sourceTree = "<group>"; };
-		19CE912091AA8847C589AA0284FD5BAE /* TabPageViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; name = TabPageViewController.storyboard; path = Pod/Classes/TabPageViewController.storyboard; sourceTree = "<group>"; };
-		1B3A29AC624D1B3D011C7CE58453D469 /* TabCollectionCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabCollectionCell.swift; path = Pod/Classes/TabCollectionCell.swift; sourceTree = "<group>"; };
-		203A1C4C29EE771B82953F06F2E92A04 /* TabPageViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TabPageViewController-prefix.pch"; sourceTree = "<group>"; };
-		25EC3AEBA0FDE06FC32694BA46D777A9 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17B147E3B2CB38731E9A5E2960AF6FC1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D6A460683595C7E77B10249D4776D65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1E57ABDFBE6023248437E906F5525525 /* TabPageViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TabPageViewController.modulemap; sourceTree = "<group>"; };
 		262188A0AC877240103ADD36DC423FD8 /* Pods-BanglaDictionary-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BanglaDictionary-acknowledgements.plist"; sourceTree = "<group>"; };
-		30C09DD30D11CD73BE3DCE62D7C494A0 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		31179C7625129546136B9BA21976485C /* TabPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabPageViewController.swift; path = Pod/Classes/TabPageViewController.swift; sourceTree = "<group>"; };
+		2B034D2CFA1397F26452E0CA74237DB4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33C4A5279A4741987B9CAF10BAB0F993 /* Pods-BanglaDictionary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BanglaDictionary.modulemap"; sourceTree = "<group>"; };
-		3A6E9795F69A35AA925D9142509ACC98 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A7C9761A65B3D9527BDA84CDD3A213C /* TabView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TabView.xib; path = Pod/Classes/TabView.xib; sourceTree = "<group>"; };
+		3D9C514258B98AF2B148DC95EDD42D01 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4196AFB2A6F7F987FCD53B614CA74B42 /* TabPageViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TabPageViewController.xcconfig; sourceTree = "<group>"; };
+		4631046DDB7499C285459208C019C559 /* ReachabilitySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-prefix.pch"; sourceTree = "<group>"; };
 		4AFF01719C0D239D594F62594BFB72C9 /* Pods-BanglaDictionary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BanglaDictionary.debug.xcconfig"; sourceTree = "<group>"; };
-		5FCB61F8FB2F1440B0E7CEEAA73317BC /* TabCollectionCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TabCollectionCell.xib; path = Pod/Classes/TabCollectionCell.xib; sourceTree = "<group>"; };
-		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		69DD3C33EE25353765422BC5ABE20556 /* TabPageViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TabPageViewController.modulemap; sourceTree = "<group>"; };
+		554B82F6E165EF2B0A39FAD814FFE412 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		568A2FEA9936DA4875AA887DD98E58D0 /* TabView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TabView.xib; path = Pod/Classes/TabView.xib; sourceTree = "<group>"; };
+		59A62F7FBF2F9150ECD1E9463A5B3432 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		6874BDD7D0248B8A0B3EFC2498A5680F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		6E94735C6AFFF95CEBF645896FA1FAE9 /* Pods-BanglaDictionary-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BanglaDictionary-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		8A732F1A7906ECC3E4AF27F28D2B4DD4 /* TabPageViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TabPageViewController-umbrella.h"; sourceTree = "<group>"; };
-		8CD3C703014E0195ED05012EF80A0E01 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		8DF83E1A434F4B10B2549DB99FBFBD53 /* TabPageOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabPageOption.swift; path = Pod/Classes/TabPageOption.swift; sourceTree = "<group>"; };
+		6F4FEF6B99E47A9A4B8682D6C3950588 /* ReachabilitySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ReachabilitySwift.framework; path = ReachabilitySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8238B32C1FFC66E25E395DA7BFDF5B83 /* ReachabilitySwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.xcconfig; sourceTree = "<group>"; };
+		823C994156571012AB2524CAD76ADDDD /* TabCollectionCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TabCollectionCell.xib; path = Pod/Classes/TabCollectionCell.xib; sourceTree = "<group>"; };
+		86073DD75AC050E013BBB4CDCA639E8E /* ReachabilitySwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReachabilitySwift-dummy.m"; sourceTree = "<group>"; };
+		8A60767E49728A5EB5C5936052C81142 /* TabPageViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TabPageViewController-dummy.m"; sourceTree = "<group>"; };
+		915DA5BF575294E4D2FADDA47577C3D0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9FF7351754C2031CD74CF234CA2D484B /* TabPageViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TabPageViewController-dummy.m"; sourceTree = "<group>"; };
+		99A666B2B6EA8F9250CF06CD4DD88A2C /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		A2A082F93F45E8FB6FE28E58C631A97B /* ReachabilitySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ReachabilitySwift.modulemap; sourceTree = "<group>"; };
+		A79627C66147B4EFB64F6E3C9AF658D4 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		AEE69D2458544B128ED1A5FD581EEFFA /* Pods-BanglaDictionary-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BanglaDictionary-resources.sh"; sourceTree = "<group>"; };
 		AFD2D50706ADC3B283F30B53BB8B08D2 /* Pods-BanglaDictionary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BanglaDictionary-dummy.m"; sourceTree = "<group>"; };
-		B746BE301C44718D3D76ABFEB2C7C242 /* TabPageViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TabPageViewController.xcconfig; sourceTree = "<group>"; };
+		B31E1EF33874C1417269E782E0A912BF /* TabPageViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TabPageViewController-umbrella.h"; sourceTree = "<group>"; };
+		B694239631FD1C632BA58580FCF3DB47 /* TabCollectionCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabCollectionCell.swift; path = Pod/Classes/TabCollectionCell.swift; sourceTree = "<group>"; };
+		BBDA2404965F3D99016F6030589B23AF /* TabPageViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; name = TabPageViewController.storyboard; path = Pod/Classes/TabPageViewController.storyboard; sourceTree = "<group>"; };
+		C25FA026A13C347CC3BF148D0D600891 /* TabView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabView.swift; path = Pod/Classes/TabView.swift; sourceTree = "<group>"; };
+		C3B0554E8F7CF10DEAB51A4E37826F73 /* TabPageViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TabPageViewController.framework; path = TabPageViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C869A3EFBAFA00CD4562C7F5D8424591 /* Pods-BanglaDictionary-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BanglaDictionary-frameworks.sh"; sourceTree = "<group>"; };
-		CA8A8363469196448381474F4C7346EA /* TabPageViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TabPageViewController.framework; path = TabPageViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4642F218C98ADA025A037E9F1B1FDA1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF23E2A498A04236E021A5A48CCDB544 /* TabView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabView.swift; path = Pod/Classes/TabView.swift; sourceTree = "<group>"; };
-		E54C9EF32ED0047A27E0972094F28360 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		E6DEA0BA29ED448DEAEF59A3CB0E09D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC6FC3E59D8BD141187B144DAA26EF0A /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		DE6972B506EEEACDE6C5D9E00043ED71 /* Pods_BanglaDictionary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BanglaDictionary.framework; path = "Pods-BanglaDictionary.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1FD3533AE84CE6F49236ED3AE5CE0B1 /* ReachabilitySwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-umbrella.h"; sourceTree = "<group>"; };
+		E7F4E4BEBD81E25670314F58209E20C9 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Reachability/Reachability.swift; sourceTree = "<group>"; };
 		EEE7718EBC98E1DBAFFA14824981DE19 /* Pods-BanglaDictionary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BanglaDictionary.release.xcconfig"; sourceTree = "<group>"; };
-		F13F9F4D5E6FAE9148F4B03A4F202938 /* Pods_BanglaDictionary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BanglaDictionary.framework; path = "Pods-BanglaDictionary.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFA6086151555415135226410941817A /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		F353162D39371066F896A6039E8CDE20 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		FF8EB68038964C855C2555279938665B /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		58228D5B27DAEAFC0EC80BA5018F672F /* Frameworks */ = {
+		0499D138B2E42B035250AC323FB3D3CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A814BC9816C87C9168BB5372E786D90 /* Foundation.framework in Frameworks */,
+				14796C175A77A918AA5AEAA453D73F40 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		78907F802B7195D0DDA1D382A15E61B4 /* Frameworks */ = {
+		8373789BD0DAC19C05A8E89203E00615 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54210E2801EEF5DF72E5211D631604E3 /* Foundation.framework in Frameworks */,
-				67C5506E24574F2BB5FDE7610E25EA73 /* UIKit.framework in Frameworks */,
+				B3584C94F4A9B1BC83D8B918A461CE60 /* Foundation.framework in Frameworks */,
+				9F2090B1EC13B342A238FFB35F2CA55F /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8FB30FEAE723EB95971D5899F9441DD2 /* Frameworks */ = {
+		C217111FA44DC3AF249E685DB0E98645 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20A48F19FBC52DB79017EE68436A9151 /* Foundation.framework in Frameworks */,
+				4052F6B2ECBA824EDCE0E2D5C25FA393 /* Foundation.framework in Frameworks */,
+				CF274805B6B7F356DA32A926EDC65B3A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCB17BB213B00A3A7D5DF288E05AFCF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10B890FBD807949FAB6F5B93ACBE41EF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07011F8FCF9C068D17FC23B05E972307 /* ReachabilitySwift */ = {
+			isa = PBXGroup;
+			children = (
+				E7F4E4BEBD81E25670314F58209E20C9 /* Reachability.swift */,
+				B3B3A65D3EB6C7D5301E68D12E7113D4 /* Support Files */,
+			);
+			name = ReachabilitySwift;
+			path = ReachabilitySwift;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D51927BAC8CE4A5A25ADE0E2DEB305C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2B49AFB0C35A4CEDEF47F8D7557900D2 /* Pods-BanglaDictionary */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,14 +178,14 @@
 			path = "Target Support Files/Pods-BanglaDictionary";
 			sourceTree = "<group>";
 		};
-		317AB4D2240BA32F65AE34CCB48FC4A5 /* Products */ = {
+		2D51927BAC8CE4A5A25ADE0E2DEB305C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				F13F9F4D5E6FAE9148F4B03A4F202938 /* Pods_BanglaDictionary.framework */,
-				25EC3AEBA0FDE06FC32694BA46D777A9 /* SwiftyJSON.framework */,
-				CA8A8363469196448381474F4C7346EA /* TabPageViewController.framework */,
+				1D6A460683595C7E77B10249D4776D65 /* Foundation.framework */,
+				6874BDD7D0248B8A0B3EFC2498A5680F /* SystemConfiguration.framework */,
+				915DA5BF575294E4D2FADDA47577C3D0 /* UIKit.framework */,
 			);
-			name = Products;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		3411B39CB13AAA3C4A0EB1734B081328 /* Targets Support Files */ = {
@@ -148,161 +196,179 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		432439F2C5442A63C60CF244A20B2086 /* Support Files */ = {
+		352B84273D218DFA17287E4EAD949B8F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E6DEA0BA29ED448DEAEF59A3CB0E09D4 /* Info.plist */,
-				69DD3C33EE25353765422BC5ABE20556 /* TabPageViewController.modulemap */,
-				B746BE301C44718D3D76ABFEB2C7C242 /* TabPageViewController.xcconfig */,
-				9FF7351754C2031CD74CF234CA2D484B /* TabPageViewController-dummy.m */,
-				203A1C4C29EE771B82953F06F2E92A04 /* TabPageViewController-prefix.pch */,
-				8A732F1A7906ECC3E4AF27F28D2B4DD4 /* TabPageViewController-umbrella.h */,
+				17B147E3B2CB38731E9A5E2960AF6FC1 /* Info.plist */,
+				F353162D39371066F896A6039E8CDE20 /* SwiftyJSON.modulemap */,
+				99A666B2B6EA8F9250CF06CD4DD88A2C /* SwiftyJSON.xcconfig */,
+				A79627C66147B4EFB64F6E3C9AF658D4 /* SwiftyJSON-dummy.m */,
+				554B82F6E165EF2B0A39FAD814FFE412 /* SwiftyJSON-prefix.pch */,
+				FF8EB68038964C855C2555279938665B /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		7951C905A7EABDABC14C4D7A159611DC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B034D2CFA1397F26452E0CA74237DB4 /* Info.plist */,
+				1E57ABDFBE6023248437E906F5525525 /* TabPageViewController.modulemap */,
+				4196AFB2A6F7F987FCD53B614CA74B42 /* TabPageViewController.xcconfig */,
+				8A60767E49728A5EB5C5936052C81142 /* TabPageViewController-dummy.m */,
+				04C243908B2E928B416F11A3437FF3D0 /* TabPageViewController-prefix.pch */,
+				B31E1EF33874C1417269E782E0A912BF /* TabPageViewController-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/TabPageViewController";
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6D876B9B5896C95BF949AB2A833DCB47 /* SwiftyJSON */ = {
-			isa = PBXGroup;
-			children = (
-				0A4866F314D2D05C87E9C22DDDF9F501 /* SwiftyJSON.swift */,
-				8D903DF1B4C9C8E7E89D909910AB10F6 /* Support Files */,
-			);
-			name = SwiftyJSON;
-			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				F6FD42A9E329E73D151DE44BDCF7000A /* Pods */,
-				317AB4D2240BA32F65AE34CCB48FC4A5 /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				8BD85FEFBF2697C5B52E07AE0A3073ED /* Pods */,
+				BBFBDFBAF44D1CC00B83D79B0061C262 /* Products */,
 				3411B39CB13AAA3C4A0EB1734B081328 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8D903DF1B4C9C8E7E89D909910AB10F6 /* Support Files */ = {
+		821BC29FE08F44BBC6F2BAD67745BFB6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3A6E9795F69A35AA925D9142509ACC98 /* Info.plist */,
-				E54C9EF32ED0047A27E0972094F28360 /* SwiftyJSON.modulemap */,
-				FFA6086151555415135226410941817A /* SwiftyJSON.xcconfig */,
-				8CD3C703014E0195ED05012EF80A0E01 /* SwiftyJSON-dummy.m */,
-				30C09DD30D11CD73BE3DCE62D7C494A0 /* SwiftyJSON-prefix.pch */,
-				EC6FC3E59D8BD141187B144DAA26EF0A /* SwiftyJSON-umbrella.h */,
+				823C994156571012AB2524CAD76ADDDD /* TabCollectionCell.xib */,
+				BBDA2404965F3D99016F6030589B23AF /* TabPageViewController.storyboard */,
+				568A2FEA9936DA4875AA887DD98E58D0 /* TabView.xib */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		AD6EE50A76BA4BF1762747693CCCE165 /* TabPageViewController */ = {
+		8BD85FEFBF2697C5B52E07AE0A3073ED /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1B3A29AC624D1B3D011C7CE58453D469 /* TabCollectionCell.swift */,
-				8DF83E1A434F4B10B2549DB99FBFBD53 /* TabPageOption.swift */,
-				31179C7625129546136B9BA21976485C /* TabPageViewController.swift */,
-				DF23E2A498A04236E021A5A48CCDB544 /* TabView.swift */,
-				FDFFD124632D71AE8B7836444115759C /* Resources */,
-				432439F2C5442A63C60CF244A20B2086 /* Support Files */,
+				07011F8FCF9C068D17FC23B05E972307 /* ReachabilitySwift */,
+				FDC42E27BC68710087DFDFD31B50487A /* SwiftyJSON */,
+				DF20993453D198FD3FCEA3F811952913 /* TabPageViewController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B3B3A65D3EB6C7D5301E68D12E7113D4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D9C514258B98AF2B148DC95EDD42D01 /* Info.plist */,
+				A2A082F93F45E8FB6FE28E58C631A97B /* ReachabilitySwift.modulemap */,
+				8238B32C1FFC66E25E395DA7BFDF5B83 /* ReachabilitySwift.xcconfig */,
+				86073DD75AC050E013BBB4CDCA639E8E /* ReachabilitySwift-dummy.m */,
+				4631046DDB7499C285459208C019C559 /* ReachabilitySwift-prefix.pch */,
+				E1FD3533AE84CE6F49236ED3AE5CE0B1 /* ReachabilitySwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ReachabilitySwift";
+			sourceTree = "<group>";
+		};
+		BBFBDFBAF44D1CC00B83D79B0061C262 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE6972B506EEEACDE6C5D9E00043ED71 /* Pods_BanglaDictionary.framework */,
+				6F4FEF6B99E47A9A4B8682D6C3950588 /* ReachabilitySwift.framework */,
+				0E11D5915545C273BD9ABFF412D1EB6B /* SwiftyJSON.framework */,
+				C3B0554E8F7CF10DEAB51A4E37826F73 /* TabPageViewController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF20993453D198FD3FCEA3F811952913 /* TabPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B694239631FD1C632BA58580FCF3DB47 /* TabCollectionCell.swift */,
+				069E7992073E0BEF11D31689A8761E99 /* TabPageOption.swift */,
+				061C77201EC7B88DF8758D40D06EDEB5 /* TabPageViewController.swift */,
+				C25FA026A13C347CC3BF148D0D600891 /* TabView.swift */,
+				821BC29FE08F44BBC6F2BAD67745BFB6 /* Resources */,
+				7951C905A7EABDABC14C4D7A159611DC /* Support Files */,
 			);
 			name = TabPageViewController;
 			path = TabPageViewController;
 			sourceTree = "<group>";
 		};
-		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+		FDC42E27BC68710087DFDFD31B50487A /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
-				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+				59A62F7FBF2F9150ECD1E9463A5B3432 /* SwiftyJSON.swift */,
+				352B84273D218DFA17287E4EAD949B8F /* Support Files */,
 			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		F6FD42A9E329E73D151DE44BDCF7000A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6D876B9B5896C95BF949AB2A833DCB47 /* SwiftyJSON */,
-				AD6EE50A76BA4BF1762747693CCCE165 /* TabPageViewController */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FDFFD124632D71AE8B7836444115759C /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				5FCB61F8FB2F1440B0E7CEEAA73317BC /* TabCollectionCell.xib */,
-				19CE912091AA8847C589AA0284FD5BAE /* TabPageViewController.storyboard */,
-				4A7C9761A65B3D9527BDA84CDD3A213C /* TabView.xib */,
-			);
-			name = Resources;
+			name = SwiftyJSON;
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		653F110E67F5D012BCA9ADF33F285E6B /* Headers */ = {
+		71B04D7FA1A707A5BBFC3C58307713D2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B23DD810A730873E6A336570BD0DB89A /* Pods-BanglaDictionary-umbrella.h in Headers */,
+				571F3360BEF24C205961B26BF2E8FF1C /* TabPageViewController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B75FFA04B92A9F04800E2975693C0599 /* Headers */ = {
+		71EDE896584ACF85C1DA50ED50990A38 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7570B594CB7809302CB43F3F87776D75 /* SwiftyJSON-umbrella.h in Headers */,
+				B6E56387C1044E183A6E0015C84893D9 /* Pods-BanglaDictionary-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7FD818F675A99B46469E5F8FD4C2E9D /* Headers */ = {
+		B2DA4697543563907BEE7170DE55C290 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5FAAE571526FB9097D39D0CB9F0AF27 /* TabPageViewController-umbrella.h in Headers */,
+				1E4410E245529D7FF84C79BE4191A084 /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C22EC0347C3BD990ACA7249030D4F010 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C8407B25BB5FFCA24B1A2D54B2C52B7 /* ReachabilitySwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8E859E70721C399D1FD4808E0215F93D /* Pods-BanglaDictionary */ = {
+		275FB17EB82776B18BD7B31A4C1507BC /* Pods-BanglaDictionary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B677F8CE0AF8974187E9CFAA75C2EFF /* Build configuration list for PBXNativeTarget "Pods-BanglaDictionary" */;
+			buildConfigurationList = 5C0CA30B4F4A27791C1EDF4C44284EF2 /* Build configuration list for PBXNativeTarget "Pods-BanglaDictionary" */;
 			buildPhases = (
-				12D7838AE306D2ED18CA83745638AA95 /* Sources */,
-				8FB30FEAE723EB95971D5899F9441DD2 /* Frameworks */,
-				653F110E67F5D012BCA9ADF33F285E6B /* Headers */,
+				53ADCB020D3E4CCA254F307D0ACE5A54 /* Sources */,
+				FCB17BB213B00A3A7D5DF288E05AFCF0 /* Frameworks */,
+				71EDE896584ACF85C1DA50ED50990A38 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A2AF2C64BA8D004F59CA186FAE27F229 /* PBXTargetDependency */,
-				990926A2F464E95783ECE96F76905832 /* PBXTargetDependency */,
+				2A98380DBBFA3A919A0975397B320189 /* PBXTargetDependency */,
+				831095455D49E01A4C4A39385B33D329 /* PBXTargetDependency */,
+				56E5BAE41EFE7033474445A663BB0FD0 /* PBXTargetDependency */,
 			);
 			name = "Pods-BanglaDictionary";
 			productName = "Pods-BanglaDictionary";
-			productReference = F13F9F4D5E6FAE9148F4B03A4F202938 /* Pods_BanglaDictionary.framework */;
+			productReference = DE6972B506EEEACDE6C5D9E00043ED71 /* Pods_BanglaDictionary.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		97234832ADC17636A18E2232A49C6D8D /* SwiftyJSON */ = {
+		42C19FBD3EF6582B96C7E0CC4B59894C /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E8A2B26F59AB1DABDA08282E29B68AC3 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = 40EA98F4662D87AE8A5DDE3D55CEF0D1 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
 			buildPhases = (
-				506167333A16C085102AA6E8045EE02F /* Sources */,
-				58228D5B27DAEAFC0EC80BA5018F672F /* Frameworks */,
-				B75FFA04B92A9F04800E2975693C0599 /* Headers */,
+				55A03AF24510CE3D26200506FC954236 /* Sources */,
+				0499D138B2E42B035250AC323FB3D3CE /* Frameworks */,
+				B2DA4697543563907BEE7170DE55C290 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -310,17 +376,34 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = 25EC3AEBA0FDE06FC32694BA46D777A9 /* SwiftyJSON.framework */;
+			productReference = 0E11D5915545C273BD9ABFF412D1EB6B /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CF256C81330AAE2EBCA5908F3518FB9B /* TabPageViewController */ = {
+		6554EFFD05F2CD52B75DEAD73482CA5A /* ReachabilitySwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5954BA834F6EC80294FBE1BCFBC0DE64 /* Build configuration list for PBXNativeTarget "TabPageViewController" */;
+			buildConfigurationList = B27A0933B6A11C435A79D073251309EE /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */;
 			buildPhases = (
-				94C4ADFD873130B4C92F370BCACECFD5 /* Sources */,
-				78907F802B7195D0DDA1D382A15E61B4 /* Frameworks */,
-				4BE4C6971221E2D345356040D0973191 /* Resources */,
-				F7FD818F675A99B46469E5F8FD4C2E9D /* Headers */,
+				88DF77B0C2E48CCC5037A1CEC7A7EA07 /* Sources */,
+				8373789BD0DAC19C05A8E89203E00615 /* Frameworks */,
+				C22EC0347C3BD990ACA7249030D4F010 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReachabilitySwift;
+			productName = ReachabilitySwift;
+			productReference = 6F4FEF6B99E47A9A4B8682D6C3950588 /* ReachabilitySwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		994117560BE3EF45D14ECB5FE834C197 /* TabPageViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5C3091FC747DC1B8C584E2EC43F19E9 /* Build configuration list for PBXNativeTarget "TabPageViewController" */;
+			buildPhases = (
+				BA7BEBD6BF9516E6918BE3D747A1808C /* Sources */,
+				C217111FA44DC3AF249E685DB0E98645 /* Frameworks */,
+				AF62434A33238224A85E6CF0964AC83D /* Resources */,
+				71B04D7FA1A707A5BBFC3C58307713D2 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -328,7 +411,7 @@
 			);
 			name = TabPageViewController;
 			productName = TabPageViewController;
-			productReference = CA8A8363469196448381474F4C7346EA /* TabPageViewController.framework */;
+			productReference = C3B0554E8F7CF10DEAB51A4E37826F73 /* TabPageViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -348,81 +431,130 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 317AB4D2240BA32F65AE34CCB48FC4A5 /* Products */;
+			productRefGroup = BBFBDFBAF44D1CC00B83D79B0061C262 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8E859E70721C399D1FD4808E0215F93D /* Pods-BanglaDictionary */,
-				97234832ADC17636A18E2232A49C6D8D /* SwiftyJSON */,
-				CF256C81330AAE2EBCA5908F3518FB9B /* TabPageViewController */,
+				275FB17EB82776B18BD7B31A4C1507BC /* Pods-BanglaDictionary */,
+				6554EFFD05F2CD52B75DEAD73482CA5A /* ReachabilitySwift */,
+				42C19FBD3EF6582B96C7E0CC4B59894C /* SwiftyJSON */,
+				994117560BE3EF45D14ECB5FE834C197 /* TabPageViewController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4BE4C6971221E2D345356040D0973191 /* Resources */ = {
+		AF62434A33238224A85E6CF0964AC83D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1572D3F680FB0C14CD4AC2F9A5BE494D /* TabCollectionCell.xib in Resources */,
-				DF69D370CD7A83BF7B805B49732E7DD5 /* TabPageViewController.storyboard in Resources */,
-				DADAB5EA5CBCDB3CC7D7BB2F13EAAA84 /* TabView.xib in Resources */,
+				2B1A507DD9CBC43578F5DC4412D26D88 /* TabCollectionCell.xib in Resources */,
+				320C3C378D2D17C43D2C40879C113438 /* TabPageViewController.storyboard in Resources */,
+				01515F525BE155E063EBE794C42D10AF /* TabView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		12D7838AE306D2ED18CA83745638AA95 /* Sources */ = {
+		53ADCB020D3E4CCA254F307D0ACE5A54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41336F06FA96129291B91B9E7438FC36 /* Pods-BanglaDictionary-dummy.m in Sources */,
+				3B9C4EDA56FF105C13707AE0057CA115 /* Pods-BanglaDictionary-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		506167333A16C085102AA6E8045EE02F /* Sources */ = {
+		55A03AF24510CE3D26200506FC954236 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A733108F8422F34874D276BE8F926F69 /* SwiftyJSON-dummy.m in Sources */,
-				7C8B12343EF4CA98D7D221BA76E143E2 /* SwiftyJSON.swift in Sources */,
+				A2C07BBDE54129FFDF6079C7A87B7B48 /* SwiftyJSON-dummy.m in Sources */,
+				3DE4CD8242B54F708691BC83E271E997 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		94C4ADFD873130B4C92F370BCACECFD5 /* Sources */ = {
+		88DF77B0C2E48CCC5037A1CEC7A7EA07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4F661A41A24A76B4F2AA26237890539 /* TabCollectionCell.swift in Sources */,
-				4FBA31D05ACC6652FA8E21ED96E39233 /* TabPageOption.swift in Sources */,
-				3DC4966C74C35A1A3EB73470F6C4450A /* TabPageViewController-dummy.m in Sources */,
-				9BEF66D5C974FEC15464F68D73EB2B4E /* TabPageViewController.swift in Sources */,
-				FB3602B7A43FE8B0695E996504AE9516 /* TabView.swift in Sources */,
+				078FC74DF9F7082389F21DB999B9508A /* Reachability.swift in Sources */,
+				7481AA8A77F983E03AF2D8B62F66A001 /* ReachabilitySwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA7BEBD6BF9516E6918BE3D747A1808C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39A167B5919490FE4F2B4C93BB863F5 /* TabCollectionCell.swift in Sources */,
+				D2D8AA4818A9E57F549684B1C517B1C2 /* TabPageOption.swift in Sources */,
+				EA3C044E02FABFF2C393DD8E68349428 /* TabPageViewController-dummy.m in Sources */,
+				899A59F73057C730395CD590CD27C9DC /* TabPageViewController.swift in Sources */,
+				F9F874034791707BFC29DD9776CFB75C /* TabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		990926A2F464E95783ECE96F76905832 /* PBXTargetDependency */ = {
+		2A98380DBBFA3A919A0975397B320189 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReachabilitySwift;
+			target = 6554EFFD05F2CD52B75DEAD73482CA5A /* ReachabilitySwift */;
+			targetProxy = 77A8D15C081D2B6BBFD4CEA5C47FFBFA /* PBXContainerItemProxy */;
+		};
+		56E5BAE41EFE7033474445A663BB0FD0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TabPageViewController;
-			target = CF256C81330AAE2EBCA5908F3518FB9B /* TabPageViewController */;
-			targetProxy = B684BDBE8697436A67EA44E9240C403E /* PBXContainerItemProxy */;
+			target = 994117560BE3EF45D14ECB5FE834C197 /* TabPageViewController */;
+			targetProxy = 0CB3169CF195BE7FD4F834FD06A306F1 /* PBXContainerItemProxy */;
 		};
-		A2AF2C64BA8D004F59CA186FAE27F229 /* PBXTargetDependency */ = {
+		831095455D49E01A4C4A39385B33D329 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = 97234832ADC17636A18E2232A49C6D8D /* SwiftyJSON */;
-			targetProxy = 21860A35907E24CDEE1551991AC41A55 /* PBXContainerItemProxy */;
+			target = 42C19FBD3EF6582B96C7E0CC4B59894C /* SwiftyJSON */;
+			targetProxy = A68332396CAE8F1118EF012D5965E620 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		50037A073688A887E6B0BAAD74CC0F48 /* Release */ = {
+		17E2CDE128B0C0387DB6777DEF01661C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B746BE301C44718D3D76ABFEB2C7C242 /* TabPageViewController.xcconfig */;
+			baseConfigurationReference = 99A666B2B6EA8F9250CF06CD4DD88A2C /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		430DE772E5DFA3162A4DDE4F6E0B4CB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEE7718EBC98E1DBAFFA14824981DE19 /* Pods-BanglaDictionary.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -435,17 +567,20 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TabPageViewController/TabPageViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TabPageViewController/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-BanglaDictionary/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TabPageViewController/TabPageViewController.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BanglaDictionary/Pods-BanglaDictionary.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TabPageViewController;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BanglaDictionary;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -496,45 +631,9 @@
 			};
 			name = Debug;
 		};
-		78F9FCBA8F7637F4FB7C8AA28A73B680 /* Debug */ = {
+		60587335851C584B6FD0F3E23F441E78 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AFF01719C0D239D594F62594BFB72C9 /* Pods-BanglaDictionary.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BanglaDictionary/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BanglaDictionary/Pods-BanglaDictionary.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_BanglaDictionary;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		82236E986C9D3F21D015FDF6934E45C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEE7718EBC98E1DBAFFA14824981DE19 /* Pods-BanglaDictionary.release.xcconfig */;
+			baseConfigurationReference = 4196AFB2A6F7F987FCD53B614CA74B42 /* TabPageViewController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -547,29 +646,26 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BanglaDictionary/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TabPageViewController/TabPageViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TabPageViewController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BanglaDictionary/Pods-BanglaDictionary.modulemap";
+				MODULEMAP_FILE = "Target Support Files/TabPageViewController/TabPageViewController.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_BanglaDictionary;
+				PRODUCT_NAME = TabPageViewController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		9FCDAB61B31CBBFC18CD2B2D07CCD14C /* Debug */ = {
+		69546B52F2C4D5F81FC1D86AC84F086A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FFA6086151555415135226410941817A /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 8238B32C1FFC66E25E395DA7BFDF5B83 /* ReachabilitySwift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -582,14 +678,79 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ReachabilitySwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		79D203BED4E08286D4DBB0E47681A5E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99A666B2B6EA8F9250CF06CD4DD88A2C /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B3A04CA7263C6B53C020DF33CCBD93C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4196AFB2A6F7F987FCD53B614CA74B42 /* TabPageViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TabPageViewController/TabPageViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TabPageViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TabPageViewController/TabPageViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TabPageViewController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -640,42 +801,9 @@
 			};
 			name = Release;
 		};
-		C2048B2D7E6136CB61086F926D4391A1 /* Debug */ = {
+		D025D8A6244DB3FA6A3039F164687B7E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B746BE301C44718D3D76ABFEB2C7C242 /* TabPageViewController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TabPageViewController/TabPageViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TabPageViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TabPageViewController/TabPageViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = TabPageViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CEF058BECDB0C823806182DC5FFDCE79 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FFA6086151555415135226410941817A /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 8238B32C1FFC66E25E395DA7BFDF5B83 /* ReachabilitySwift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -688,14 +816,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftyJSON;
+				PRODUCT_NAME = ReachabilitySwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -704,6 +832,42 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		E14C48B2DE9BADAB485A4540734BC332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AFF01719C0D239D594F62594BFB72C9 /* Pods-BanglaDictionary.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BanglaDictionary/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BanglaDictionary/Pods-BanglaDictionary.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BanglaDictionary;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -717,29 +881,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B677F8CE0AF8974187E9CFAA75C2EFF /* Build configuration list for PBXNativeTarget "Pods-BanglaDictionary" */ = {
+		40EA98F4662D87AE8A5DDE3D55CEF0D1 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				78F9FCBA8F7637F4FB7C8AA28A73B680 /* Debug */,
-				82236E986C9D3F21D015FDF6934E45C7 /* Release */,
+				17E2CDE128B0C0387DB6777DEF01661C /* Debug */,
+				79D203BED4E08286D4DBB0E47681A5E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5954BA834F6EC80294FBE1BCFBC0DE64 /* Build configuration list for PBXNativeTarget "TabPageViewController" */ = {
+		5C0CA30B4F4A27791C1EDF4C44284EF2 /* Build configuration list for PBXNativeTarget "Pods-BanglaDictionary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C2048B2D7E6136CB61086F926D4391A1 /* Debug */,
-				50037A073688A887E6B0BAAD74CC0F48 /* Release */,
+				E14C48B2DE9BADAB485A4540734BC332 /* Debug */,
+				430DE772E5DFA3162A4DDE4F6E0B4CB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E8A2B26F59AB1DABDA08282E29B68AC3 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+		B27A0933B6A11C435A79D073251309EE /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9FCDAB61B31CBBFC18CD2B2D07CCD14C /* Debug */,
-				CEF058BECDB0C823806182DC5FFDCE79 /* Release */,
+				69546B52F2C4D5F81FC1D86AC84F086A /* Debug */,
+				D025D8A6244DB3FA6A3039F164687B7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5C3091FC747DC1B8C584E2EC43F19E9 /* Build configuration list for PBXNativeTarget "TabPageViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3A04CA7263C6B53C020DF33CCBD93C3 /* Debug */,
+				60587335851C584B6FD0F3E23F441E78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

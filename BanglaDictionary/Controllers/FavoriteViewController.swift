@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FavoriteViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FavoriteViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
     var favoriteWordListArray = [String]()
     var favoriteWordTableList = [Int]()

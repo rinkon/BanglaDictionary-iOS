@@ -4,5 +4,5 @@ use_frameworks!
 target 'BanglaDictionary' do
     pod 'TabPageViewController'
     pod 'SwiftyJSON'
-
+    pod 'ReachabilitySwift'
 end

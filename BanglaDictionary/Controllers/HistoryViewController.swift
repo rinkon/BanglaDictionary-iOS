@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HistoryViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
     var historyWordListArray = [String]()
     var historyWordTableList = [Int]()
@@ -47,7 +47,6 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
             }
             historyWordListArray.append(word)
         }
-        print(historyWordListArray)
         historyTableView.reloadData()
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
