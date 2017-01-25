@@ -11,26 +11,36 @@ import TabPageViewController
 import GoogleMobileAds
 import AudioToolbox
 
-class ContainerViewController: UIViewController, GADBannerViewDelegate {
+class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableViewDataSource, UITableViewDelegate {
     let tabPageViewController = TabPageViewController.create()
     var adMobBannerView = GADBannerView()
+    var interstitial: GADInterstitial!
+
     
     @IBOutlet weak var tabPageContainerView: UIView!
+    @IBOutlet weak var visualEffectView: UIVisualEffectView!
+    @IBOutlet weak var menuTableView: UITableView!
+    @IBOutlet weak var closeMenuButton: UIButton!
+    @IBOutlet weak var menuBackgroundImageView: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addBarButton()
+        menuTableView.tableHeaderView = getHeaderView()
+        closeMenuButton.layer.zPosition = 100
         self.foldMenuController().rightMenuEnabled = false
         self.foldMenuController().foldEffeectEnabled = false
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let vc1 = storyBoard.instantiateViewController(withIdentifier: "Home") as! HomeViewController
         let vc2 = storyBoard.instantiateViewController(withIdentifier: "Favorite") as! FavoriteViewController
         let vc3 = storyBoard.instantiateViewController(withIdentifier: "History") as! HistoryViewController
-        let vc4 = storyBoard.instantiateViewController(withIdentifier: "Settings") as! SettingsViewController
+        let vc4 = storyBoard.instantiateViewController(withIdentifier: "Settings") as! GamesViewController
         vc1.containerViewController = self
         vc2.containerViewController = self
         vc3.containerViewController = self
-        tabPageViewController.tabItems = [(vc1, "Home"), (vc2, "Saved Words"), (vc3, "History"), (vc4, "Settings")]
+        vc4.containerViewController = self
+        tabPageViewController.tabItems = [(vc1, "Home"), (vc2, "Saved Words"), (vc3, "History"), (vc4, "Games")]
         tabPageViewController.view.frame = self.tabPageContainerView.frame
         tabPageViewController.option.tabBackgroundColor = UIColor(red: 48.0/255.0, green: 61.0/255.0, blue: 76.0/255.0, alpha: 1.0)
         tabPageViewController.option.currentColor = UIColor.white
@@ -42,6 +52,20 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate {
         self.navigationController?.navigationBar.setBackgroundImage(emptyImage, for: .default)
         initAdMobBanner()
         showBanner(adMobBannerView)
+        createAndLoadInterstitial()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        menuTableView.tableFooterView = UIView()
+        print("viewwillappear of containerviewcontroller")
+        if(Constants.countForInterstitial%5 == 0 && Constants.countForInterstitial != 0){
+            if interstitial.isReady {
+                interstitial.present(fromRootViewController: self)
+                Constants.countForInterstitial = 0
+            } else {
+                print("Ad wasn't ready")
+            }
+            createAndLoadInterstitial()
+        }
     }
     
     func addBarButton(){
@@ -51,9 +75,19 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate {
         button.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
         let barButton = UIBarButtonItem(customView: button)
         self.navigationItem.leftBarButtonItem = barButton
+        
+//        let button1 = UIButton(type: .custom)
+//        button1.setImage(UIImage(named: "menu_image.png"), for: UIControlState())
+//        button1.addTarget(self, action: #selector(self.rightMenuTapped(_:)), for: UIControlEvents.touchUpInside)
+//        button1.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+//        let barButton1 = UIBarButtonItem(customView: button1)
+//        self.navigationItem.rightBarButtonItem = barButton1
     }
     func leftMenuTapped(_ sender: AnyObject) {
         self.foldMenuController().leftMenuAction()
+    }
+    func rightMenuTapped(_ sender: AnyObject) {
+        
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "ToMeaningViewController"){
@@ -61,6 +95,7 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate {
             let envelope = sender as! [Any]
             vc.wordTable = envelope[0] as! Int
             vc.wordId = envelope[1] as! Int
+            vc.showDismissButton = false
         }
     }
     //MARK: BannerAdRelated
@@ -113,5 +148,86 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate {
     // NO AdMob banner available
     func adView(_ view: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
         hideBanner(adMobBannerView)
+    }
+    //MARK: Interstitial
+    fileprivate func createAndLoadInterstitial() {
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-8831588022499731/1042848201")
+        let request = GADRequest()
+        // Request test ads on devices you specify. Your test device ID is printed to the console when
+        // an ad request is made.
+        request.testDevices = [ kGADSimulatorID]
+        interstitial.load(request)
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "menuReuseCell")
+        if(indexPath.row == 0){
+            cell?.textLabel?.text = "Clear History"
+        }
+        
+        cell?.backgroundColor = UIColor.clear
+        cell?.textLabel?.textColor = UIColor.white
+        
+        return cell!
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        if(indexPath.row == 0){
+            let alertController = UIAlertController(title: "Are you sure?", message: "Pressing 'Delete all' will remove all words from History", preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            let deleteAction = UIAlertAction(title: "Delete all", style: .default, handler: { action in
+                var historyArray = UserDefaults.standard.value(forKey: Constants.HISTORY_ARRAY_KEY) as! [String]
+                historyArray.removeAll()
+                UserDefaults.standard.set(historyArray, forKey: Constants.HISTORY_ARRAY_KEY)
+            })
+            alertController.addAction(cancelAction)
+            alertController.addAction(deleteAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+//        closeMenu(closeMenuButton)
+    }
+    
+    
+    @IBAction func closeMenu(_ sender: Any) {
+        showOrHideMenu(UIBarButtonItem())
+    }
+    @IBAction func showOrHideMenu(_ sender: Any) {
+        if(visualEffectView.isHidden){
+            
+            UIView.transition(with: visualEffectView, duration: 0.2, options: .transitionCrossDissolve, animations: {
+                self.visualEffectView.isHidden = false
+                self.navigationController?.setNavigationBarHidden(true, animated: true)
+                self.adMobBannerView.frame.origin.y = self.view.frame.size.height - self.adMobBannerView.frame.size.height
+            }, completion:nil)
+            
+            UIView.transition(with: menuBackgroundImageView, duration: 0.4, options: .transitionCrossDissolve, animations: {
+                self.menuBackgroundImageView.isHidden = false
+            }, completion:nil)
+        }
+        else{
+            
+            UIView.transition(with: visualEffectView, duration: 0.2, options: .transitionCrossDissolve, animations: {
+                self.visualEffectView.isHidden = true
+                self.menuBackgroundImageView.isHidden = true
+                self.adMobBannerView.frame.origin.y = self.view.frame.size.height - self.adMobBannerView.frame.size.height - (self.navigationController?.navigationBar.frame.height)!
+                self.navigationController?.setNavigationBarHidden(false, animated: true)
+            }, completion: nil)
+            
+            
+            
+        }
+    }
+    func getHeaderView() -> UIView {
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 60))
+        let headerLabel = UILabel(frame: CGRect(x: 10, y: 0, width: view.frame.width - 10, height: 60))
+        headerLabel.text = "Bangla Dictionary"
+        headerLabel.font = UIFont.systemFont(ofSize: 30)
+        headerLabel.textColor = UIColor.white
+        headerView.addSubview(headerLabel)
+        return headerView
     }
 }

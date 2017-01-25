@@ -23,7 +23,7 @@ class HistoryViewController: BaseViewController, UITableViewDelegate, UITableVie
     }
     override func viewWillAppear(_ animated: Bool) {
         print("viewWillAppear")
-        
+        historyTableView.tableFooterView = UIView()
         var historyArray = UserDefaults.standard.value(forKey: Constants.HISTORY_ARRAY_KEY) as! [String]
         
         historyWordListArray.removeAll()

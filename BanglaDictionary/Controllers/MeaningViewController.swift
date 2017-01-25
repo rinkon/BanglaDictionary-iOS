@@ -15,13 +15,17 @@ class MeaningViewController: BaseViewController, UITableViewDelegate, UITableVie
     var word : String!
     var contentDictionary : Dictionary<String, String>!
     var contentTypeName : [String]!
+    var showDismissButton : Bool!
     
     @IBOutlet weak var meaningLabel: UILabel!
     @IBOutlet weak var meaningTable: UITableView!
     @IBOutlet weak var favoriteButton: UIBarButtonItem!
+    @IBOutlet weak var dismissButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Constants.countForInterstitial += 1
         var valueToStore = ""
         if(wordTable == 0){
             let content = DBManager.shared.fetchFromPrimaryWord(tableName: "primary_word", id: wordId)
@@ -50,6 +54,11 @@ class MeaningViewController: BaseViewController, UITableViewDelegate, UITableVie
                 historyArray.removeFirst()
             }
             UserDefaults.standard.set(historyArray, forKey: Constants.HISTORY_ARRAY_KEY)
+        }
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        if(showDismissButton == true) {
+            dismissButton.isHidden = false
         }
     }
     //MARK: TableViewDelegate Methods
@@ -114,5 +123,8 @@ class MeaningViewController: BaseViewController, UITableViewDelegate, UITableVie
         }
         UserDefaults.standard.set(favoriteArray, forKey: Constants.FAVORITE_ARRAY_KEY)
         print(favoriteArray)
+    }
+    @IBAction func dismissTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
 }

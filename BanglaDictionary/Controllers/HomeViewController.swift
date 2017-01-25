@@ -34,7 +34,9 @@ class HomeViewController: BaseViewController, UISearchBarDelegate, UITableViewDe
         DBManager.shared.printPath()
         customizeSearchBar()
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        suggestionTableView.tableFooterView = UIView()
+    }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
@@ -48,7 +50,7 @@ class HomeViewController: BaseViewController, UISearchBarDelegate, UITableViewDe
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseId")
         cell!.textLabel!.text = suggestionList[indexPath.row].capitalized
         cell!.textLabel?.numberOfLines = 0
-        cell!.backgroundColor = UIColor(red: 48.0/255.0, green: 61.0/255.0, blue: 76.0/255.0, alpha: 1.0)
+//        cell!.backgroundColor = UIColor.clear//(red: 48.0/255.0, green: 61.0/255.0, blue: 76.0/255.0, alpha: 1.0)
         cell?.textLabel?.textColor = UIColor.white
         return cell!
     }
@@ -118,7 +120,7 @@ class HomeViewController: BaseViewController, UISearchBarDelegate, UITableViewDe
             suggestionList = returnedResult.suggestionList
             suggestionIdList = returnedResult.suggestionIdList
         }
-        suggestionTableView.frame.size.height = CGFloat(suggestionList.count * 50)
+        suggestionTableView.frame.size.height = CGFloat(8 * 50)
         suggestionTableView.reloadData()
     }
     func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool{

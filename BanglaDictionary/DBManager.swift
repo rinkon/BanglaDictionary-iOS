@@ -25,7 +25,7 @@ class DBManager: NSObject {
         var suggestionList = [String]()
         var suggestionIdList = [Int]()
         if(database.open()){
-            let query = "SELECT _from, _id FROM primary_word WHERE _from like '\(prefix.lowercased())%' limit 10"
+            let query = "SELECT _from, _id FROM primary_word WHERE _from like '\(prefix.lowercased())%' limit 15"
             do{
                 let resultSet : FMResultSet = try database.executeQuery(query, values: nil)
                 while (resultSet.next()) {
