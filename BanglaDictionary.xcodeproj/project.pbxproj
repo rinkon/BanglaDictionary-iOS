@@ -64,6 +64,7 @@
 		C0CBA33C1E2BE242009AF430 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CBA33B1E2BE242009AF430 /* iCarousel.m */; };
 		C0CBA33E1E2C1896009AF430 /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CBA33D1E2C1896009AF430 /* SideBarViewController.swift */; };
 		C0CD87E21E23E14F00C051AB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CD87E11E23E14F00C051AB /* Constants.swift */; };
+		C0F38E881E410D7D00292500 /* delete1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0F38E871E410D7D00292500 /* delete1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -135,6 +136,7 @@
 		C0CBA33B1E2BE242009AF430 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		C0CBA33D1E2C1896009AF430 /* SideBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
 		C0CD87E11E23E14F00C051AB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C0F38E871E410D7D00292500 /* delete1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = delete1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +265,7 @@
 		C00C95A61DFB17F300FAE6D8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C0F38E871E410D7D00292500 /* delete1.jpg */,
 				C069057D1E3664DE008DE69C /* delete.png */,
 				C07D6D621E2ABF7B003B9351 /* menu_bg_4.jpg */,
 				C06905791E36524F008DE69C /* menu_bg_5.jpg */,
@@ -408,6 +411,7 @@
 				C09DD43E1E2A78F60005E5F0 /* menu_bg.jpg in Resources */,
 				C07D6D631E2ABF7B003B9351 /* menu_bg_4.jpg in Resources */,
 				5205AB101DF3749700079A24 /* menu_image.png in Resources */,
+				C0F38E881E410D7D00292500 /* delete1.jpg in Resources */,
 				C09DD4401E2A7D9E0005E5F0 /* menu_bg_2.jpg in Resources */,
 				5293215E1DEDEA600074CDFA /* Main.storyboard in Resources */,
 			);

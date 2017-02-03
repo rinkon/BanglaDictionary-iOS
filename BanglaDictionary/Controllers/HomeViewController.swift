@@ -35,6 +35,7 @@ class HomeViewController: BaseViewController, UISearchBarDelegate, UITableViewDe
         customizeSearchBar()
     }
     override func viewWillAppear(_ animated: Bool) {
+//        searchBar.becomeFirstResponder()
         suggestionTableView.tableFooterView = UIView()
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -52,15 +53,14 @@ class HomeViewController: BaseViewController, UISearchBarDelegate, UITableViewDe
         cell!.textLabel?.numberOfLines = 0
 //        cell!.backgroundColor = UIColor.clear//(red: 48.0/255.0, green: 61.0/255.0, blue: 76.0/255.0, alpha: 1.0)
         cell?.textLabel?.textColor = UIColor.white
+        
         return cell!
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var envelope : [Any]!
-        envelope = [languageSegmented.selectedSegmentIndex, suggestionIdList[indexPath.row]]
+        let envelope = [0, suggestionIdList[indexPath.row]]
+        searchBar.resignFirstResponder()
         suggestionTableView.cellForRow(at: indexPath)?.contentView.backgroundColor = UIColor(red: 68.0/255.0, green: 80.0/255.0, blue: 93.0/255.0, alpha: 1.0)
-        DispatchQueue.main.async {
-            self.containerViewController.performSegue(withIdentifier: "ToMeaningViewController", sender: envelope)
-        }
+        self.containerViewController.performSegue(withIdentifier: "ToMeaningViewController", sender: envelope)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
@@ -96,9 +96,10 @@ class HomeViewController: BaseViewController, UISearchBarDelegate, UITableViewDe
             self.view.layoutIfNeeded()
         }, completion: nil)
         
-        UIView.transition(with: self.languageSegmented, duration: 0.1, options: .transitionFlipFromTop , animations: {
+        UIView.transition(with: self.languageSegmented, duration: 0.4, options: .transitionFlipFromTop , animations: {
             self.languageSegmented.isHidden = false
         }, completion: nil)
+        
         
         return true
     }
@@ -160,5 +161,6 @@ class HomeViewController: BaseViewController, UISearchBarDelegate, UITableViewDe
         glassIconView?.image = glassIconView?.image?.withRenderingMode(.alwaysTemplate)
         glassIconView?.tintColor = UIColor.white
     }
+    
 }
 

@@ -11,6 +11,7 @@ import TabPageViewController
 import GoogleMobileAds
 import AudioToolbox
 
+
 class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableViewDataSource, UITableViewDelegate {
     let tabPageViewController = TabPageViewController.create()
     var adMobBannerView = GADBannerView()
@@ -18,16 +19,16 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
 
     
     @IBOutlet weak var tabPageContainerView: UIView!
-    @IBOutlet weak var visualEffectView: UIVisualEffectView!
     @IBOutlet weak var menuTableView: UITableView!
     @IBOutlet weak var closeMenuButton: UIButton!
     @IBOutlet weak var menuBackgroundImageView: UIImageView!
-    
+    @IBOutlet weak var menuTableBackGroundView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addBarButton()
         menuTableView.tableHeaderView = getHeaderView()
+        
         closeMenuButton.layer.zPosition = 100
         self.foldMenuController().rightMenuEnabled = false
         self.foldMenuController().foldEffeectEnabled = false
@@ -75,13 +76,6 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
         button.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
         let barButton = UIBarButtonItem(customView: button)
         self.navigationItem.leftBarButtonItem = barButton
-        
-//        let button1 = UIButton(type: .custom)
-//        button1.setImage(UIImage(named: "menu_image.png"), for: UIControlState())
-//        button1.addTarget(self, action: #selector(self.rightMenuTapped(_:)), for: UIControlEvents.touchUpInside)
-//        button1.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
-//        let barButton1 = UIBarButtonItem(customView: button1)
-//        self.navigationItem.rightBarButtonItem = barButton1
     }
     func leftMenuTapped(_ sender: AnyObject) {
         self.foldMenuController().leftMenuAction()
@@ -169,14 +163,18 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
             cell?.textLabel?.text = "Clear History"
         }
         
-        cell?.backgroundColor = UIColor.clear
+        cell?.backgroundColor = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 0.2)
+        
         cell?.textLabel?.textColor = UIColor.white
         
         return cell!
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        
         if(indexPath.row == 0){
+            
             let alertController = UIAlertController(title: "Are you sure?", message: "Pressing 'Delete all' will remove all words from History", preferredStyle: .alert)
             let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
             let deleteAction = UIAlertAction(title: "Delete all", style: .default, handler: { action in
@@ -186,7 +184,20 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
             })
             alertController.addAction(cancelAction)
             alertController.addAction(deleteAction)
-            self.present(alertController, animated: true, completion: nil)
+            
+//            let firstSubview = alertController.view.subviews.first
+//            let alertContentView = firstSubview?.subviews.first
+//            for subview in (alertContentView?.subviews)! {
+//                subview.backgroundColor = UIColor(red: 48.0/255.0, green: 61.0/255.0, blue: 76.0/255.0, alpha: 1.0)
+//                subview.layer.cornerRadius = 10
+//                subview.alpha = 1
+//                subview.layer.borderWidth = 1
+//                subview.layer.borderColor = UIColor.white.cgColor
+//                
+//            }
+            self.present(alertController, animated: true, completion: {() -> Void in
+            
+            })
         }
 //        closeMenu(closeMenuButton)
     }
@@ -196,10 +207,9 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
         showOrHideMenu(UIBarButtonItem())
     }
     @IBAction func showOrHideMenu(_ sender: Any) {
-        if(visualEffectView.isHidden){
-            
-            UIView.transition(with: visualEffectView, duration: 0.2, options: .transitionCrossDissolve, animations: {
-                self.visualEffectView.isHidden = false
+        if(menuTableBackGroundView.isHidden){
+            UIView.transition(with: menuTableBackGroundView, duration: 0.2, options: .transitionCrossDissolve, animations: {
+                self.menuTableBackGroundView.isHidden = false
                 self.navigationController?.setNavigationBarHidden(true, animated: true)
                 self.adMobBannerView.frame.origin.y = self.view.frame.size.height - self.adMobBannerView.frame.size.height
             }, completion:nil)
@@ -210,8 +220,8 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
         }
         else{
             
-            UIView.transition(with: visualEffectView, duration: 0.2, options: .transitionCrossDissolve, animations: {
-                self.visualEffectView.isHidden = true
+            UIView.transition(with: menuTableBackGroundView, duration: 0.2, options: .transitionCrossDissolve, animations: {
+                self.menuTableBackGroundView.isHidden = true
                 self.menuBackgroundImageView.isHidden = true
                 self.adMobBannerView.frame.origin.y = self.view.frame.size.height - self.adMobBannerView.frame.size.height - (self.navigationController?.navigationBar.frame.height)!
                 self.navigationController?.setNavigationBarHidden(false, animated: true)

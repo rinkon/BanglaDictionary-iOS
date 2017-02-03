@@ -127,7 +127,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2cf-z9-S9P"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oL2-IY-aP8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" directionalLockEnabled="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="frx-zO-jiY">
@@ -300,72 +300,62 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                                 <color key="backgroundColor" red="0.99992364645004272" green="1" blue="0.99988287687301636" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_bg_5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="BFz-wi-voK">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_bg_4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="BFz-wi-voK">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                             </imageView>
-                            <visualEffectView hidden="YES" opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z1f-s8-slt">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXF-cA-KoX">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2zV-3P-n5j">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ojq-gF-avp">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
-                                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <prototypes>
-                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuReuseCell" id="PJC-v3-DPZ">
-                                                    <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ojq-gF-avp">
+                                        <rect key="frame" x="10" y="0.0" width="355" height="623"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuReuseCell" id="PJC-v3-DPZ">
+                                                <rect key="frame" x="0.0" y="28" width="355" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PJC-v3-DPZ" id="bsI-uc-SNH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PJC-v3-DPZ" id="bsI-uc-SNH">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                    </tableViewCellContentView>
-                                                </tableViewCell>
-                                            </prototypes>
-                                            <connections>
-                                                <outlet property="dataSource" destination="5Wc-jD-DH3" id="SAx-Vb-hYC"/>
-                                                <outlet property="delegate" destination="5Wc-jD-DH3" id="nif-Kh-6Gj"/>
-                                            </connections>
-                                        </tableView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlq-AF-dJK">
-                                            <rect key="frame" x="329" y="0.0" width="46" height="40"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="40" id="cNb-SY-LEL"/>
-                                                <constraint firstAttribute="width" constant="46" id="kAW-r9-GRr"/>
-                                            </constraints>
-                                            <state key="normal" title="Close">
-                                                <color key="titleColor" red="0.99992364645004272" green="1" blue="0.99988287687301636" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="closeMenu:" destination="5Wc-jD-DH3" eventType="touchUpInside" id="fbp-ZU-s2g"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="Tlq-AF-dJK" firstAttribute="top" secondItem="2zV-3P-n5j" secondAttribute="top" id="3yI-HL-tYY"/>
-                                        <constraint firstAttribute="bottom" secondItem="ojq-gF-avp" secondAttribute="bottom" id="65z-7i-ofJ"/>
-                                        <constraint firstAttribute="trailing" secondItem="ojq-gF-avp" secondAttribute="trailing" id="9iF-q2-cK4"/>
-                                        <constraint firstAttribute="trailing" secondItem="Tlq-AF-dJK" secondAttribute="trailing" id="R4Q-bp-5Ww"/>
-                                        <constraint firstItem="ojq-gF-avp" firstAttribute="leading" secondItem="2zV-3P-n5j" secondAttribute="leading" id="Z3C-sP-QP7"/>
-                                        <constraint firstItem="ojq-gF-avp" firstAttribute="top" secondItem="2zV-3P-n5j" secondAttribute="top" id="j3o-Wf-mJ2"/>
-                                    </constraints>
-                                </view>
-                                <blurEffect style="dark"/>
-                            </visualEffectView>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="5Wc-jD-DH3" id="SAx-Vb-hYC"/>
+                                            <outlet property="delegate" destination="5Wc-jD-DH3" id="nif-Kh-6Gj"/>
+                                        </connections>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlq-AF-dJK">
+                                        <rect key="frame" x="328" y="8" width="39" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Close">
+                                            <color key="titleColor" red="0.99992364645004272" green="1" blue="0.99988287687301636" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeMenu:" destination="5Wc-jD-DH3" eventType="touchUpInside" id="fbp-ZU-s2g"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ojq-gF-avp" secondAttribute="bottom" id="73H-qY-oT6"/>
+                                    <constraint firstItem="ojq-gF-avp" firstAttribute="top" secondItem="hXF-cA-KoX" secondAttribute="top" id="9X5-vb-2Fd"/>
+                                    <constraint firstItem="ojq-gF-avp" firstAttribute="leading" secondItem="hXF-cA-KoX" secondAttribute="leading" constant="10" id="D2y-Kr-Yt1"/>
+                                    <constraint firstAttribute="trailing" secondItem="ojq-gF-avp" secondAttribute="trailing" constant="10" id="cF0-HA-Vri"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="z1f-s8-slt" firstAttribute="top" secondItem="MhL-bs-9D5" secondAttribute="bottom" id="2PU-ug-112"/>
                             <constraint firstItem="EqZ-bc-wOC" firstAttribute="leading" secondItem="PiG-c2-sMp" secondAttribute="leading" id="9CA-M3-aAz"/>
+                            <constraint firstAttribute="trailing" secondItem="hXF-cA-KoX" secondAttribute="trailing" id="9Ge-rz-PRc"/>
                             <constraint firstItem="bP3-GW-ixd" firstAttribute="top" secondItem="EqZ-bc-wOC" secondAttribute="bottom" id="GiO-NN-MtS"/>
-                            <constraint firstAttribute="trailing" secondItem="z1f-s8-slt" secondAttribute="trailing" id="Nh4-aa-8Ff"/>
                             <constraint firstItem="EqZ-bc-wOC" firstAttribute="top" secondItem="MhL-bs-9D5" secondAttribute="bottom" id="OJX-vj-0dr"/>
                             <constraint firstAttribute="trailing" secondItem="EqZ-bc-wOC" secondAttribute="trailing" id="USG-5d-87P"/>
                             <constraint firstItem="BFz-wi-voK" firstAttribute="leading" secondItem="PiG-c2-sMp" secondAttribute="leading" id="Vna-om-np9"/>
+                            <constraint firstItem="hXF-cA-KoX" firstAttribute="top" secondItem="MhL-bs-9D5" secondAttribute="bottom" id="WjB-Zy-UMj"/>
                             <constraint firstAttribute="trailing" secondItem="BFz-wi-voK" secondAttribute="trailing" id="ZrL-7d-YSH"/>
-                            <constraint firstItem="z1f-s8-slt" firstAttribute="leading" secondItem="PiG-c2-sMp" secondAttribute="leading" id="cPj-H0-TB3"/>
-                            <constraint firstItem="bP3-GW-ixd" firstAttribute="top" secondItem="z1f-s8-slt" secondAttribute="bottom" id="kvn-iF-7ma"/>
+                            <constraint firstItem="bP3-GW-ixd" firstAttribute="top" secondItem="hXF-cA-KoX" secondAttribute="bottom" id="huy-EP-Aux"/>
                             <constraint firstItem="bP3-GW-ixd" firstAttribute="top" secondItem="BFz-wi-voK" secondAttribute="bottom" id="kzW-MH-aLw"/>
+                            <constraint firstItem="hXF-cA-KoX" firstAttribute="leading" secondItem="PiG-c2-sMp" secondAttribute="leading" id="s7h-sM-E7y"/>
                             <constraint firstItem="BFz-wi-voK" firstAttribute="top" secondItem="MhL-bs-9D5" secondAttribute="bottom" id="uNu-61-Lad"/>
                         </constraints>
                     </view>
@@ -380,10 +370,10 @@
                     <connections>
                         <outlet property="closeMenuButton" destination="Tlq-AF-dJK" id="WNK-kz-Oih"/>
                         <outlet property="menuBackgroundImageView" destination="BFz-wi-voK" id="5ix-dl-e1b"/>
+                        <outlet property="menuTableBackGroundView" destination="hXF-cA-KoX" id="2yL-dl-MlT"/>
                         <outlet property="menuTableView" destination="ojq-gF-avp" id="weg-vs-zYE"/>
                         <outlet property="tabPageContainerView" destination="EqZ-bc-wOC" id="ORX-oM-Zxc"/>
-                        <outlet property="visualEffectView" destination="z1f-s8-slt" id="hla-sh-d5a"/>
-                        <segue destination="rdD-hI-XgW" kind="show" identifier="ToMeaningViewController" animates="NO" id="7tA-ie-AHc"/>
+                        <segue destination="rdD-hI-XgW" kind="show" identifier="ToMeaningViewController" id="7tA-ie-AHc"/>
                         <segue destination="vSH-zA-vSu" kind="show" identifier="checking" animates="NO" id="n22-1O-J0o"/>
                         <segue destination="PVz-tN-Vmm" kind="show" identifier="ToFlashCards" id="FfB-yF-C7L"/>
                     </connections>
@@ -417,13 +407,12 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="477" id="7g2-ou-WH2"/>
                                 </constraints>
-                                <color key="sectionIndexBackgroundColor" red="0.18823529411764706" green="0.23921568627450979" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseId" focusStyle="custom" id="jnb-Vz-m5K">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseId" id="jnb-Vz-m5K">
                                         <rect key="frame" x="0.0" y="28" width="212" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jnb-Vz-m5K" id="rfI-9n-Nlc">
-                                            <rect key="frame" x="0.0" y="0.0" width="212" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="212" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </tableViewCellContentView>
@@ -551,9 +540,8 @@
     </scenes>
     <resources>
         <image name="menu_bg_4.jpg" width="375" height="667"/>
-        <image name="menu_bg_5.jpg" width="600" height="1123"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TCe-dp-0T2"/>
+        <segue reference="7tA-ie-AHc"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -24,7 +24,6 @@ class MeaningViewController: BaseViewController, UITableViewDelegate, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         Constants.countForInterstitial += 1
         var valueToStore = ""
         if(wordTable == 0){
@@ -100,6 +99,7 @@ class MeaningViewController: BaseViewController, UITableViewDelegate, UITableVie
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        UIPasteboard.general.string = contentDictionary[contentTypeName[indexPath.section]]
     }
     
     //MARK: Actions
@@ -122,7 +122,6 @@ class MeaningViewController: BaseViewController, UITableViewDelegate, UITableVie
             favoriteArray.append(valueToStore!)
         }
         UserDefaults.standard.set(favoriteArray, forKey: Constants.FAVORITE_ARRAY_KEY)
-        print(favoriteArray)
     }
     @IBAction func dismissTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)

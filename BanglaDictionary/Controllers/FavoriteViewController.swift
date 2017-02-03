@@ -21,7 +21,7 @@ class FavoriteViewController: BaseViewController, UITableViewDelegate, UITableVi
     override func viewDidLoad() {
     }
     override func viewWillAppear(_ animated: Bool) {
-        print("viewWillAppear")
+//        print("viewWillAppear")
         favoriteTableView.tableFooterView = UIView()
         loadFavoriteWords()
     }
@@ -35,7 +35,7 @@ class FavoriteViewController: BaseViewController, UITableViewDelegate, UITableVi
         cell.textLabel?.textColor = UIColor.white
         
         let accessoryBtn = UIButton()
-        accessoryBtn.setBackgroundImage(UIImage(named: "delete.png") , for: .normal)
+        accessoryBtn.setBackgroundImage(UIImage(named: "delete1.jpg") , for: .normal)
         accessoryBtn.frame = CGRect(x: cell.frame.size.width - 30, y: (cell.frame.size.height - 20)/2, width: 20, height: 20)
         accessoryBtn.addTarget(self, action: #selector(self.accessoryButtonClicked(sender:)), for: .touchUpInside)
         accessoryBtn.tag = indexPath.row
@@ -46,13 +46,9 @@ class FavoriteViewController: BaseViewController, UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var envelope = [Any]()
         envelope = [favoriteWordTableList[indexPath.row], favoriteWordIdList[indexPath.row]]
-        
-        DispatchQueue.main.async {
-            self.containerViewController.performSegue(withIdentifier: "ToMeaningViewController", sender: envelope)
-        }
+        self.containerViewController.performSegue(withIdentifier: "ToMeaningViewController", sender: envelope)
     }
     func accessoryButtonClicked(sender : UIButton) {
-        print(sender.tag)
         let alertController = UIAlertController(title: "Delete word?", message: "someMessage", preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         let deleteAction = UIAlertAction(title: "Delete", style: .default, handler: { action in
@@ -93,7 +89,7 @@ class FavoriteViewController: BaseViewController, UITableViewDelegate, UITableVi
             }
             favoriteWordListArray.append(word)
         }
-        print(favoriteArrayClass)
+//        print(favoriteArrayClass)
         favoriteTableView.reloadData()
     }
     

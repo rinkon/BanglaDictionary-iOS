@@ -62,8 +62,6 @@ class HistoryViewController: BaseViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var envelope = [Any]()
         envelope = [historyWordTableList[indexPath.row], historyWordIdList[indexPath.row]]
-        DispatchQueue.main.async {
-            self.containerViewController.performSegue(withIdentifier: "ToMeaningViewController", sender: envelope)
-        }
+        self.containerViewController.performSegue(withIdentifier: "ToMeaningViewController", sender: envelope)
     }
 }
