@@ -16,22 +16,22 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
     let tabPageViewController = TabPageViewController.create()
     var adMobBannerView = GADBannerView()
     var interstitial: GADInterstitial!
-
+    let menuTableContentArray = ["Clear History", "Remove All From Favorites", "Flash-Cards", "Rate Us", "Turn Off Fullscreen Ads"]
     
     @IBOutlet weak var tabPageContainerView: UIView!
     @IBOutlet weak var menuTableView: UITableView!
     @IBOutlet weak var closeMenuButton: UIButton!
     @IBOutlet weak var menuBackgroundImageView: UIImageView!
-    @IBOutlet weak var menuTableBackGroundView: UIView!
+    @IBOutlet var menuBackgroundView: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addBarButton()
         menuTableView.tableHeaderView = getHeaderView()
-        
         closeMenuButton.layer.zPosition = 100
-        self.foldMenuController().rightMenuEnabled = false
-        self.foldMenuController().foldEffeectEnabled = false
+//        self.foldMenuController().rightMenuEnabled = false
+//        self.foldMenuController().foldEffeectEnabled = false
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let vc1 = storyBoard.instantiateViewController(withIdentifier: "Home") as! HomeViewController
         let vc2 = storyBoard.instantiateViewController(withIdentifier: "Favorite") as! FavoriteViewController
@@ -41,12 +41,14 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
         vc2.containerViewController = self
         vc3.containerViewController = self
         vc4.containerViewController = self
-        tabPageViewController.tabItems = [(vc1, "Home"), (vc2, "Saved Words"), (vc3, "History"), (vc4, "Games")]
+        tabPageViewController.tabItems = [(vc1, "Home"), (vc2, "Favorites"), (vc3, "History"), (vc4, "Games")]
         tabPageViewController.view.frame = self.tabPageContainerView.frame
         tabPageViewController.option.tabBackgroundColor = UIColor(red: 48.0/255.0, green: 61.0/255.0, blue: 76.0/255.0, alpha: 1.0)
         tabPageViewController.option.currentColor = UIColor.white
         tabPageViewController.option.defaultColor = UIColor.white
         tabPageViewController.option.tabHeight = 32
+        tabPageViewController.option.fontSize = 16
+        tabPageViewController.option.tabBackgroundColor = UIColor(red: 48.0/255.0, green: 61.0/255.0, blue: 76.0/255.0, alpha: 1.0)
         self.tabPageContainerView.addSubview(tabPageViewController.view)
         let emptyImage = UIImage()
         self.navigationController?.navigationBar.shadowImage = emptyImage
@@ -70,12 +72,12 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
     }
     
     func addBarButton(){
-        let button = UIButton(type: .custom)
-        button.setImage(UIImage(named: "menu_image.png"), for: UIControlState())
-        button.addTarget(self, action: #selector(self.leftMenuTapped(_:)), for: UIControlEvents.touchUpInside)
-        button.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
-        let barButton = UIBarButtonItem(customView: button)
-        self.navigationItem.leftBarButtonItem = barButton
+//        let button = UIButton(type: .custom)
+//        button.setImage(UIImage(named: "menu_image.png"), for: UIControlState())
+//        button.addTarget(self, action: #selector(self.leftMenuTapped(_:)), for: UIControlEvents.touchUpInside)
+//        button.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+//        let barButton = UIBarButtonItem(customView: button)
+//        self.navigationItem.leftBarButtonItem = barButton
     }
     func leftMenuTapped(_ sender: AnyObject) {
         self.foldMenuController().leftMenuAction()
@@ -154,18 +156,17 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return menuTableContentArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "menuReuseCell")
-        if(indexPath.row == 0){
-            cell?.textLabel?.text = "Clear History"
-        }
+        cell?.textLabel?.text = menuTableContentArray[indexPath.row]
         
-        cell?.backgroundColor = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 0.2)
+        cell?.backgroundColor = UIColor(red: 50.0/255.0, green: 64.0/255.0, blue: 101.0/255.0, alpha: 0.0)
         
         cell?.textLabel?.textColor = UIColor.white
+//        cell?.layer.cornerRadius = 10
         
         return cell!
     }
@@ -207,9 +208,10 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
         showOrHideMenu(UIBarButtonItem())
     }
     @IBAction func showOrHideMenu(_ sender: Any) {
-        if(menuTableBackGroundView.isHidden){
-            UIView.transition(with: menuTableBackGroundView, duration: 0.2, options: .transitionCrossDissolve, animations: {
-                self.menuTableBackGroundView.isHidden = false
+        if(menuBackgroundView.isHidden){
+            animateTable()
+            UIView.transition(with: menuBackgroundView, duration: 0.2, options: .transitionCrossDissolve, animations: {
+                self.menuBackgroundView.isHidden = false
                 self.navigationController?.setNavigationBarHidden(true, animated: true)
                 self.adMobBannerView.frame.origin.y = self.view.frame.size.height - self.adMobBannerView.frame.size.height
             }, completion:nil)
@@ -220,8 +222,8 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
         }
         else{
             
-            UIView.transition(with: menuTableBackGroundView, duration: 0.2, options: .transitionCrossDissolve, animations: {
-                self.menuTableBackGroundView.isHidden = true
+            UIView.transition(with: menuBackgroundView, duration: 0.2, options: .transitionCrossDissolve, animations: {
+                self.menuBackgroundView.isHidden = true
                 self.menuBackgroundImageView.isHidden = true
                 self.adMobBannerView.frame.origin.y = self.view.frame.size.height - self.adMobBannerView.frame.size.height - (self.navigationController?.navigationBar.frame.height)!
                 self.navigationController?.setNavigationBarHidden(false, animated: true)
@@ -232,12 +234,36 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
         }
     }
     func getHeaderView() -> UIView {
-        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 60))
-        let headerLabel = UILabel(frame: CGRect(x: 10, y: 0, width: view.frame.width - 10, height: 60))
-        headerLabel.text = "Bangla Dictionary"
-        headerLabel.font = UIFont.systemFont(ofSize: 30)
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 20))
+        let headerLabel = UILabel(frame: CGRect(x: 10, y: 0, width: view.frame.width - 10, height: 120))
+        let visualEffectViewHeader = UIVisualEffectView(effect: UIBlurEffect(style: UIBlurEffectStyle.light))
+        visualEffectViewHeader.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 120)
+        
+//        headerLabel.text = "Bangla Dictionary"
+        headerLabel.font = UIFont(name: "Avenir Next", size: 30)
         headerLabel.textColor = UIColor.white
-        headerView.addSubview(headerLabel)
+//        headerView.backgroundColor = UIColor(red: 56.0/255.0, green: 172.0/255.0, blue: 223.0/255.0, alpha: 1.0)
+//        headerView.addSubview(visualEffectViewHeader)
+//        headerView.addSubview(headerLabel)
         return headerView
+    }
+    func animateTable() {
+        menuTableView.reloadData()
+        let cells = menuTableView.visibleCells
+        
+        let tableViewHeight = menuTableView.bounds.size.height
+        
+        for cell in cells{
+            cell.transform  = CGAffineTransform(translationX: 0, y: tableViewHeight)
+        }
+        
+        var delayCounter = 0.0
+        
+        for cell in cells{
+            UIView.animate(withDuration: 1.0, delay: Double(delayCounter * 0.05), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
+                cell.transform = CGAffineTransform.identity
+            }, completion: nil)
+            delayCounter += 1
+        }
     }
 }

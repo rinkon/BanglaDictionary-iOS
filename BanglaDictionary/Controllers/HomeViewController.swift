@@ -160,6 +160,8 @@ class HomeViewController: BaseViewController, UISearchBarDelegate, UITableViewDe
         
         glassIconView?.image = glassIconView?.image?.withRenderingMode(.alwaysTemplate)
         glassIconView?.tintColor = UIColor.white
+        
+        searchBar.layer.cornerRadius = 5
     }
     
 }
