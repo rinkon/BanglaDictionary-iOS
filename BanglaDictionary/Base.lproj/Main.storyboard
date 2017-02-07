@@ -97,9 +97,11 @@
                         <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_bg_6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4KK-d6-kBd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Crs-Ek-zVW" customClass="iCarousel">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="565"/>
-                                <color key="backgroundColor" red="0.18694978952407837" green="0.23955479264259338" blue="0.29713466763496399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="503"/>
                                 <connections>
                                     <outlet property="dataSource" destination="PVz-tN-Vmm" id="fX7-gj-jkl"/>
                                     <outlet property="delegate" destination="PVz-tN-Vmm" id="WYB-eM-ShQ"/>
@@ -110,18 +112,24 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Crs-Ek-zVW" secondAttribute="trailing" id="D0c-Ku-v7X"/>
                             <constraint firstItem="Crs-Ek-zVW" firstAttribute="top" secondItem="Ctm-kW-CpZ" secondAttribute="bottom" id="G9d-z6-2sb"/>
+                            <constraint firstItem="4KK-d6-kBd" firstAttribute="leading" secondItem="LnW-Po-qQa" secondAttribute="leading" id="PiP-3Y-Tg8"/>
+                            <constraint firstItem="4KK-d6-kBd" firstAttribute="top" secondItem="Ctm-kW-CpZ" secondAttribute="bottom" id="RGq-q3-p3e"/>
                             <constraint firstItem="Crs-Ek-zVW" firstAttribute="leading" secondItem="LnW-Po-qQa" secondAttribute="leading" id="U3J-7a-zZs"/>
-                            <constraint firstItem="5KN-LT-2Pl" firstAttribute="top" secondItem="Crs-Ek-zVW" secondAttribute="bottom" constant="58" id="zUE-rg-plB"/>
+                            <constraint firstItem="4KK-d6-kBd" firstAttribute="top" secondItem="Ctm-kW-CpZ" secondAttribute="bottom" id="YVJ-bN-LiY"/>
+                            <constraint firstAttribute="trailing" secondItem="4KK-d6-kBd" secondAttribute="trailing" id="ik0-c5-MXN"/>
+                            <constraint firstItem="5KN-LT-2Pl" firstAttribute="top" secondItem="4KK-d6-kBd" secondAttribute="bottom" id="keH-kl-r0G"/>
+                            <constraint firstItem="5KN-LT-2Pl" firstAttribute="top" secondItem="Crs-Ek-zVW" secondAttribute="bottom" constant="120" id="zUE-rg-plB"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundImageView" destination="4KK-d6-kBd" id="UTB-Zo-0zV"/>
                         <outlet property="carouselView" destination="Crs-Ek-zVW" id="veJ-VG-1Ri"/>
                         <segue destination="rdD-hI-XgW" kind="modal" identifier="ToMeaningViewControllerFromFlashCards" modalPresentationStyle="currentContext" modalTransitionStyle="flipHorizontal" id="TCe-dp-0T2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u4Q-D6-p2r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1127" y="1064"/>
+            <point key="canvasLocation" x="1125.5999999999999" y="1063.7181409295354"/>
         </scene>
         <!--Meaning View Controller-->
         <scene sceneID="2xb-Or-79G">
@@ -360,29 +368,29 @@
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zyW-7S-iaZ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ojq-gF-avp">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ojq-gF-avp">
                                         <rect key="frame" x="8" y="0.0" width="307" height="615"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuReuseCell" id="PJC-v3-DPZ">
                                                 <rect key="frame" x="0.0" y="28" width="307" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PJC-v3-DPZ" id="bsI-uc-SNH">
-                                                    <rect key="frame" x="0.0" y="0.0" width="307" height="44"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="307" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HRa-xz-tla">
-                                                            <rect key="frame" x="0.0" y="0.0" width="369" height="43"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="VkI-H5-jib">
-                                                                <rect key="frame" x="0.0" y="0.0" width="369" height="43"/>
+                                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HRa-xz-tla">
+                                                            <rect key="frame" x="0.0" y="0.0" width="307" height="44"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VkI-H5-jib">
+                                                                <rect key="frame" x="0.0" y="0.0" width="307" height="44"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <subviews>
                                                                     <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g1Z-bZ-l8U">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="369" height="43"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="307" height="44"/>
                                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="0nc-if-rkb">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="369" height="43"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="307" height="44"/>
                                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                         </view>
                                                                         <vibrancyEffect>
@@ -394,6 +402,12 @@
                                                             <blurEffect style="light"/>
                                                         </visualEffectView>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="HRa-xz-tla" secondAttribute="bottom" id="HRv-zu-3QP"/>
+                                                        <constraint firstAttribute="trailing" secondItem="HRa-xz-tla" secondAttribute="trailing" id="PS7-t8-kYj"/>
+                                                        <constraint firstItem="HRa-xz-tla" firstAttribute="leading" secondItem="bsI-uc-SNH" secondAttribute="leading" id="hlc-tn-b8s"/>
+                                                        <constraint firstItem="HRa-xz-tla" firstAttribute="top" secondItem="bsI-uc-SNH" secondAttribute="top" id="k8L-uO-hvy"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
                                         </prototypes>
@@ -403,9 +417,13 @@
                                         </connections>
                                     </tableView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlq-AF-dJK">
-                                        <rect key="frame" x="331" y="0.0" width="44" height="32"/>
+                                        <rect key="frame" x="335" y="5" width="28" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="Czw-1H-ipE"/>
+                                            <constraint firstAttribute="width" constant="28" id="lrV-4Y-HpG"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="Close">
+                                        <state key="normal" backgroundImage="action.png">
                                             <color key="titleColor" red="0.98958333333333337" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -419,8 +437,8 @@
                                     <constraint firstAttribute="trailing" secondItem="ojq-gF-avp" secondAttribute="trailing" constant="60" id="Bst-eX-a1t"/>
                                     <constraint firstItem="ojq-gF-avp" firstAttribute="leading" secondItem="zyW-7S-iaZ" secondAttribute="leading" constant="8" id="FPH-r9-Evk"/>
                                     <constraint firstItem="ojq-gF-avp" firstAttribute="top" secondItem="zyW-7S-iaZ" secondAttribute="top" id="dc5-ex-mtG"/>
-                                    <constraint firstAttribute="trailing" secondItem="Tlq-AF-dJK" secondAttribute="trailing" id="e2F-Zj-ITp"/>
-                                    <constraint firstItem="Tlq-AF-dJK" firstAttribute="top" secondItem="zyW-7S-iaZ" secondAttribute="top" id="rRH-3Q-ysh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tlq-AF-dJK" secondAttribute="trailing" constant="12" id="e2F-Zj-ITp"/>
+                                    <constraint firstItem="Tlq-AF-dJK" firstAttribute="top" secondItem="zyW-7S-iaZ" secondAttribute="top" constant="5" id="rRH-3Q-ysh"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -601,7 +619,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YxG-Kz-kX2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedStatusBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="iky-2S-VkT">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="iky-2S-VkT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.18823529411764706" green="0.23921568627450979" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -621,6 +639,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="action.png" width="83" height="98"/>
         <image name="menu_bg.jpg" width="600" height="1067"/>
         <image name="menu_bg_4.jpg" width="375" height="667"/>
         <image name="menu_bg_6.jpg" width="4000" height="3000"/>

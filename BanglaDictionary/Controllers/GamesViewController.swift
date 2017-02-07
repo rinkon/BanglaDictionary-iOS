@@ -33,8 +33,6 @@ class GamesViewController: UIViewController {
     }
     */
     @IBAction func goToFlashCards(_ sender: Any) {
-        print("Clicked flash cards")
-        containerViewController.performSegue(withIdentifier: "ToFlashCards", sender: nil)
     }
     
 

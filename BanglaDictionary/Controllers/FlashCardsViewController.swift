@@ -13,16 +13,19 @@ class FlashCardsViewController: BaseViewController, iCarouselDelegate, iCarousel
     
     
     @IBOutlet weak var carouselView: iCarousel!
+    @IBOutlet weak var backgroundImageView: UIImageView!
     
     var numbers = [Int]()
     var favoriteWordListArray = [String]()
     var favoriteWordTableList = [Int]()
     var favoriteWordIdList = [Int]()
+    var toMeaning = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         carouselView.type = .coverFlow
         carouselView.isVertical = false
+        carouselView.isPagingEnabled = true
         
     }
     override func awakeFromNib() {
@@ -54,6 +57,9 @@ class FlashCardsViewController: BaseViewController, iCarouselDelegate, iCarousel
     }
     override func viewWillAppear(_ animated: Bool) {
         carouselView.isHidden = false
+        backgroundImageView.isHidden = false
+        toMeaning = false
+        navigationController?.navigationBar.barTintColor = UIColor(red: 29.0/255.0, green: 101.0/255.0, blue: 111.0/255.0, alpha: 0.0)
     }
     func numberOfItems(in carousel: iCarousel) -> Int {
         return favoriteWordListArray.count
@@ -93,7 +99,12 @@ class FlashCardsViewController: BaseViewController, iCarouselDelegate, iCarousel
         return value
     }
     override func viewWillDisappear(_ animated: Bool) {
-        carouselView.isHidden = true
+        if(toMeaning == false){
+            carouselView.isHidden = true
+            backgroundImageView.isHidden = true
+            navigationController?.setNavigationBarHidden(true, animated: true)
+            navigationController?.navigationBar.barTintColor = UIColor(red: 48.0/255.0, green: 61.0/255.0, blue: 76.0/255.0, alpha: 0.0)
+        }
     }
     @IBAction func backButtonPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
@@ -102,7 +113,7 @@ class FlashCardsViewController: BaseViewController, iCarouselDelegate, iCarousel
         print(sender.tag)
         var envelope = [Any]()
         envelope = [favoriteWordTableList[sender.tag], favoriteWordIdList[sender.tag]]
-        
+        toMeaning = true
         DispatchQueue.main.async {
             self.performSegue(withIdentifier: "ToMeaningViewControllerFromFlashCards", sender: envelope)
         }

@@ -17,7 +17,7 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
     var adMobBannerView = GADBannerView()
     var interstitial: GADInterstitial!
     let menuTableContentArray = ["Clear History", "Remove All From Favorites", "Flash-Cards", "Rate Us", "Turn Off Fullscreen Ads"]
-    
+    var vc1 : HomeViewController!
     @IBOutlet weak var tabPageContainerView: UIView!
     @IBOutlet weak var menuTableView: UITableView!
     @IBOutlet weak var closeMenuButton: UIButton!
@@ -33,22 +33,22 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
 //        self.foldMenuController().rightMenuEnabled = false
 //        self.foldMenuController().foldEffeectEnabled = false
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let vc1 = storyBoard.instantiateViewController(withIdentifier: "Home") as! HomeViewController
+        vc1 = storyBoard.instantiateViewController(withIdentifier: "Home") as! HomeViewController
         let vc2 = storyBoard.instantiateViewController(withIdentifier: "Favorite") as! FavoriteViewController
         let vc3 = storyBoard.instantiateViewController(withIdentifier: "History") as! HistoryViewController
-        let vc4 = storyBoard.instantiateViewController(withIdentifier: "Settings") as! GamesViewController
         vc1.containerViewController = self
         vc2.containerViewController = self
         vc3.containerViewController = self
-        vc4.containerViewController = self
-        tabPageViewController.tabItems = [(vc1, "Home"), (vc2, "Favorites"), (vc3, "History"), (vc4, "Games")]
+        tabPageViewController.tabItems = [(vc1, "Home"), (vc2, "Favorites"), (vc3, "History")]
         tabPageViewController.view.frame = self.tabPageContainerView.frame
         tabPageViewController.option.tabBackgroundColor = UIColor(red: 48.0/255.0, green: 61.0/255.0, blue: 76.0/255.0, alpha: 1.0)
         tabPageViewController.option.currentColor = UIColor.white
         tabPageViewController.option.defaultColor = UIColor.white
         tabPageViewController.option.tabHeight = 32
         tabPageViewController.option.fontSize = 16
+        tabPageViewController.option.tabWidth = self.view.frame.width/3
         tabPageViewController.option.tabBackgroundColor = UIColor(red: 48.0/255.0, green: 61.0/255.0, blue: 76.0/255.0, alpha: 1.0)
+        tabPageViewController.option.pageBackgoundColor = UIColor(red: 29.0/255.0, green: 101.0/255.0, blue: 111.0/255.0, alpha: 1.0)
         self.tabPageContainerView.addSubview(tabPageViewController.view)
         let emptyImage = UIImage()
         self.navigationController?.navigationBar.shadowImage = emptyImage
@@ -196,11 +196,18 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
 //                subview.layer.borderColor = UIColor.white.cgColor
 //                
 //            }
-            self.present(alertController, animated: true, completion: {() -> Void in
+            self.present(alertController, animated: false, completion: {() -> Void in
             
             })
         }
-//        closeMenu(closeMenuButton)
+        if(indexPath.row == 2){
+            vc1.searchBar.resignFirstResponder()
+            print("Clicked flash cards")
+//            closeMenu(closeMenuButton)
+            navigationController?.setNavigationBarHidden(false, animated: false)
+            self.performSegue(withIdentifier: "ToFlashCards", sender: nil)
+        }
+
     }
     
     
@@ -224,17 +231,20 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
             
             UIView.transition(with: menuBackgroundView, duration: 0.2, options: .transitionCrossDissolve, animations: {
                 self.menuBackgroundView.isHidden = true
-                self.menuBackgroundImageView.isHidden = true
                 self.adMobBannerView.frame.origin.y = self.view.frame.size.height - self.adMobBannerView.frame.size.height - (self.navigationController?.navigationBar.frame.height)!
-                self.navigationController?.setNavigationBarHidden(false, animated: true)
             }, completion: nil)
             
-            
+            UIView.transition(with: menuBackgroundImageView, duration: 0.2, options: .transitionCrossDissolve, animations: {
+                self.menuBackgroundImageView.isHidden = true
+                self.navigationController?.setNavigationBarHidden(false, animated: true)
+            }, completion:{(Bool) -> Void in
+                
+            })
             
         }
     }
     func getHeaderView() -> UIView {
-        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 20))
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 50))
         let headerLabel = UILabel(frame: CGRect(x: 10, y: 0, width: view.frame.width - 10, height: 120))
         let visualEffectViewHeader = UIVisualEffectView(effect: UIBlurEffect(style: UIBlurEffectStyle.light))
         visualEffectViewHeader.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 120)
@@ -260,7 +270,7 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
         var delayCounter = 0.0
         
         for cell in cells{
-            UIView.animate(withDuration: 1.0, delay: Double(delayCounter * 0.05), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
+            UIView.animate(withDuration: 1.25, delay: Double(delayCounter * 0.05), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
                 cell.transform = CGAffineTransform.identity
             }, completion: nil)
             delayCounter += 1

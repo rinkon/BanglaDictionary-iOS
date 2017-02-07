@@ -32,6 +32,8 @@
 		AFE347FE8801E30D4301B723 /* Pods_BanglaDictionary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BAF6C9201BB2A11867383C /* Pods_BanglaDictionary.framework */; };
 		C00C9CE61E2E9AB10088FCFC /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00C9CE51E2E9AB10088FCFC /* GoogleMobileAds.framework */; };
 		C00C9CE81E2E9B280088FCFC /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00C9CE71E2E9B280088FCFC /* GoogleMobileAds.framework */; };
+		C01AA1F01E4A44060057402C /* crossIconOne.png in Resources */ = {isa = PBXBuildFile; fileRef = C01AA1EF1E4A44060057402C /* crossIconOne.png */; };
+		C01AA1F21E4A46C10057402C /* action.png in Resources */ = {isa = PBXBuildFile; fileRef = C01AA1F11E4A46C10057402C /* action.png */; };
 		C01E02D41E1137BC001886B9 /* MeaningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01E02D31E1137BC001886B9 /* MeaningViewController.swift */; };
 		C031AEB81E09B718005BDDAE /* bangla.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C031AEB71E09B718005BDDAE /* bangla.sqlite */; };
 		C031AEBB1E09B775005BDDAE /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031AEBA1E09B775005BDDAE /* DBManager.swift */; };
@@ -99,6 +101,8 @@
 		71BAF6C9201BB2A11867383C /* Pods_BanglaDictionary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BanglaDictionary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00C9CE51E2E9AB10088FCFC /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../../../Downloads/GoogleMobileAdsSdkiOS-7.16.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		C00C9CE71E2E9B280088FCFC /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		C01AA1EF1E4A44060057402C /* crossIconOne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crossIconOne.png; sourceTree = "<group>"; };
+		C01AA1F11E4A46C10057402C /* action.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = action.png; sourceTree = "<group>"; };
 		C01E02D31E1137BC001886B9 /* MeaningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeaningViewController.swift; sourceTree = "<group>"; };
 		C031AEB71E09B718005BDDAE /* bangla.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = bangla.sqlite; sourceTree = "<group>"; };
 		C031AEBA1E09B775005BDDAE /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
@@ -269,6 +273,8 @@
 		C00C95A61DFB17F300FAE6D8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C01AA1F11E4A46C10057402C /* action.png */,
+				C01AA1EF1E4A44060057402C /* crossIconOne.png */,
 				C048E6AD1E47B20D00564195 /* menu_bg_6 2.jpg */,
 				C0F38E871E410D7D00292500 /* delete1.jpg */,
 				C069057D1E3664DE008DE69C /* delete.png */,
@@ -413,8 +419,10 @@
 				C069057E1E3664DE008DE69C /* delete.png in Resources */,
 				C031AEB81E09B718005BDDAE /* bangla.sqlite in Resources */,
 				52F948051DF18BE4004BE59A /* .gitkeep in Resources */,
+				C01AA1F21E4A46C10057402C /* action.png in Resources */,
 				52F948061DF18BE4004BE59A /* .gitkeep in Resources */,
 				52F947F91DF18B53004BE59A /* left.png in Resources */,
+				C01AA1F01E4A44060057402C /* crossIconOne.png in Resources */,
 				C09DD43E1E2A78F60005E5F0 /* menu_bg.jpg in Resources */,
 				C07D6D631E2ABF7B003B9351 /* menu_bg_4.jpg in Resources */,
 				5205AB101DF3749700079A24 /* menu_image.png in Resources */,
