@@ -13,4 +13,5 @@ class Constants: NSObject {
     static let HISTORY_ARRAY_KEY : String = "historyArray"
     static let ADMOB_BANNER_UNIT_ID : String = "ca-app-pub-8831588022499731/5226029001"
     static var countForInterstitial : Int = 0
+    static var tabBarHeight : CGFloat = 40.0
 }

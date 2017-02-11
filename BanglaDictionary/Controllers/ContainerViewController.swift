@@ -16,7 +16,7 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
     let tabPageViewController = TabPageViewController.create()
     var adMobBannerView = GADBannerView()
     var interstitial: GADInterstitial!
-    let menuTableContentArray = ["Clear History", "Remove All From Favorites", "Flash-Cards", "Rate Us", "Turn Off Fullscreen Ads"]
+    let menuTableContentArray = ["Support Developer:\nPlease visit appstore by clicking on Full-screen ads", "Clear History", "Remove All From Favorites", "Flash-Cards", "Rate Us", "Turn Off Fullscreen Ads"]
     var vc1 : HomeViewController!
     @IBOutlet weak var tabPageContainerView: UIView!
     @IBOutlet weak var menuTableView: UITableView!
@@ -44,7 +44,7 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
         tabPageViewController.option.tabBackgroundColor = UIColor(red: 48.0/255.0, green: 61.0/255.0, blue: 76.0/255.0, alpha: 1.0)
         tabPageViewController.option.currentColor = UIColor.white
         tabPageViewController.option.defaultColor = UIColor.white
-        tabPageViewController.option.tabHeight = 32
+        tabPageViewController.option.tabHeight = Constants.tabBarHeight
         tabPageViewController.option.fontSize = 16
         tabPageViewController.option.tabWidth = self.view.frame.width/3
         tabPageViewController.option.tabBackgroundColor = UIColor(red: 48.0/255.0, green: 61.0/255.0, blue: 76.0/255.0, alpha: 1.0)
@@ -164,8 +164,8 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
         cell?.textLabel?.text = menuTableContentArray[indexPath.row]
         
         cell?.backgroundColor = UIColor(red: 50.0/255.0, green: 64.0/255.0, blue: 101.0/255.0, alpha: 0.0)
-        
-        cell?.textLabel?.textColor = UIColor.white
+        cell!.textLabel?.numberOfLines = 0
+        cell?.textLabel?.textColor = UIColor.cyan
 //        cell?.layer.cornerRadius = 10
         
         return cell!
@@ -196,7 +196,7 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
 //                subview.layer.borderColor = UIColor.white.cgColor
 //                
 //            }
-            self.present(alertController, animated: false, completion: {() -> Void in
+            self.present(alertController, animated: true, completion: {() -> Void in
             
             })
         }
@@ -209,7 +209,13 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
         }
 
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
     
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
     
     @IBAction func closeMenu(_ sender: Any) {
         showOrHideMenu(UIBarButtonItem())

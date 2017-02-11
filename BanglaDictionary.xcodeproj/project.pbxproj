@@ -61,6 +61,12 @@
 		C069057E1E3664DE008DE69C /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = C069057D1E3664DE008DE69C /* delete.png */; };
 		C07D6D611E2ABED9003B9351 /* menu_bg_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C07D6D601E2ABED9003B9351 /* menu_bg_3.jpg */; };
 		C07D6D631E2ABF7B003B9351 /* menu_bg_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C07D6D621E2ABF7B003B9351 /* menu_bg_4.jpg */; };
+		C08B8F911E4CDB86002171D8 /* delete2.png in Resources */ = {isa = PBXBuildFile; fileRef = C08B8F901E4CDB86002171D8 /* delete2.png */; };
+		C08B8F931E4CDE61002171D8 /* delete3.png in Resources */ = {isa = PBXBuildFile; fileRef = C08B8F921E4CDE61002171D8 /* delete3.png */; };
+		C08B8F951E4CDE99002171D8 /* delete4.png in Resources */ = {isa = PBXBuildFile; fileRef = C08B8F941E4CDE99002171D8 /* delete4.png */; };
+		C08B8F971E4CDF1C002171D8 /* delete4 2.png in Resources */ = {isa = PBXBuildFile; fileRef = C08B8F961E4CDF1C002171D8 /* delete4 2.png */; };
+		C08B8F9B1E4CE817002171D8 /* delete4 2.png in Resources */ = {isa = PBXBuildFile; fileRef = C08B8F9A1E4CE817002171D8 /* delete4 2.png */; };
+		C08B8F9E1E4CEF14002171D8 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08B8F9D1E4CEF14002171D8 /* FavoriteTableViewCell.swift */; };
 		C09DD43C1E2A755D0005E5F0 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09DD43B1E2A755D0005E5F0 /* GamesViewController.swift */; };
 		C09DD43E1E2A78F60005E5F0 /* menu_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C09DD43D1E2A78F60005E5F0 /* menu_bg.jpg */; };
 		C09DD4401E2A7D9E0005E5F0 /* menu_bg_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C09DD43F1E2A7D9E0005E5F0 /* menu_bg_2.jpg */; };
@@ -136,6 +142,12 @@
 		C069057D1E3664DE008DE69C /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
 		C07D6D601E2ABED9003B9351 /* menu_bg_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menu_bg_3.jpg; sourceTree = "<group>"; };
 		C07D6D621E2ABF7B003B9351 /* menu_bg_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menu_bg_4.jpg; sourceTree = "<group>"; };
+		C08B8F901E4CDB86002171D8 /* delete2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete2.png; sourceTree = "<group>"; };
+		C08B8F921E4CDE61002171D8 /* delete3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete3.png; sourceTree = "<group>"; };
+		C08B8F941E4CDE99002171D8 /* delete4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete4.png; sourceTree = "<group>"; };
+		C08B8F961E4CDF1C002171D8 /* delete4 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete4 2.png"; sourceTree = "<group>"; };
+		C08B8F9A1E4CE817002171D8 /* delete4 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete4 2.png"; sourceTree = "<group>"; };
+		C08B8F9D1E4CEF14002171D8 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		C09DD43B1E2A755D0005E5F0 /* GamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
 		C09DD43D1E2A78F60005E5F0 /* menu_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menu_bg.jpg; sourceTree = "<group>"; };
 		C09DD43F1E2A7D9E0005E5F0 /* menu_bg_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menu_bg_2.jpg; sourceTree = "<group>"; };
@@ -195,6 +207,7 @@
 		529321571DEDEA600074CDFA /* BanglaDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				C08B8F9C1E4CEEFB002171D8 /* View */,
 				C00C9CE71E2E9B280088FCFC /* GoogleMobileAds.framework */,
 				C031AEBC1E09B7A4005BDDAE /* External Libraries */,
 				C031AEB91E09B74B005BDDAE /* Model */,
@@ -273,6 +286,10 @@
 		C00C95A61DFB17F300FAE6D8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C08B8F9A1E4CE817002171D8 /* delete4 2.png */,
+				C08B8F941E4CDE99002171D8 /* delete4.png */,
+				C08B8F921E4CDE61002171D8 /* delete3.png */,
+				C08B8F901E4CDB86002171D8 /* delete2.png */,
 				C01AA1F11E4A46C10057402C /* action.png */,
 				C01AA1EF1E4A44060057402C /* crossIconOne.png */,
 				C048E6AD1E47B20D00564195 /* menu_bg_6 2.jpg */,
@@ -293,6 +310,7 @@
 		C031AEB61E09B6E8005BDDAE /* DB */ = {
 			isa = PBXGroup;
 			children = (
+				C08B8F961E4CDF1C002171D8 /* delete4 2.png */,
 				C031AEB71E09B718005BDDAE /* bangla.sqlite */,
 			);
 			name = DB;
@@ -325,6 +343,14 @@
 				C031AEC71E09B7B2005BDDAE /* FMResultSet.m */,
 			);
 			name = "External Libraries";
+			sourceTree = "<group>";
+		};
+		C08B8F9C1E4CEEFB002171D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C08B8F9D1E4CEF14002171D8 /* FavoriteTableViewCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		E46BE60967202DE0E59460A7 /* Frameworks */ = {
@@ -411,6 +437,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C08B8F931E4CDE61002171D8 /* delete3.png in Resources */,
+				C08B8F9B1E4CE817002171D8 /* delete4 2.png in Resources */,
 				C069057A1E36524F008DE69C /* menu_bg_5.jpg in Resources */,
 				C048E6AE1E47B20D00564195 /* menu_bg_6 2.jpg in Resources */,
 				529321661DEDEA600074CDFA /* LaunchScreen.storyboard in Resources */,
@@ -420,14 +448,17 @@
 				C031AEB81E09B718005BDDAE /* bangla.sqlite in Resources */,
 				52F948051DF18BE4004BE59A /* .gitkeep in Resources */,
 				C01AA1F21E4A46C10057402C /* action.png in Resources */,
+				C08B8F971E4CDF1C002171D8 /* delete4 2.png in Resources */,
 				52F948061DF18BE4004BE59A /* .gitkeep in Resources */,
 				52F947F91DF18B53004BE59A /* left.png in Resources */,
+				C08B8F911E4CDB86002171D8 /* delete2.png in Resources */,
 				C01AA1F01E4A44060057402C /* crossIconOne.png in Resources */,
 				C09DD43E1E2A78F60005E5F0 /* menu_bg.jpg in Resources */,
 				C07D6D631E2ABF7B003B9351 /* menu_bg_4.jpg in Resources */,
 				5205AB101DF3749700079A24 /* menu_image.png in Resources */,
 				C0F38E881E410D7D00292500 /* delete1.jpg in Resources */,
 				C09DD4401E2A7D9E0005E5F0 /* menu_bg_2.jpg in Resources */,
+				C08B8F951E4CDE99002171D8 /* delete4.png in Resources */,
 				C048E6AC1E47A73E00564195 /* menu_bg_6.jpg in Resources */,
 				5293215E1DEDEA600074CDFA /* Main.storyboard in Resources */,
 			);
@@ -493,6 +524,7 @@
 				C031AECA1E09B7B2005BDDAE /* FMDatabasePool.m in Sources */,
 				52197AD71DF1D7AA00AEF00C /* UIView+Frame.h in Sources */,
 				52CBB83C1DF4982C0087F9C9 /* ContainerViewController.swift in Sources */,
+				C08B8F9E1E4CEF14002171D8 /* FavoriteTableViewCell.swift in Sources */,
 				C0CBA33C1E2BE242009AF430 /* iCarousel.m in Sources */,
 				C031AECB1E09B7B2005BDDAE /* FMDatabaseQueue.m in Sources */,
 				C0CD87E21E23E14F00C051AB /* Constants.swift in Sources */,

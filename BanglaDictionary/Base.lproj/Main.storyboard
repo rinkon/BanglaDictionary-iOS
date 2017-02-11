@@ -314,12 +314,13 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gC3-FA-f0f">
                                 <rect key="frame" x="0.0" y="32" width="375" height="635"/>
                                 <color key="backgroundColor" red="0.18694978952407837" green="0.23955479264259338" blue="0.29713466763496399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.1130618826" green="0.39623415470000001" blue="0.43467980620000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="historyReuseId" id="amc-uV-738">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="amc-uV-738" id="OPi-fb-GMS">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -329,17 +330,34 @@
                                     <outlet property="delegate" destination="8PD-k0-Agq" id="WFm-MI-aJK"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHE-Nd-ntM">
+                                <rect key="frame" x="139" y="500" width="98" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EVM-UJ-cea"/>
+                                    <constraint firstAttribute="width" constant="98" id="hMI-qX-Svc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="doneButtonPressed:" destination="8PD-k0-Agq" eventType="touchUpInside" id="mtT-k6-ZY5"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.62158890845070425" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.18694978952407837" green="0.23955479264259338" blue="0.29713466763496399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gC3-FA-f0f" firstAttribute="leading" secondItem="Rv8-lE-Jbl" secondAttribute="leading" id="2XP-By-2qH"/>
                             <constraint firstItem="gC3-FA-f0f" firstAttribute="top" secondItem="Rv8-lE-Jbl" secondAttribute="top" constant="32" id="7ci-ie-a9k"/>
+                            <constraint firstItem="OHE-Nd-ntM" firstAttribute="centerX" secondItem="Rv8-lE-Jbl" secondAttribute="centerX" id="7t8-NU-OiA"/>
+                            <constraint firstItem="hSr-dR-0Vz" firstAttribute="top" secondItem="OHE-Nd-ntM" secondAttribute="bottom" constant="137" id="9sT-re-A5A"/>
                             <constraint firstItem="hSr-dR-0Vz" firstAttribute="top" secondItem="gC3-FA-f0f" secondAttribute="bottom" id="drq-jH-qs6"/>
                             <constraint firstAttribute="trailing" secondItem="gC3-FA-f0f" secondAttribute="trailing" id="y3F-qQ-o55"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="doneButton" destination="OHE-Nd-ntM" id="gUT-1d-7MY"/>
+                        <outlet property="heightOfTabBar" destination="7ci-ie-a9k" id="I54-Sn-rNI"/>
                         <outlet property="historyTableView" destination="gC3-FA-f0f" id="otc-YP-qe0"/>
+                        <outlet property="okButtonConstraint" destination="9sT-re-A5A" id="TYO-mr-KyZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RFP-eY-cFX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -360,7 +378,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EqZ-bc-wOC">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
-                                <color key="backgroundColor" red="0.99992364645004272" green="1" blue="0.99988287687301636" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.11306188255548477" green="0.39623415470123291" blue="0.43467980623245239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_bg_6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="BFz-wi-voK">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
@@ -377,7 +395,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="307" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PJC-v3-DPZ" id="bsI-uc-SNH">
-                                                    <rect key="frame" x="0.0" y="0.0" width="307" height="43"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="307" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HRa-xz-tla">
@@ -554,6 +572,7 @@
                     <navigationItem key="navigationItem" title="Home" id="FoA-MH-07Q"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="heightOfTabBar" destination="fmL-ic-lG4" id="EBX-bU-rhh"/>
                         <outlet property="languageSegmented" destination="0Uh-8g-Z8Z" id="j4u-Fo-Ufv"/>
                         <outlet property="languageSegmentedControl" destination="0Uh-8g-Z8Z" id="SGg-Lk-4I2"/>
                         <outlet property="searchBar" destination="dXv-Do-aRW" id="WFC-4d-ciN"/>
@@ -581,14 +600,17 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ncl-10-CVM">
                                 <rect key="frame" x="0.0" y="32" width="375" height="635"/>
                                 <color key="backgroundColor" red="0.18694978952407837" green="0.23955479264259338" blue="0.29713466763496399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.11306188255548477" green="0.39623415470123291" blue="0.43467980623245239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoriteCellReuseId" id="Yhc-1i-IDe">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoriteCellReuseId" id="Yhc-1i-IDe" customClass="FavoriteTableViewCell" customModule="BanglaDictionary" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yhc-1i-IDe" id="Hmj-Wq-q7y">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="0.18694978952407837" green="0.23955479264259338" blue="0.29713466763496399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.18694978952407837" green="0.23955479264259338" blue="0.29713466763496399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -596,17 +618,34 @@
                                     <outlet property="delegate" destination="0S8-dn-UsK" id="yXA-sC-7ZJ"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfG-q9-gSe">
+                                <rect key="frame" x="139" y="500" width="98" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="Glb-Ko-aGg"/>
+                                    <constraint firstAttribute="height" constant="30" id="zmh-mv-gqh"/>
+                                </constraints>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneButtonPressed:" destination="0S8-dn-UsK" eventType="touchUpInside" id="x6i-oR-Llr"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.18694978952407837" green="0.23955479264259338" blue="0.29713466763496399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Tlk-2M-jk8" firstAttribute="top" secondItem="xfG-q9-gSe" secondAttribute="bottom" constant="137" id="04f-uL-JGz"/>
                             <constraint firstItem="Ncl-10-CVM" firstAttribute="top" secondItem="edR-H2-xzb" secondAttribute="top" constant="32" id="4cL-44-xcX"/>
-                            <constraint firstItem="Tlk-2M-jk8" firstAttribute="top" secondItem="Ncl-10-CVM" secondAttribute="bottom" id="RY7-su-ViI"/>
+                            <constraint firstItem="xfG-q9-gSe" firstAttribute="centerX" secondItem="edR-H2-xzb" secondAttribute="centerX" id="Ajw-0T-XFH"/>
                             <constraint firstAttribute="trailing" secondItem="Ncl-10-CVM" secondAttribute="trailing" id="RuY-Vk-hBr"/>
                             <constraint firstItem="Ncl-10-CVM" firstAttribute="leading" secondItem="edR-H2-xzb" secondAttribute="leading" id="VXf-hL-PkQ"/>
+                            <constraint firstItem="Tlk-2M-jk8" firstAttribute="top" secondItem="Ncl-10-CVM" secondAttribute="bottom" id="jUC-iq-w4W"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="doneButton" destination="xfG-q9-gSe" id="I2K-Cg-DQQ"/>
                         <outlet property="favoriteTableView" destination="Ncl-10-CVM" id="ZEL-vx-xXT"/>
+                        <outlet property="heightOfTabBar" destination="4cL-44-xcX" id="ilv-9v-o32"/>
+                        <outlet property="okButtonConstraint" destination="04f-uL-JGz" id="tTB-Fr-wcc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0P-cU-r3E" userLabel="First Responder" sceneMemberID="firstResponder"/>

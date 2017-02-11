@@ -8,20 +8,25 @@
 
 import UIKit
 
-class FavoriteViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
+class FavoriteViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate {
     
     var favoriteWordListArray = [String]()
     var favoriteWordTableList = [Int]()
     var favoriteWordIdList = [Int]()
     var favoriteArrayClass = [String]()
     var containerViewController : ContainerViewController!
-    var longGesture : UILongPressGestureRecognizer!
+    
     @IBOutlet weak var favoriteTableView: UITableView!
+    @IBOutlet weak var heightOfTabBar: NSLayoutConstraint!
+    @IBOutlet weak var okButtonConstraint: NSLayoutConstraint!
+    @IBOutlet weak var doneButton: UIButton!
     
     override func viewDidLoad() {
+        okButtonConstraint.constant -= view.bounds.height/2
+        doneButton.layer.cornerRadius = 3
     }
     override func viewWillAppear(_ animated: Bool) {
-//        print("viewWillAppear")
+        heightOfTabBar.constant = CGFloat(Constants.tabBarHeight)
         favoriteTableView.tableFooterView = UIView()
         loadFavoriteWords()
     }
@@ -31,15 +36,13 @@ class FavoriteViewController: BaseViewController, UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "favoriteCellReuseId", for: indexPath)
         cell.textLabel?.text = favoriteWordListArray[indexPath.row].capitalized
-        cell.backgroundColor = UIColor(red: 48.0/255.0, green: 61.0/255.0, blue: 76.0/255.0, alpha: 1.0)
         cell.textLabel?.textColor = UIColor.white
         
-        let accessoryBtn = UIButton()
-        accessoryBtn.setBackgroundImage(UIImage(named: "delete1.jpg") , for: .normal)
-        accessoryBtn.frame = CGRect(x: cell.frame.size.width - 30, y: (cell.frame.size.height - 20)/2, width: 20, height: 20)
-        accessoryBtn.addTarget(self, action: #selector(self.accessoryButtonClicked(sender:)), for: .touchUpInside)
-        accessoryBtn.tag = indexPath.row
-        cell.addSubview(accessoryBtn)
+        let selectedBackgroundView = UIView()
+        selectedBackgroundView.backgroundColor = UIColor.black
+        cell.selectedBackgroundView = selectedBackgroundView
+        
+        cell.addGestureRecognizer(generateGestureRecognizer())
         
         return cell
     }
@@ -48,15 +51,23 @@ class FavoriteViewController: BaseViewController, UITableViewDelegate, UITableVi
         envelope = [favoriteWordTableList[indexPath.row], favoriteWordIdList[indexPath.row]]
         self.containerViewController.performSegue(withIdentifier: "ToMeaningViewController", sender: envelope)
     }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            let alertController = UIAlertController(title: "Delete word?", message: "someMessage", preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            let deleteAction = UIAlertAction(title: "Delete", style: .default, handler: { action in
+                self.removeFromFavorite(index: indexPath.row)
+                
+            })
+            alertController.addAction(cancelAction)
+            alertController.addAction(deleteAction)
+            self.present(alertController, animated: true, completion: nil)
+            
+        }
+    }
+    
     func accessoryButtonClicked(sender : UIButton) {
-        let alertController = UIAlertController(title: "Delete word?", message: "someMessage", preferredStyle: .alert)
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        let deleteAction = UIAlertAction(title: "Delete", style: .default, handler: { action in
-            self.removeFromFavorite(index: sender.tag)
-        })
-        alertController.addAction(cancelAction)
-        alertController.addAction(deleteAction)
-        self.present(alertController, animated: true, completion: nil)
+        
     }
     func removeFromFavorite(index : Int) {
         favoriteArrayClass.remove(at: index)
@@ -90,7 +101,39 @@ class FavoriteViewController: BaseViewController, UITableViewDelegate, UITableVi
             favoriteWordListArray.append(word)
         }
 //        print(favoriteArrayClass)
+        print(CGFloat(favoriteWordListArray.count))
         favoriteTableView.reloadData()
+    }
+    func deleteButtonPressed(_ sender : UIButton) {
+        if(favoriteTableView.isEditing){
+            sender.setTitle("Delete", for: .normal)
+            favoriteTableView.setEditing(false, animated: true)
+        }
+        else{
+            sender.setTitle("Ok", for: .normal)
+            favoriteTableView.setEditing(true, animated: true)
+        }
+    }
+    func longPressAction(gesture: UILongPressGestureRecognizer){
+        favoriteTableView.setEditing(true, animated: true)
+        if(gesture.state == UIGestureRecognizerState.began){
+            UIView.animate(withDuration: 0.5, delay: 0.3, options: .curveEaseOut, animations: {
+                self.okButtonConstraint.constant += self.view.bounds.height/2
+                self.view.layoutIfNeeded()
+            }, completion: nil)
+        }
+    }
+    func generateGestureRecognizer() -> UILongPressGestureRecognizer {
+        let longGesture = UILongPressGestureRecognizer(target: self, action: (#selector(self.longPressAction)))
+        longGesture.minimumPressDuration = 1.0
+        return longGesture
+    }
+    @IBAction func doneButtonPressed(_ sender: Any) {
+        favoriteTableView.setEditing(false, animated: true)
+        UIView.animate(withDuration: 0.5, delay: 0.3, options: .curveEaseOut, animations: {
+            self.okButtonConstraint.constant -= self.view.bounds.height/2
+            self.view.layoutIfNeeded()
+        }, completion: nil)
     }
     
 }

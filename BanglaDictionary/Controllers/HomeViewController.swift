@@ -16,6 +16,7 @@ class HomeViewController: BaseViewController, UISearchBarDelegate, UITableViewDe
     @IBOutlet weak var searchBarTrailingConstraint: NSLayoutConstraint!
     @IBOutlet weak var suggestionTableView: UITableView!
     @IBOutlet weak var languageSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var heightOfTabBar: NSLayoutConstraint!
 
     var searchBarDefaultWidth : CGFloat = 0.0
     var searchBarAnimatedWidth : CGFloat = 0.0
@@ -36,6 +37,7 @@ class HomeViewController: BaseViewController, UISearchBarDelegate, UITableViewDe
     }
     override func viewWillAppear(_ animated: Bool) {
 //        searchBar.becomeFirstResponder()
+        heightOfTabBar.constant = CGFloat(Constants.tabBarHeight)
         suggestionTableView.tableFooterView = UIView()
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -82,9 +84,6 @@ class HomeViewController: BaseViewController, UISearchBarDelegate, UITableViewDe
         else if(languageSegmented.selectedSegmentIndex == 1){
             searchBar.placeholder = "Search Bangla Words"
         }
-    }
-    @IBAction func leftMenuTapped(_ sender: AnyObject) {
-        self.foldMenuController().leftMenuAction()
     }
     //MARK: SearchBar Delegates
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
