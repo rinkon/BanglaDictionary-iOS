@@ -15,7 +15,6 @@ class FlashCardsViewController: BaseViewController, iCarouselDelegate, iCarousel
     @IBOutlet weak var carouselView: iCarousel!
     @IBOutlet weak var backgroundImageView: UIImageView!
     
-    var numbers = [Int]()
     var favoriteWordListArray = [String]()
     var favoriteWordTableList = [Int]()
     var favoriteWordIdList = [Int]()
@@ -28,8 +27,17 @@ class FlashCardsViewController: BaseViewController, iCarouselDelegate, iCarousel
         carouselView.isPagingEnabled = true
         
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if(favoriteWordListArray.count == 0){
+            print("kkkkk")
+            let alertController = UIAlertController(title: "Save words to favorite", message: "To use the flash cards, you have to add some words to Favorite lists", preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+            alertController.addAction(cancelAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+    }
     override func awakeFromNib() {
-        numbers = [2, 4, 5, 4, 3, 0, 1, 9]
         var favoriteArray = UserDefaults.standard.value(forKey: Constants.FAVORITE_ARRAY_KEY) as! [String]
         
         favoriteWordListArray.removeAll()
@@ -105,6 +113,7 @@ class FlashCardsViewController: BaseViewController, iCarouselDelegate, iCarousel
             navigationController?.setNavigationBarHidden(true, animated: true)
             navigationController?.navigationBar.barTintColor = UIColor(red: 48.0/255.0, green: 61.0/255.0, blue: 76.0/255.0, alpha: 0.0)
         }
+        
     }
     @IBAction func backButtonPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)

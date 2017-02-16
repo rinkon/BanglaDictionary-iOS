@@ -20,6 +20,7 @@ class FavoriteViewController: BaseViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var heightOfTabBar: NSLayoutConstraint!
     @IBOutlet weak var okButtonConstraint: NSLayoutConstraint!
     @IBOutlet weak var doneButton: UIButton!
+    @IBOutlet weak var tableViewBottom: NSLayoutConstraint!
     
     override func viewDidLoad() {
         okButtonConstraint.constant -= view.bounds.height/2
@@ -29,6 +30,9 @@ class FavoriteViewController: BaseViewController, UITableViewDelegate, UITableVi
         heightOfTabBar.constant = CGFloat(Constants.tabBarHeight)
         favoriteTableView.tableFooterView = UIView()
         loadFavoriteWords()
+        if(bannerShown){
+            tableViewBottom.constant = bannerAdHeight
+        }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return favoriteWordListArray.count
@@ -39,8 +43,12 @@ class FavoriteViewController: BaseViewController, UITableViewDelegate, UITableVi
         cell.textLabel?.textColor = UIColor.white
         
         let selectedBackgroundView = UIView()
-        selectedBackgroundView.backgroundColor = UIColor.black
+        selectedBackgroundView.backgroundColor = UIColor(red: 85.0/255.0, green: 146.0/255.0, blue: 154.0/255.0, alpha: 1.0)
         cell.selectedBackgroundView = selectedBackgroundView
+        
+//        cell.preservesSuperviewLayoutMargins = false
+//        cell.separatorInset = UIEdgeInsets.zero
+//        cell.layoutMargins = UIEdgeInsets.zero
         
         cell.addGestureRecognizer(generateGestureRecognizer())
         
@@ -61,11 +69,29 @@ class FavoriteViewController: BaseViewController, UITableViewDelegate, UITableVi
             })
             alertController.addAction(cancelAction)
             alertController.addAction(deleteAction)
-            self.present(alertController, animated: true, completion: nil)
             
+            self.present(alertController, animated: true, completion: nil)
         }
     }
+//    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+//        let button1 = UITableViewRowAction(style: .default, title: "Delete") { action, indexPath in
+//            print("button1 pressed!")
+//        }
+//        button1.backgroundColor = UIColor(red: 51.0/255.0, green: 119.0/255.0, blue: 129.0/255.0, alpha: 1.0)
+//        return [button1]
+//    }
+    func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        return .delete
+    }
+    private func tableView(_ tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+    }
     func accessoryButtonClicked(sender : UIButton) {
         
     }

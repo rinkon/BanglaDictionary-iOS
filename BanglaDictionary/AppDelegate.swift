@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let historyArray = [String]()
             UserDefaults.standard.set(historyArray, forKey: Constants.HISTORY_ARRAY_KEY)
         }
-        self.window?.tintColor = UIColor.white
+//        self.window?.tintColor = UIColor.white
         
         return true
     }

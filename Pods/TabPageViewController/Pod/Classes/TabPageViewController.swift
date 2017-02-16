@@ -38,7 +38,7 @@ open class TabPageViewController: UIPageViewController {
 
     override open func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupPageViewController()
         setupScrollView()
         updateNavigationBar()
@@ -115,7 +115,7 @@ extension TabPageViewController {
         let scrollView = view.subviews.flatMap { $0 as? UIScrollView }.first
         scrollView?.scrollsToTop = false
         scrollView?.delegate = self
-        scrollView?.backgroundColor = option.pageBackgoundColor
+        scrollView?.backgroundColor = UIColor(red: 29.0/255.0, green: 101.0/255.0, blue: 111.0/255.0, alpha: 1.0)
     }
 
     /**

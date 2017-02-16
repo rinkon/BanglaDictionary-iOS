@@ -21,6 +21,7 @@ class HistoryViewController: BaseViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var heightOfTabBar: NSLayoutConstraint!
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var okButtonConstraint: NSLayoutConstraint!
+    @IBOutlet weak var tableBottomConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         okButtonConstraint.constant -= view.bounds.height/2
@@ -31,6 +32,9 @@ class HistoryViewController: BaseViewController, UITableViewDelegate, UITableVie
         heightOfTabBar.constant = CGFloat(Constants.tabBarHeight)
         historyTableView.tableFooterView = UIView()
         loadHistoryWords()
+        if(bannerShown){
+            tableBottomConstraint.constant = bannerAdHeight
+        }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return historyWordListArray.count
@@ -41,6 +45,11 @@ class HistoryViewController: BaseViewController, UITableViewDelegate, UITableVie
         cell.backgroundColor = UIColor(red: 48.0/255.0, green: 61.0/255.0, blue: 76.0/255.0, alpha: 1.0)
         cell.textLabel?.textColor = UIColor.white
         cell.addGestureRecognizer(generateGestureRecognizer())
+        
+        let selectedBackgroundView = UIView()
+        selectedBackgroundView.backgroundColor = UIColor(red: 85.0/255.0, green: 146.0/255.0, blue: 154.0/255.0, alpha: 1.0)
+        cell.selectedBackgroundView = selectedBackgroundView
+        
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

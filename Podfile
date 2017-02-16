@@ -5,4 +5,5 @@ target 'BanglaDictionary' do
     pod 'TabPageViewController'
     pod 'SwiftyJSON'
     pod 'ReachabilitySwift'
+    pod 'Toast-Swift', '~> 2.0.0'
 end

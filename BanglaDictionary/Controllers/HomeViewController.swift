@@ -26,6 +26,8 @@ class HomeViewController: BaseViewController, UISearchBarDelegate, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         if(languageSegmented.selectedSegmentIndex == 0){
             searchBar.placeholder = "Search English Words"
         }
@@ -53,14 +55,17 @@ class HomeViewController: BaseViewController, UISearchBarDelegate, UITableViewDe
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseId")
         cell!.textLabel!.text = suggestionList[indexPath.row].capitalized
         cell!.textLabel?.numberOfLines = 0
-//        cell!.backgroundColor = UIColor.clear//(red: 48.0/255.0, green: 61.0/255.0, blue: 76.0/255.0, alpha: 1.0)
         cell?.textLabel?.textColor = UIColor.white
+        
+        let selectedBackgroundView = UIView()
+        selectedBackgroundView.backgroundColor = UIColor(red: 85.0/255.0, green: 146.0/255.0, blue: 154.0/255.0, alpha: 1.0)
+        cell?.selectedBackgroundView = selectedBackgroundView
         
         return cell!
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let envelope = [0, suggestionIdList[indexPath.row]]
-        searchBar.resignFirstResponder()
+        let envelope = [languageSegmented.selectedSegmentIndex, suggestionIdList[indexPath.row]]
+//        searchBar.resignFirstResponder()
         suggestionTableView.cellForRow(at: indexPath)?.contentView.backgroundColor = UIColor(red: 68.0/255.0, green: 80.0/255.0, blue: 93.0/255.0, alpha: 1.0)
         self.containerViewController.performSegue(withIdentifier: "ToMeaningViewController", sender: envelope)
     }
@@ -159,8 +164,6 @@ class HomeViewController: BaseViewController, UISearchBarDelegate, UITableViewDe
         
         glassIconView?.image = glassIconView?.image?.withRenderingMode(.alwaysTemplate)
         glassIconView?.tintColor = UIColor.white
-        
-        searchBar.layer.cornerRadius = 5
     }
     
 }
