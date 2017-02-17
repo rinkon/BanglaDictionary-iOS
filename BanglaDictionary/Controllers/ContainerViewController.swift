@@ -69,7 +69,7 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
     override func viewWillAppear(_ animated: Bool) {
         menuTableView.tableFooterView = UIView()
         print("viewwillappear of containerviewcontroller")
-        if(Constants.countForInterstitial%5 == 0 && Constants.countForInterstitial != 0){
+        if(Constants.countForInterstitial%10 == 0 && Constants.countForInterstitial != 0){
             if interstitial.isReady {
                 interstitial.present(fromRootViewController: self)
                 Constants.countForInterstitial = 0
@@ -223,6 +223,10 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
             self.performSegue(withIdentifier: "ToFlashCards", sender: nil)
         }
 
+        else if(indexPath.row == 3){
+            UIApplication.shared.openURL(URL(string: "https://itunes.apple.com/us/app/english-to-bangla-dictionary/id1207065254?ls=1&mt=8")!)
+        }
+        
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
