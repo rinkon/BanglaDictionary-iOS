@@ -8,9 +8,11 @@
 
 import UIKit
 import CoreData
+import SSZipArchive
+
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,SSZipArchiveDelegate {
 
     var window: UIWindow?
 
@@ -24,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let historyArray = [String]()
             UserDefaults.standard.set(historyArray, forKey: Constants.HISTORY_ARRAY_KEY)
         }
-//        self.window?.tintColor = UIColor.white
+        manageDatabaseFile()
         
         return true
     }
@@ -115,6 +117,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    func manageDatabaseFile() {
+        
+        let documentsDirectoryPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+        print("the docdire is \(documentsDirectoryPath)")
+        
+        let destinationPath = URL(fileURLWithPath: documentsDirectoryPath).appendingPathComponent("bangla.sqlite.zip").path
+        
+        let sourcePath = Bundle.main.path(forResource: "bangla.sqlite", ofType: "zip")
+        
+        let fileManager = FileManager.default
+        
+        let unZipPath = documentsDirectoryPath
+        let zippedPath = destinationPath
+        
+        if(fileManager.fileExists(atPath: unZipPath + "/bangla.sqlite")){
+            print("there is database dont have to unzip that")
+        }
+        else{
+            print("database isn't there, unzipping now")
+            do{
+                try fileManager.copyItem(atPath: sourcePath!, toPath: destinationPath)
+            }catch{
+                print("error while copying")
+            }
+            SSZipArchive.unzipFile(atPath: zippedPath, toDestination: unZipPath, delegate: self)
+        }
+    }
+    
+    func zipArchiveDidUnzipArchive(atPath path: String, zipInfo: unz_global_info, unzippedPath: String){
+        let fileManager = FileManager.default
+        do{
+            try fileManager.removeItem(atPath: path)
+        }catch{
+            print("error while deleting database file")
+        }
+    }
+    
 
 }
 

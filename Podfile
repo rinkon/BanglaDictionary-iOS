@@ -6,4 +6,5 @@ target 'BanglaDictionary' do
     pod 'SwiftyJSON'
     pod 'ReachabilitySwift'
     pod 'Toast-Swift', '~> 2.0.0'
+    pod 'SSZipArchive'
 end

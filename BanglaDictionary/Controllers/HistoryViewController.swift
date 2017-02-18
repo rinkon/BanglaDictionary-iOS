@@ -59,7 +59,7 @@ class HistoryViewController: BaseViewController, UITableViewDelegate, UITableVie
     }
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
-            let alertController = UIAlertController(title: "Delete word?", message: "someMessage", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Delete word?", message: "This word will be permanently deleted", preferredStyle: .alert)
             let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
             let deleteAction = UIAlertAction(title: "Delete", style: .default, handler: { action in
                 self.removeFromHistory(index: indexPath.row)

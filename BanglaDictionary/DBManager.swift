@@ -15,11 +15,13 @@ class DBManager: NSObject {
     let database : FMDatabase!
     
     override init(){
-        pathToDatabase = Bundle.main.path(forResource: "bangla", ofType: "sqlite")
+        let documentsDirectoryPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+        pathToDatabase = URL(fileURLWithPath: documentsDirectoryPath).appendingPathComponent("bangla.sqlite").path
+//        pathToDatabase = Bundle.main.path(forResource: "bangla", ofType: "sqlite")
         database = FMDatabase(path: pathToDatabase)
     }
     func printPath(){
-        print("So the database path is: \(pathToDatabase!)")
+//        print("So the database path is: \(pathToDatabase!)")
     }
     func fetchSuggestionForPrimaryWord(prefix : String) -> (suggestionList : [String], suggestionIdList : [Int]) {
         var suggestionList = [String]()

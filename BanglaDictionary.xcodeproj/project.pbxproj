@@ -35,7 +35,6 @@
 		C01AA1F01E4A44060057402C /* crossIconOne.png in Resources */ = {isa = PBXBuildFile; fileRef = C01AA1EF1E4A44060057402C /* crossIconOne.png */; };
 		C01AA1F21E4A46C10057402C /* action.png in Resources */ = {isa = PBXBuildFile; fileRef = C01AA1F11E4A46C10057402C /* action.png */; };
 		C01E02D41E1137BC001886B9 /* MeaningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01E02D31E1137BC001886B9 /* MeaningViewController.swift */; };
-		C031AEB81E09B718005BDDAE /* bangla.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C031AEB71E09B718005BDDAE /* bangla.sqlite */; };
 		C031AEBB1E09B775005BDDAE /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031AEBA1E09B775005BDDAE /* DBManager.swift */; };
 		C031AEC81E09B7B2005BDDAE /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C031AEBE1E09B7B2005BDDAE /* FMDatabase.m */; };
 		C031AEC91E09B7B2005BDDAE /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C031AEC01E09B7B2005BDDAE /* FMDatabaseAdditions.m */; };
@@ -64,6 +63,7 @@
 		C091D0BF1E559FBB00EF60CD /* menuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C091D0BE1E559FBB00EF60CD /* menuIcon.png */; };
 		C091D0C11E55A0D300EF60CD /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = C091D0C01E55A0D300EF60CD /* menu.png */; };
 		C09DD43C1E2A755D0005E5F0 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09DD43B1E2A755D0005E5F0 /* GamesViewController.swift */; };
+		C0B677FC1E58E7EE00F75FF4 /* bangla.sqlite.zip in Resources */ = {isa = PBXBuildFile; fileRef = C0B677FB1E58E7EE00F75FF4 /* bangla.sqlite.zip */; };
 		C0CBA3391E2BE1AC009AF430 /* FlashCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CBA3381E2BE1AC009AF430 /* FlashCardsViewController.swift */; };
 		C0CBA33C1E2BE242009AF430 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CBA33B1E2BE242009AF430 /* iCarousel.m */; };
 		C0CBA33E1E2C1896009AF430 /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CBA33D1E2C1896009AF430 /* SideBarViewController.swift */; };
@@ -103,7 +103,6 @@
 		C01AA1EF1E4A44060057402C /* crossIconOne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crossIconOne.png; sourceTree = "<group>"; };
 		C01AA1F11E4A46C10057402C /* action.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = action.png; sourceTree = "<group>"; };
 		C01E02D31E1137BC001886B9 /* MeaningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeaningViewController.swift; sourceTree = "<group>"; };
-		C031AEB71E09B718005BDDAE /* bangla.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = bangla.sqlite; sourceTree = "<group>"; };
 		C031AEBA1E09B775005BDDAE /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		C031AEBD1E09B7B2005BDDAE /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		C031AEBE1E09B7B2005BDDAE /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
@@ -138,6 +137,7 @@
 		C091D0BE1E559FBB00EF60CD /* menuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuIcon.png; sourceTree = "<group>"; };
 		C091D0C01E55A0D300EF60CD /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		C09DD43B1E2A755D0005E5F0 /* GamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
+		C0B677FB1E58E7EE00F75FF4 /* bangla.sqlite.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = bangla.sqlite.zip; sourceTree = "<group>"; };
 		C0CBA3381E2BE1AC009AF430 /* FlashCardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCardsViewController.swift; sourceTree = "<group>"; };
 		C0CBA33A1E2BE242009AF430 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		C0CBA33B1E2BE242009AF430 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
@@ -290,7 +290,7 @@
 		C031AEB61E09B6E8005BDDAE /* DB */ = {
 			isa = PBXGroup;
 			children = (
-				C031AEB71E09B718005BDDAE /* bangla.sqlite */,
+				C0B677FB1E58E7EE00F75FF4 /* bangla.sqlite.zip */,
 			);
 			name = DB;
 			sourceTree = "<group>";
@@ -422,7 +422,6 @@
 				C091D0BF1E559FBB00EF60CD /* menuIcon.png in Resources */,
 				529321631DEDEA600074CDFA /* Assets.xcassets in Resources */,
 				C069057E1E3664DE008DE69C /* delete.png in Resources */,
-				C031AEB81E09B718005BDDAE /* bangla.sqlite in Resources */,
 				C091D0C11E55A0D300EF60CD /* menu.png in Resources */,
 				52F948051DF18BE4004BE59A /* .gitkeep in Resources */,
 				C01AA1F21E4A46C10057402C /* action.png in Resources */,
@@ -430,6 +429,7 @@
 				52F948061DF18BE4004BE59A /* .gitkeep in Resources */,
 				52F947F91DF18B53004BE59A /* left.png in Resources */,
 				C091D0BB1E558B0800EF60CD /* appIconTransparent.png in Resources */,
+				C0B677FC1E58E7EE00F75FF4 /* bangla.sqlite.zip in Resources */,
 				C01AA1F01E4A44060057402C /* crossIconOne.png in Resources */,
 				5205AB101DF3749700079A24 /* menu_image.png in Resources */,
 				C048E6AC1E47A73E00564195 /* menu_bg_6.jpg in Resources */,

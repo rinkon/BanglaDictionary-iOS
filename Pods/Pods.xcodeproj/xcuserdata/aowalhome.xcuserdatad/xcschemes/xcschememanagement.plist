@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SSZipArchive.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2B01CF78D2DC4AB0B4C9CF6C84F86A1A</key>
+		<key>30409097477146E660E95143E3DC7FAB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4793A06AC77077A386B0B003A2F500CF</key>
+		<key>3263391FD6955212894E4EB5D62F3D9D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A81A711386BFF2579D83B828F8AD3D70</key>
+		<key>756676A441B1CD2D0806149264F69900</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B50BD0221459B478597547F9E8DBB896</key>
+		<key>8D67F9B26367B5D1A2183EDFF6CA14BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F52DA2008F5692C1341696D96097F2C4</key>
+		<key>971ABF5925FCBCFC2859B4032715C500</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1F61992D1366AF084EB475FE24C233C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
