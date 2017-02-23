@@ -28,7 +28,7 @@ class HistoryViewController: BaseViewController, UITableViewDelegate, UITableVie
         doneButton.layer.cornerRadius = 3
     }
     override func viewWillAppear(_ animated: Bool) {
-        print("viewWillAppear")
+        super.viewWillAppear(animated)
         heightOfTabBar.constant = CGFloat(Constants.tabBarHeight)
         historyTableView.tableFooterView = UIView()
         loadHistoryWords()

@@ -30,7 +30,6 @@ class FlashCardsViewController: BaseViewController, iCarouselDelegate, iCarousel
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         if(favoriteWordListArray.count == 0){
-            print("kkkkk")
             let alertController = UIAlertController(title: "Save words to favorite", message: "To use the flash cards, you have to add some words to Favorite lists", preferredStyle: .alert)
             let cancelAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
             alertController.addAction(cancelAction)
@@ -119,7 +118,6 @@ class FlashCardsViewController: BaseViewController, iCarouselDelegate, iCarousel
         self.dismiss(animated: true, completion: nil)
     }
     func meaningButtonTapped(sender: UIButton) {
-        print(sender.tag)
         var envelope = [Any]()
         envelope = [favoriteWordTableList[sender.tag], favoriteWordIdList[sender.tag]]
         toMeaning = true

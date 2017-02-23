@@ -21,7 +21,7 @@ class BaseViewController: UIViewController {
         do{
             try reachability.startNotifier()
         }catch{
-            print("could not start reachability notifier")
+//            print("could not start reachability notifier")
         }
     }
     func reachabilityChanged(note: NSNotification) {
@@ -30,12 +30,12 @@ class BaseViewController: UIViewController {
         
         if reachability.isReachable {
             if reachability.isReachableViaWiFi {
-                print("Reachable via WiFi")
+//                print("Reachable via WiFi")
             } else {
-                print("Reachable via Cellular")
+//                print("Reachable via Cellular")
             }
         } else {
-            print("Network not reachable")
+//            print("Network not reachable")
         }
     }
     

@@ -9,13 +9,14 @@
 import UIKit
 import CoreData
 import SSZipArchive
+import GoogleMobileAds
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate,SSZipArchiveDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,SSZipArchiveDelegate, GADInterstitialDelegate {
 
     var window: UIWindow?
-
+    var interstitial: GADInterstitial!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         if(UserDefaults.standard.value(forKey: Constants.FAVORITE_ARRAY_KEY) == nil){
@@ -121,7 +122,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,SSZipArchiveDelegate {
     func manageDatabaseFile() {
         
         let documentsDirectoryPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
-        print("the docdire is \(documentsDirectoryPath)")
+//        print("the docdire is \(documentsDirectoryPath)")
         
         let destinationPath = URL(fileURLWithPath: documentsDirectoryPath).appendingPathComponent("bangla.sqlite.zip").path
         
@@ -133,14 +134,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate,SSZipArchiveDelegate {
         let zippedPath = destinationPath
         
         if(fileManager.fileExists(atPath: unZipPath + "/bangla.sqlite")){
-            print("there is database dont have to unzip that")
+//            print("there is database dont have to unzip that")
         }
         else{
-            print("database isn't there, unzipping now")
+//            print("database isn't there, unzipping now")
             do{
                 try fileManager.copyItem(atPath: sourcePath!, toPath: destinationPath)
             }catch{
-                print("error while copying")
+//                print("error while copying")
             }
             SSZipArchive.unzipFile(atPath: zippedPath, toDestination: unZipPath, delegate: self)
         }
@@ -151,10 +152,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate,SSZipArchiveDelegate {
         do{
             try fileManager.removeItem(atPath: path)
         }catch{
-            print("error while deleting database file")
+//            print("error while deleting database file")
         }
     }
     
+    //MARK: Interstitial
+    func createAndLoadInterstitial() {
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-8831588022499731/1042848201")
+        let request = GADRequest()
+        // Request test ads on devices you specify. Your test device ID is printed to the console when
+        // an ad request is made.
+        request.testDevices = [ kGADSimulatorID]
+        interstitial.delegate = self
+        interstitial.load(request)
+        print("requesting....")
+    }
+    func interstitialDidReceiveAd(_ ad: GADInterstitial) {
+        print("it's ready")
+        if interstitial.isReady {
+            interstitial.present(fromRootViewController: (self.window?.rootViewController)!)
+            Constants.countForInterstitial = 0
+        } else {
+            print("Ad wasn't ready")
+        }
+    }
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+        interstitial.delegate = nil
+        interstitial = nil
+    }
 
 }
 

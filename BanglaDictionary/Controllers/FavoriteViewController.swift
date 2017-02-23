@@ -127,7 +127,7 @@ class FavoriteViewController: BaseViewController, UITableViewDelegate, UITableVi
             favoriteWordListArray.append(word)
         }
 //        print(favoriteArrayClass)
-        print(CGFloat(favoriteWordListArray.count))
+//        print(CGFloat(favoriteWordListArray.count))
         favoriteTableView.reloadData()
     }
     func deleteButtonPressed(_ sender : UIButton) {

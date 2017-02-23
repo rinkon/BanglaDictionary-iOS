@@ -27,7 +27,6 @@ class MeaningViewController: BaseViewController, UITableViewDelegate, UITableVie
         super.viewDidLoad()
         Constants.countForInterstitial += 1
         var valueToStore = ""
-        print("wordTable \(wordTable), wordId\(wordId)")
         if(wordTable == 0){
             let content = DBManager.shared.fetchFromPrimaryWord(tableName: "primary_word", id: wordId)
             contentDictionary = content.allContent

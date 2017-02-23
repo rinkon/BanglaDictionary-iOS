@@ -19,7 +19,7 @@ var bannerAdHeight : CGFloat = 0.0
 class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableViewDataSource, UITableViewDelegate {
     let tabPageViewController = TabPageViewController.create()
     var adMobBannerView = GADBannerView()
-    var interstitial: GADInterstitial!
+//    var interstitial: GADInterstitial!
     var shouldShowKeyBoard = false
     let menuTableContentArray = ["Clear History", "Clear Favorites", "Flash-Cards", "Rate Us"]
     var vc1 : HomeViewController!
@@ -63,20 +63,13 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
         self.navigationController?.navigationBar.setBackgroundImage(emptyImage, for: .default)
         initAdMobBanner()
         showBanner(adMobBannerView)
-        createAndLoadInterstitial()
+//        createAndLoadInterstitial()
         self.navigationController?.navigationBar.tintColor = UIColor.white
     }
     override func viewWillAppear(_ animated: Bool) {
         menuTableView.tableFooterView = UIView()
-        print("viewwillappear of containerviewcontroller")
         if(Constants.countForInterstitial%10 == 0 && Constants.countForInterstitial != 0){
-            if interstitial.isReady {
-                interstitial.present(fromRootViewController: self)
-                Constants.countForInterstitial = 0
-            } else {
-                print("Ad wasn't ready")
-            }
-            createAndLoadInterstitial()
+            (UIApplication.shared.delegate as! AppDelegate).createAndLoadInterstitial()
         }
     }
     
@@ -149,15 +142,15 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
     func adView(_ view: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
         hideBanner(adMobBannerView)
     }
-    //MARK: Interstitial
-    fileprivate func createAndLoadInterstitial() {
-        interstitial = GADInterstitial(adUnitID: "ca-app-pub-8831588022499731/1042848201")
-        let request = GADRequest()
-        // Request test ads on devices you specify. Your test device ID is printed to the console when
-        // an ad request is made.
-        request.testDevices = [ kGADSimulatorID]
-        interstitial.load(request)
-    }
+//    //MARK: Interstitial
+//    fileprivate func createAndLoadInterstitial() {
+//        interstitial = GADInterstitial(adUnitID: "ca-app-pub-8831588022499731/1042848201")
+//        let request = GADRequest()
+//        // Request test ads on devices you specify. Your test device ID is printed to the console when
+//        // an ad request is made.
+//        request.testDevices = [ kGADSimulatorID]
+//        interstitial.load(request)
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return menuTableContentArray.count
@@ -170,7 +163,6 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
         cell?.backgroundColor = UIColor(red: 50.0/255.0, green: 64.0/255.0, blue: 101.0/255.0, alpha: 0.0)
         cell!.textLabel?.numberOfLines = 0
         cell?.textLabel?.textColor = UIColor.cyan
-//        cell?.layer.cornerRadius = 10
         
         return cell!
     }
@@ -217,8 +209,6 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
             })
         }
         else if(indexPath.row == 2){
-            print("Clicked flash cards")
-//            closeMenu(closeMenuButton)
             navigationController?.setNavigationBarHidden(false, animated: false)
             self.performSegue(withIdentifier: "ToFlashCards", sender: nil)
         }
@@ -276,7 +266,6 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
     @IBAction func showOrHideMenu(_ sender: Any) {
         if(menuBackgroundView.isHidden){
             if (vc1.searchBar.isFirstResponder) {
-                print("is focused man")
                 shouldShowKeyBoard = true
                 vc1.searchBar.resignFirstResponder()
             }

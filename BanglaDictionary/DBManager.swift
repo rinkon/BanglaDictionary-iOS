@@ -35,7 +35,7 @@ class DBManager: NSObject {
                     suggestionIdList.append(Int(resultSet.int(forColumn: "_id")))
                 }
             }catch{
-                print("Couldn't open database")
+//                print("Couldn't open database")
             }
         }
         return (suggestionList, suggestionIdList)
@@ -53,7 +53,7 @@ class DBManager: NSObject {
                     suggestionIdList.append(Int(resultSet.int(forColumn: "_id")))
                 }
             }catch{
-                print("Couldn't open database")
+//                print("Couldn't open database")
             }
         }
         return (suggestionList, suggestionIdList)
@@ -101,7 +101,7 @@ class DBManager: NSObject {
                                 }
                                 
                             }catch{
-                                print("Error while parsing definition")
+//                                print("Error while parsing definition")
                             }
                         }
                     }
@@ -130,13 +130,13 @@ class DBManager: NSObject {
                                     }
                                 }
                             }catch{
-                                print("Error while parsing extra")
+//                                print("Error while parsing extra")
                             }
                         }
                     }
                 }
             }catch{
-                print("Didn't find meaning")
+//                print("Didn't find meaning")
             }
         }
         return (returnDictionary, returnArray)
@@ -153,7 +153,7 @@ class DBManager: NSObject {
                     }
                 }
             }catch{
-                print("Error while fetching type from primary_word_type")
+//                print("Error while fetching type from primary_word_type")
             }
         }
         return wordTypeString
@@ -174,7 +174,7 @@ class DBManager: NSObject {
                     }
                 }
             }catch{
-                print("Error while fetching otherWords")
+//                print("Error while fetching otherWords")
             }
         }
         return returnString
@@ -258,7 +258,7 @@ class DBManager: NSObject {
                     }
                 }
             }catch{
-                print("Error while fetching from secondary_word")
+//                print("Error while fetching from secondary_word")
             }
         }
         return (returnDictionary, returnArray)
@@ -274,7 +274,7 @@ class DBManager: NSObject {
                     returnString = resultSet.string(forColumn: "_from")
                 }
             }catch{
-                print("error while fetch only english word from primary_word")
+//                print("error while fetch only english word from primary_word")
             }
         }
         return returnString
@@ -289,7 +289,7 @@ class DBManager: NSObject {
                     returnString = resultSet.string(forColumn: "_from")
                 }
             }catch{
-                print("Error while fetching favorite")
+//                print("Error while fetching favorite")
             }
         }
         
