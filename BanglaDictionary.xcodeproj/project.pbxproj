@@ -30,8 +30,6 @@
 		52F948081DF18BE4004BE59A /* BEFoldMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F948021DF18BE4004BE59A /* BEFoldMenuViewController.m */; };
 		52F948091DF18BE4004BE59A /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F948041DF18BE4004BE59A /* UIView+Frame.m */; };
 		AFE347FE8801E30D4301B723 /* Pods_BanglaDictionary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BAF6C9201BB2A11867383C /* Pods_BanglaDictionary.framework */; };
-		C00C9CE61E2E9AB10088FCFC /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00C9CE51E2E9AB10088FCFC /* GoogleMobileAds.framework */; };
-		C00C9CE81E2E9B280088FCFC /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00C9CE71E2E9B280088FCFC /* GoogleMobileAds.framework */; };
 		C01AA1F01E4A44060057402C /* crossIconOne.png in Resources */ = {isa = PBXBuildFile; fileRef = C01AA1EF1E4A44060057402C /* crossIconOne.png */; };
 		C01AA1F21E4A46C10057402C /* action.png in Resources */ = {isa = PBXBuildFile; fileRef = C01AA1F11E4A46C10057402C /* action.png */; };
 		C01E02D41E1137BC001886B9 /* MeaningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01E02D31E1137BC001886B9 /* MeaningViewController.swift */; };
@@ -99,7 +97,6 @@
 		52F948041DF18BE4004BE59A /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		71BAF6C9201BB2A11867383C /* Pods_BanglaDictionary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BanglaDictionary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00C9CE51E2E9AB10088FCFC /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../../../Downloads/GoogleMobileAdsSdkiOS-7.16.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
-		C00C9CE71E2E9B280088FCFC /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		C01AA1EF1E4A44060057402C /* crossIconOne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crossIconOne.png; sourceTree = "<group>"; };
 		C01AA1F11E4A46C10057402C /* action.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = action.png; sourceTree = "<group>"; };
 		C01E02D31E1137BC001886B9 /* MeaningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeaningViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +125,7 @@
 		C039C0451E294EEB002705EC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		C039C0471E294EF4002705EC /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C039C0491E294EFB002705EC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C04094881E5EF302008FA745 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../../../Downloads/GoogleMobileAdsSdkiOS-7.17.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		C048E6AB1E47A73E00564195 /* menu_bg_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menu_bg_6.jpg; sourceTree = "<group>"; };
 		C048E6AD1E47B20D00564195 /* menu_bg_6 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "menu_bg_6 2.jpg"; sourceTree = "<group>"; };
 		C069057D1E3664DE008DE69C /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
@@ -150,9 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C00C9CE61E2E9AB10088FCFC /* GoogleMobileAds.framework in Frameworks */,
 				C039C04A1E294EFC002705EC /* SystemConfiguration.framework in Frameworks */,
-				C00C9CE81E2E9B280088FCFC /* GoogleMobileAds.framework in Frameworks */,
 				C039C0481E294EF4002705EC /* StoreKit.framework in Frameworks */,
 				C039C0461E294EEB002705EC /* MessageUI.framework in Frameworks */,
 				C039C0441E294EE3002705EC /* CoreMedia.framework in Frameworks */,
@@ -193,8 +189,8 @@
 		529321571DEDEA600074CDFA /* BanglaDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				C0858DF31E5F1CF8003D2DE1 /* Utilities */,
 				C08B8F9C1E4CEEFB002171D8 /* View */,
-				C00C9CE71E2E9B280088FCFC /* GoogleMobileAds.framework */,
 				C031AEBC1E09B7A4005BDDAE /* External Libraries */,
 				C031AEB91E09B74B005BDDAE /* Model */,
 				C031AEB61E09B6E8005BDDAE /* DB */,
@@ -299,7 +295,6 @@
 			isa = PBXGroup;
 			children = (
 				C031AEBA1E09B775005BDDAE /* DBManager.swift */,
-				C0CD87E11E23E14F00C051AB /* Constants.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -324,6 +319,14 @@
 			name = "External Libraries";
 			sourceTree = "<group>";
 		};
+		C0858DF31E5F1CF8003D2DE1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C0CD87E11E23E14F00C051AB /* Constants.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		C08B8F9C1E4CEEFB002171D8 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +338,7 @@
 		E46BE60967202DE0E59460A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C04094881E5EF302008FA745 /* GoogleMobileAds.framework */,
 				C00C9CE51E2E9AB10088FCFC /* GoogleMobileAds.framework */,
 				C039C0491E294EFB002705EC /* SystemConfiguration.framework */,
 				C039C0471E294EF4002705EC /* StoreKit.framework */,
@@ -640,6 +644,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BanglaDictionary",
+					"\"$(SRCROOT)/BanglaDictionary/GoogleMobileAdsSdkiOS-7.17.0/GoogleMobileAds.framework\"",
 				);
 				INFOPLIST_FILE = BanglaDictionary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9;
@@ -661,6 +666,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BanglaDictionary",
+					"\"$(SRCROOT)/BanglaDictionary/GoogleMobileAdsSdkiOS-7.17.0/GoogleMobileAds.framework\"",
 				);
 				INFOPLIST_FILE = BanglaDictionary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9;

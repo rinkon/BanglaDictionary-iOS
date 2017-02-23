@@ -8,8 +8,8 @@
 
 import UIKit
 import TabPageViewController
-import GoogleMobileAds
 import AudioToolbox
+import GoogleMobileAds
 
 
 var bannerShown : Bool = false
@@ -214,7 +214,7 @@ class ContainerViewController: UIViewController, GADBannerViewDelegate, UITableV
         }
 
         else if(indexPath.row == 3){
-            UIApplication.shared.openURL(URL(string: "https://itunes.apple.com/us/app/english-to-bangla-dictionary/id1207065254?ls=1&mt=8")!)
+            UIApplication.shared.openURL(URL(string: Constants.rateUrl)!)
         }
         
     }

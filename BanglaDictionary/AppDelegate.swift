@@ -158,17 +158,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate,SSZipArchiveDelegate, GADI
     
     //MARK: Interstitial
     func createAndLoadInterstitial() {
-        interstitial = GADInterstitial(adUnitID: "ca-app-pub-8831588022499731/1042848201")
+        interstitial = GADInterstitial(adUnitID: Constants.ADMOB_INTERSTITIAL_UNIT_ID)
         let request = GADRequest()
         // Request test ads on devices you specify. Your test device ID is printed to the console when
         // an ad request is made.
         request.testDevices = [ kGADSimulatorID]
         interstitial.delegate = self
         interstitial.load(request)
-        print("requesting....")
     }
     func interstitialDidReceiveAd(_ ad: GADInterstitial) {
-        print("it's ready")
         if interstitial.isReady {
             interstitial.present(fromRootViewController: (self.window?.rootViewController)!)
             Constants.countForInterstitial = 0

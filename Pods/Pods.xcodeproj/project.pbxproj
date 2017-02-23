@@ -7,70 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		009E3CBBBFDE3FEB3C58A65FCBE04CC8 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 4084D83029597A0BF243E7F472ECB339 /* SSZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		017D9DF6FF098A174D94F073749FAFC0 /* entropy.h in Headers */ = {isa = PBXBuildFile; fileRef = 339A917D661848A04E0944485BA7B58E /* entropy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		01C00BF91A2778521CB366C3BD121600 /* aestab.h in Headers */ = {isa = PBXBuildFile; fileRef = 37BCFDF1C61A549709B5BF452B32FB6D /* aestab.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0BE2CB47EE6A12E44306453195D8D959 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45426FC099BD10343FC5D59A1D82620E /* SwiftyJSON.swift */; };
-		0F823216FE9C73594185495B3BB0418C /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B0117208FF173CE58A2BC767BA3A00 /* SSZipArchive.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		1418782D744D7218ABBD7FE110A4EE70 /* Toast-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D022D475D9298E90B0B6AA312DFD983 /* Toast-Swift-dummy.m */; };
-		20198FDBBB20963EEC656C5920388703 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = A37D9EBF99545F8FB1E54DFE94B05441 /* unzip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		247F6058B255C379AFEA2202EA95BA30 /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = D0A425372E78EA4C16CBED0F3E20CDD0 /* aeskey.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		29BE9FF2000A524B852EF90C49DF6670 /* aesopt.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D31C20D89E95277840ACCBF1A179AF5 /* aesopt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		009E3CBBBFDE3FEB3C58A65FCBE04CC8 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AB186C81B4885B7B24E94E99AB196DE /* SSZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		017D9DF6FF098A174D94F073749FAFC0 /* entropy.h in Headers */ = {isa = PBXBuildFile; fileRef = CECB926FF52BB0ADEBCB2273886C59A5 /* entropy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		01C00BF91A2778521CB366C3BD121600 /* aestab.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C1824D7EE3A49FF5008B736C7B2ACD /* aestab.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0BE2CB47EE6A12E44306453195D8D959 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD089D7AE9D4D35D713F4B3337C4CB86 /* SwiftyJSON.swift */; };
+		0F823216FE9C73594185495B3BB0418C /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E6C1924225F99D7EB1A6A352D06623 /* SSZipArchive.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1418782D744D7218ABBD7FE110A4EE70 /* Toast-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4C2D3BBCE6E4F5F31AAC00CD426780 /* Toast-Swift-dummy.m */; };
+		20198FDBBB20963EEC656C5920388703 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 57745301EE452762203B3CCB7EA454C6 /* unzip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		247F6058B255C379AFEA2202EA95BA30 /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = 78519020DFF8F95F823A46D55EEEE689 /* aeskey.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		29BE9FF2000A524B852EF90C49DF6670 /* aesopt.h in Headers */ = {isa = PBXBuildFile; fileRef = A5CDC2BF5611B29BC33F58365FB625FB /* aesopt.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		33DA3F25554645754F49125D1F21EE9E /* Pods-BanglaDictionary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE25C938F4CC416497F985BD585E960 /* Pods-BanglaDictionary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3547F083581A8E1034FEA1CBBCAA9A35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FE2609E14F7BFC360449A39AB32728 /* Foundation.framework */; };
-		36D49782C8FE1A2C809DB1CDF906387B /* brg_endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 85945C16A822F510EC23200A3ECA17E8 /* brg_endian.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		39DBE98020969CEE4B93A72779254F0A /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 440B34C5F7E8E327E211B21468389964 /* ioapi.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		40655FBB73DDFE59239A14AD4B4CDE0C /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD916C7C1AA012B421FDC2A4C3586B2 /* TabView.swift */; };
-		42722739EE16499DDB108D0E0D8656D0 /* TabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4334A875830CE6F0427F232BE0F5F0A /* TabView.xib */; };
-		444AF7BA0AD38233A6450C4D9D56583E /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B1698744B403270933A51569E7F611 /* ZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4835B6A8631F61C65FFAAC9C2050F792 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = DC904C5741BBD500E34A1CBA86886643 /* aestab.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		54C31EE8521705AE14F6830ED286BCAD /* ReachabilitySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 906B21A08F30CB4170EF21E8A9FF1D19 /* ReachabilitySwift-dummy.m */; };
+		36D49782C8FE1A2C809DB1CDF906387B /* brg_endian.h in Headers */ = {isa = PBXBuildFile; fileRef = BD3E10AC556386FCD27A2752854FC6B0 /* brg_endian.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		39DBE98020969CEE4B93A72779254F0A /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 770B7E049F75D1363DBFBBD672C6D28F /* ioapi.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		40655FBB73DDFE59239A14AD4B4CDE0C /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B8C2E755C82C00DAB484FB1A55A94 /* TabView.swift */; };
+		42722739EE16499DDB108D0E0D8656D0 /* TabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57F7A31278230B3A431FE7DC6BC184AB /* TabView.xib */; };
+		444AF7BA0AD38233A6450C4D9D56583E /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 5830C5F4F043CBC1AB5809D198F8F700 /* ZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4835B6A8631F61C65FFAAC9C2050F792 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB6B1816C9821521FC47309F399DD4 /* aestab.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		54C31EE8521705AE14F6830ED286BCAD /* ReachabilitySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C18217BE55B3647F58A98A4F01CDC8 /* ReachabilitySwift-dummy.m */; };
 		57C24B729DF9DC3606F32280E5B1016A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FE2609E14F7BFC360449A39AB32728 /* Foundation.framework */; };
-		5AB3D3E3C39D9424296F7AD226D1FDFE /* TabPageViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E74EA26CE16FA2A8B6F6889F2A7872C2 /* TabPageViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AB3D3E3C39D9424296F7AD226D1FDFE /* TabPageViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B12E2FFD9D1E7017835C24E2852F82B /* TabPageViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6053BB347FAD05E6333D5D1C3CC166A5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D27141F73F380EDC138FC3AA189CCE /* QuartzCore.framework */; };
-		6155AD78AADAD69D2081AD2EB8136A1E /* ReachabilitySwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41E5E80A7A1E002ECD3D39D389C8B111 /* ReachabilitySwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		634BF7C93AC44B6499E3E05FB10724E4 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 743989F5965D8FD3F49B733ECACA8EE8 /* mztools.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		66B9EA1F111762B2980D4631BAB7827A /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 76E176E3A0391F2E12BF02619644A6E2 /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		67265645168CB17E32195287034702E6 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6EC4EB3BDEABC960C9DFEF7C434622 /* Reachability.swift */; };
-		690AF64CA43B657C3D05FB3546C6C8C8 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66AB137E70AB42AD71E3D612EBCFC8 /* hmac.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6E29A1FF89B877CAABC7FEAC84F198A3 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C9C081482BA3453E48D4B706C828FA /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6F1ACB592FD888FADDEAF994FE80CE12 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 63258B893CE931E0BB8DED577C8A87AF /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6155AD78AADAD69D2081AD2EB8136A1E /* ReachabilitySwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EA38634564C6CDDA96300F9C07A7E0 /* ReachabilitySwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		634BF7C93AC44B6499E3E05FB10724E4 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = F1D8B6741473101372CB78CAF401ECC6 /* mztools.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		66B9EA1F111762B2980D4631BAB7827A /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 45EE5C6EE673C437C99A3CCA4F3204C3 /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		67265645168CB17E32195287034702E6 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5E09AF8F0CC71F7F113A77426A69E4 /* Reachability.swift */; };
+		690AF64CA43B657C3D05FB3546C6C8C8 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 1389D8E6D3B9D58C02D36AE7F07CBB55 /* hmac.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6E29A1FF89B877CAABC7FEAC84F198A3 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BDF271F7AF9387F4C24158E3BB29A56 /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6F1ACB592FD888FADDEAF994FE80CE12 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A11390C64B1300C1F6D11960D8A77BC /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6FFC1604F089CD50A3E2B1F6012E3F27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE91684DF41AC473A22BE06935BC262E /* UIKit.framework */; };
-		70F490F1FF26CB912E75712E52ADA8A4 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 369CA266B4346AAEBB2985CA88BDE073 /* mztools.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		740383C46B2546A32A40880E88E58101 /* TabPageOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E69731706012ACCF210A8556EDF710 /* TabPageOption.swift */; };
+		70F490F1FF26CB912E75712E52ADA8A4 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 197CC4063A6D579DB1EAB6CF1FB55684 /* mztools.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		740383C46B2546A32A40880E88E58101 /* TabPageOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ED0DDA7901B94384B71BF6507FE8E6 /* TabPageOption.swift */; };
 		7524B8B1E2DC0C65AC9C04C0EB5EFBBC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738B62860272B953B69639020CE17274 /* SystemConfiguration.framework */; };
-		7F742A82C35CF4DA92F130EAA8AA0B4D /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 026906D5C66F5F2B301F121F38083807 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		812ABDBDA1BD963863BCCFFCA0C10DE7 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC42F4896CEBAF8C6BE57971BE9208 /* Toast.swift */; };
-		818BA62AF07864BCE1BB418460C1FC72 /* SSZipCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 854C6666B120289F74F4DB6527547D4C /* SSZipCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		85ACE9E219846A4F7C01B5E420E0D789 /* TabPageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C239825362DE6023A5FBB81A97D8BC90 /* TabPageViewController.storyboard */; };
+		7F742A82C35CF4DA92F130EAA8AA0B4D /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C794D9E1F8554E0E7858001CE84AD6 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		812ABDBDA1BD963863BCCFFCA0C10DE7 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CC37C1320D444B7094ADA30386B24 /* Toast.swift */; };
+		818BA62AF07864BCE1BB418460C1FC72 /* SSZipCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 9794D68CE0B9F9B7D25130727DF16B5C /* SSZipCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85ACE9E219846A4F7C01B5E420E0D789 /* TabPageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF50C9270401844AC09BAACB2B172FA /* TabPageViewController.storyboard */; };
 		86D556EE1568BE6801C1EA44D274C86C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FE2609E14F7BFC360449A39AB32728 /* Foundation.framework */; };
 		95BEC95DCB2F97771C09E543104340AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FE2609E14F7BFC360449A39AB32728 /* Foundation.framework */; };
-		9B5368781F7B240A73485D0D6036E96B /* SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 869B9A077EC9B301A4C35244E50D2269 /* SSZipArchive-dummy.m */; };
-		9DEDE3D0B5B4573E01D822083C016C97 /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = B4F4B8003B17C300D4B00E6DFC43F9B4 /* prng.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A1A6D5BB477E221B354544D40C25D343 /* pwd2key.h in Headers */ = {isa = PBXBuildFile; fileRef = 11FF6810541234B87D4D2C2494C4A079 /* pwd2key.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A8C2B91549E6209DB6D2E3A1749177E3 /* TabCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF969EC7BA99607858EF5D9972DD78A /* TabCollectionCell.swift */; };
-		A949BFF2E86C26140ED70C3ABB319CCA /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 308B3C9BED69EA156C6B16BE194EE7A7 /* SwiftyJSON-dummy.m */; };
+		9B5368781F7B240A73485D0D6036E96B /* SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2680F6C918AF9F07BBAC0CABCB53B7B /* SSZipArchive-dummy.m */; };
+		9DEDE3D0B5B4573E01D822083C016C97 /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = 050CE2256F5218BA70E8A67A1F15687A /* prng.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A1A6D5BB477E221B354544D40C25D343 /* pwd2key.h in Headers */ = {isa = PBXBuildFile; fileRef = D61C0320A558037E36BF235515F4D7FB /* pwd2key.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A8C2B91549E6209DB6D2E3A1749177E3 /* TabCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6372AE211AF169B9DE6A3EDC07E0ABA /* TabCollectionCell.swift */; };
+		A949BFF2E86C26140ED70C3ABB319CCA /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 068CE19D0FED2FFB46D3DD263850CB1B /* SwiftyJSON-dummy.m */; };
 		AC43F6E00DC60820BA7A43B4199B574D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FE2609E14F7BFC360449A39AB32728 /* Foundation.framework */; };
-		B66A2DBC894B0F386056B2273F5F31F8 /* aes_via_ace.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE6AFD45E62E7A6EF40C045E7E4D239 /* aes_via_ace.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B68E9B4E24EC5840EF000D3BC7BF51A7 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = C117FA89E2E0BF200E7926426D3C5FB3 /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B75408746FE88E76EBA9317DD35F0A93 /* Toast-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F928F1973F8F2164267EEE8F1B9BDC9B /* Toast-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE3464008F8C99FFEAAD900CF09B98E3 /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = B7FE1355E7DDB03D21743F6171B29A98 /* pwd2key.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		BEC8C2C2BDE4531DA6C2906C81F5DE47 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 87E844293128BF4DD7241B983E6F8C95 /* hmac.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		CAAB9BD996ECAA7286DACC8732D7E8AD /* fileenc.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A335479F098D4404DED08F5FAAE3CA8 /* fileenc.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CBBDA76A9E866060CFC7623156A0A1FC /* TabPageViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF7C295E2B4115A4E2094A186E6579 /* TabPageViewController-dummy.m */; };
-		CBC6640B29BEB64625D9DEF10EFC2FDF /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = DE88ADDDDA6B01CC623B10AB80D9DFEB /* sha1.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		CCAEA998241307C6A30AF87930C7D117 /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = C864A2F18927E3BCC1E7FF217811F710 /* fileenc.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D6185F95EE73C677CA2544BCD455A9D6 /* brg_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 11277356236149398D6FEA648B345AEC /* brg_types.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DD019A68898CF3BE86D1E1528F4D050B /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = 296EA6D43515E5512673F197A20E19AB /* sha1.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E3208E1C142ACC16962920773FE06AEE /* TabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BED37855C34A5EDEB1D78B302E4D3CD /* TabPageViewController.swift */; };
-		E8CF5EBF566FACA3CD06E34C6CA38AB7 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4250DFCDCFF745535798396219AA7C65 /* aes.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E9A12DB75D3BD62D8D6B73504C552C70 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = AA2E2784175134A3BFC40FB2565D06ED /* zip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		EA34B3745028B9D497493BADE0A6DE5F /* SSZipArchive-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40D7566FE8FC9F86BCF00C464AB0F412 /* SSZipArchive-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC54AC70B4229B32E1D43AF27E09A56A /* prng.h in Headers */ = {isa = PBXBuildFile; fileRef = A80F7B5CD806F2561BA88FF0729BB38E /* prng.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EC56EDFFBD328F6A718E709C6471B4E3 /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = CEFF4D9DC68B4286CF6180291400C08B /* entropy.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B66A2DBC894B0F386056B2273F5F31F8 /* aes_via_ace.h in Headers */ = {isa = PBXBuildFile; fileRef = B267328C8835D99DF5F9A0E3F782E3E1 /* aes_via_ace.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B68E9B4E24EC5840EF000D3BC7BF51A7 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = F9C3BEA8AF47975631E8F56AC78A8E32 /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B75408746FE88E76EBA9317DD35F0A93 /* Toast-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 593714CFAB2C40FBE2DC81A680755970 /* Toast-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE3464008F8C99FFEAAD900CF09B98E3 /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D7E0506B13167B93252061357840A1F /* pwd2key.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BEC8C2C2BDE4531DA6C2906C81F5DE47 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = F977E74A3A03EE39F93FBD81F06A30AF /* hmac.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CAAB9BD996ECAA7286DACC8732D7E8AD /* fileenc.h in Headers */ = {isa = PBXBuildFile; fileRef = 8860EDA14A9556E5C39FFABF83B43380 /* fileenc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CBBDA76A9E866060CFC7623156A0A1FC /* TabPageViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3A811973963A73C5A1D0A50F4BF5D0 /* TabPageViewController-dummy.m */; };
+		CBC6640B29BEB64625D9DEF10EFC2FDF /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = AC87B452E7E40B4FD690432F3EB618A7 /* sha1.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CCAEA998241307C6A30AF87930C7D117 /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 3A03C3BC7973CEED12EDA7E2C7AFF21A /* fileenc.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D6185F95EE73C677CA2544BCD455A9D6 /* brg_types.h in Headers */ = {isa = PBXBuildFile; fileRef = E2EA4D3E69F349F30F595899B3162DC3 /* brg_types.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DD019A68898CF3BE86D1E1528F4D050B /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = CCDEC811C42F3D0E6525D1CA61423963 /* sha1.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E3208E1C142ACC16962920773FE06AEE /* TabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54597DB3D55FF535493422022CA7B151 /* TabPageViewController.swift */; };
+		E8CF5EBF566FACA3CD06E34C6CA38AB7 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 61E68E24C53DF91513E5B1818513E157 /* aes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E9A12DB75D3BD62D8D6B73504C552C70 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 741055D35AE64B69D92E733D6CBFC4C4 /* zip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EA34B3745028B9D497493BADE0A6DE5F /* SSZipArchive-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FCDE2721A1CD997461506C6F0D084D1 /* SSZipArchive-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC54AC70B4229B32E1D43AF27E09A56A /* prng.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F128AB914F977E0D65D43B72E944C74 /* prng.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EC56EDFFBD328F6A718E709C6471B4E3 /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = 600FEE9D9408CD7F2AA5CCC19667DFB3 /* entropy.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		EE2283A045531466010A5831282D2386 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FE2609E14F7BFC360449A39AB32728 /* Foundation.framework */; };
-		F33916DCA38C87DBB45473259A4342AC /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 908CA91D19F275AB57DF1DDAC77AA14E /* aescrypt.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F3BA80AC23CDD8C484BA0C75AA7FDB91 /* TabCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D179E654ED6B3E96A754EC3F210E629B /* TabCollectionCell.xib */; };
+		F33916DCA38C87DBB45473259A4342AC /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EB461337241B55E86106774672F62D3 /* aescrypt.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F3BA80AC23CDD8C484BA0C75AA7FDB91 /* TabCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236786EA4C3A3AC2D4C82655C2079C79 /* TabCollectionCell.xib */; };
 		FEBF463E06845F7CB7E84B487A884C7E /* Pods-BanglaDictionary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD2D50706ADC3B283F30B53BB8B08D2 /* Pods-BanglaDictionary-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -113,101 +113,102 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		026906D5C66F5F2B301F121F38083807 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		07AD2F038ADE5619D08F65B045F1DD90 /* SSZipArchive.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SSZipArchive.modulemap; sourceTree = "<group>"; };
-		08E69731706012ACCF210A8556EDF710 /* TabPageOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabPageOption.swift; path = Pod/Classes/TabPageOption.swift; sourceTree = "<group>"; };
+		050CE2256F5218BA70E8A67A1F15687A /* prng.c */ = {isa = PBXFileReference; includeInIndex = 1; name = prng.c; path = SSZipArchive/aes/prng.c; sourceTree = "<group>"; };
+		058D4FEC1E17DAC899EC86FCA762CB3E /* Toast-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.xcconfig"; sourceTree = "<group>"; };
+		068CE19D0FED2FFB46D3DD263850CB1B /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		0D7E0506B13167B93252061357840A1F /* pwd2key.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pwd2key.c; path = SSZipArchive/aes/pwd2key.c; sourceTree = "<group>"; };
 		0FE25C938F4CC416497F985BD585E960 /* Pods-BanglaDictionary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BanglaDictionary-umbrella.h"; sourceTree = "<group>"; };
-		0FE6AFD45E62E7A6EF40C045E7E4D239 /* aes_via_ace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes_via_ace.h; path = SSZipArchive/aes/aes_via_ace.h; sourceTree = "<group>"; };
-		11277356236149398D6FEA648B345AEC /* brg_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_types.h; path = SSZipArchive/aes/brg_types.h; sourceTree = "<group>"; };
-		11FF6810541234B87D4D2C2494C4A079 /* pwd2key.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pwd2key.h; path = SSZipArchive/aes/pwd2key.h; sourceTree = "<group>"; };
-		12E079691178B20EFC63F5B3354741C1 /* ReachabilitySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-prefix.pch"; sourceTree = "<group>"; };
-		13A56D36CD48512C88538D18A2E17D54 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		1389D8E6D3B9D58C02D36AE7F07CBB55 /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = SSZipArchive/aes/hmac.h; sourceTree = "<group>"; };
 		1472C2C9EECE7E0E91D37BE63CD4727A /* Pods_BanglaDictionary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BanglaDictionary.framework; path = "Pods-BanglaDictionary.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		183CC37C1320D444B7094ADA30386B24 /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Toast/Toast.swift; sourceTree = "<group>"; };
+		197CC4063A6D579DB1EAB6CF1FB55684 /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = SSZipArchive/minizip/mztools.h; sourceTree = "<group>"; };
+		20C18217BE55B3647F58A98A4F01CDC8 /* ReachabilitySwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReachabilitySwift-dummy.m"; sourceTree = "<group>"; };
+		236786EA4C3A3AC2D4C82655C2079C79 /* TabCollectionCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TabCollectionCell.xib; path = Pod/Classes/TabCollectionCell.xib; sourceTree = "<group>"; };
+		24E6C1924225F99D7EB1A6A352D06623 /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
 		262188A0AC877240103ADD36DC423FD8 /* Pods-BanglaDictionary-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BanglaDictionary-acknowledgements.plist"; sourceTree = "<group>"; };
 		26FE2609E14F7BFC360449A39AB32728 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		296EA6D43515E5512673F197A20E19AB /* sha1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = SSZipArchive/aes/sha1.h; sourceTree = "<group>"; };
-		29D75703C66BD462D2BB4A34E3359375 /* TabPageViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TabPageViewController.xcconfig; sourceTree = "<group>"; };
-		308B3C9BED69EA156C6B16BE194EE7A7 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		2ADB6B1816C9821521FC47309F399DD4 /* aestab.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aestab.c; path = SSZipArchive/aes/aestab.c; sourceTree = "<group>"; };
+		2FB9BCD4E301028F25E070B4C313775A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		311B8C2E755C82C00DAB484FB1A55A94 /* TabView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabView.swift; path = Pod/Classes/TabView.swift; sourceTree = "<group>"; };
+		314196B95D00AB12648EDC6215DB98AF /* ReachabilitySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-prefix.pch"; sourceTree = "<group>"; };
 		33034897523712EF46E6807A03776C50 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		339A917D661848A04E0944485BA7B58E /* entropy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = entropy.h; path = SSZipArchive/aes/entropy.h; sourceTree = "<group>"; };
-		339C62399E20B509A18457A076067F6A /* SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
 		33C4A5279A4741987B9CAF10BAB0F993 /* Pods-BanglaDictionary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BanglaDictionary.modulemap"; sourceTree = "<group>"; };
-		33F4AA2D73986BE3B5B6F4E4F5FEAF3D /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		3415D42E9177F4F4F909E612D1C73444 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		352B7150B3FB71823422A4DFCF36892F /* TabPageViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TabPageViewController.modulemap; sourceTree = "<group>"; };
-		369CA266B4346AAEBB2985CA88BDE073 /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = SSZipArchive/minizip/mztools.h; sourceTree = "<group>"; };
-		37BCFDF1C61A549709B5BF452B32FB6D /* aestab.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aestab.h; path = SSZipArchive/aes/aestab.h; sourceTree = "<group>"; };
-		3E1FAE13FC6852905762C5B359E46B48 /* ReachabilitySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ReachabilitySwift.modulemap; sourceTree = "<group>"; };
-		4084D83029597A0BF243E7F472ECB339 /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
-		40D7566FE8FC9F86BCF00C464AB0F412 /* SSZipArchive-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-umbrella.h"; sourceTree = "<group>"; };
-		41E5E80A7A1E002ECD3D39D389C8B111 /* ReachabilitySwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-umbrella.h"; sourceTree = "<group>"; };
-		4250DFCDCFF745535798396219AA7C65 /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = SSZipArchive/aes/aes.h; sourceTree = "<group>"; };
-		440B34C5F7E8E327E211B21468389964 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = SSZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
-		447A4CD719BB230A6A5B0B1501B15D19 /* ReachabilitySwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.xcconfig; sourceTree = "<group>"; };
-		45426FC099BD10343FC5D59A1D82620E /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		45D53388D6A5C79CD161F71A85117394 /* Toast-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.xcconfig"; sourceTree = "<group>"; };
+		35377EA0FB231BEBA1E8E9F1D0B69B3E /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		36A1E11897B8C3A85DDF2F38E7D21665 /* Toast-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Toast-Swift.modulemap"; sourceTree = "<group>"; };
+		3A03C3BC7973CEED12EDA7E2C7AFF21A /* fileenc.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fileenc.c; path = SSZipArchive/aes/fileenc.c; sourceTree = "<group>"; };
+		3A4C2D3BBCE6E4F5F31AAC00CD426780 /* Toast-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-Swift-dummy.m"; sourceTree = "<group>"; };
+		3CA3F94021F260ACCB3E0D3585A11ACA /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		45EE5C6EE673C437C99A3CCA4F3204C3 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = SSZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
 		47025B9E3152136A7AA5B720E81DAF2C /* SSZipArchive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SSZipArchive.framework; path = SSZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48862F99FCE619C5935C56CB847BF086 /* ReachabilitySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ReachabilitySwift.modulemap; sourceTree = "<group>"; };
 		4AFF01719C0D239D594F62594BFB72C9 /* Pods-BanglaDictionary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BanglaDictionary.debug.xcconfig"; sourceTree = "<group>"; };
-		4F6EC4EB3BDEABC960C9DFEF7C434622 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Reachability/Reachability.swift; sourceTree = "<group>"; };
-		5AD916C7C1AA012B421FDC2A4C3586B2 /* TabView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabView.swift; path = Pod/Classes/TabView.swift; sourceTree = "<group>"; };
-		63258B893CE931E0BB8DED577C8A87AF /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = SSZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
-		6CF969EC7BA99607858EF5D9972DD78A /* TabCollectionCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabCollectionCell.swift; path = Pod/Classes/TabCollectionCell.swift; sourceTree = "<group>"; };
-		6D022D475D9298E90B0B6AA312DFD983 /* Toast-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-Swift-dummy.m"; sourceTree = "<group>"; };
+		4EB461337241B55E86106774672F62D3 /* aescrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aescrypt.c; path = SSZipArchive/aes/aescrypt.c; sourceTree = "<group>"; };
+		53DC7147F27BE074C608F5A07F8FCEA9 /* SSZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.xcconfig; sourceTree = "<group>"; };
+		54597DB3D55FF535493422022CA7B151 /* TabPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabPageViewController.swift; path = Pod/Classes/TabPageViewController.swift; sourceTree = "<group>"; };
+		570DBCF0524E8296D651E7344D09C902 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		57745301EE452762203B3CCB7EA454C6 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = SSZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
+		57F7A31278230B3A431FE7DC6BC184AB /* TabView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TabView.xib; path = Pod/Classes/TabView.xib; sourceTree = "<group>"; };
+		5830C5F4F043CBC1AB5809D198F8F700 /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = SSZipArchive/ZipArchive.h; sourceTree = "<group>"; };
+		58F172EAE9DB73E462D957120448F595 /* SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
+		593714CFAB2C40FBE2DC81A680755970 /* Toast-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-umbrella.h"; sourceTree = "<group>"; };
+		59CEE536BF03CDDA08567C3970ABFBAA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A11390C64B1300C1F6D11960D8A77BC /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = SSZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
+		5A3A811973963A73C5A1D0A50F4BF5D0 /* TabPageViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TabPageViewController-dummy.m"; sourceTree = "<group>"; };
+		5AB186C81B4885B7B24E94E99AB196DE /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
+		5F5E09AF8F0CC71F7F113A77426A69E4 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Reachability/Reachability.swift; sourceTree = "<group>"; };
+		600FEE9D9408CD7F2AA5CCC19667DFB3 /* entropy.c */ = {isa = PBXFileReference; includeInIndex = 1; name = entropy.c; path = SSZipArchive/aes/entropy.c; sourceTree = "<group>"; };
+		61E68E24C53DF91513E5B1818513E157 /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = SSZipArchive/aes/aes.h; sourceTree = "<group>"; };
+		681F2B3300B17FC062B30F6168C5AE3E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E94735C6AFFF95CEBF645896FA1FAE9 /* Pods-BanglaDictionary-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BanglaDictionary-acknowledgements.markdown"; sourceTree = "<group>"; };
-		71BA7B8BD2773A17DDEFDD029AE0635D /* SSZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.xcconfig; sourceTree = "<group>"; };
 		738B62860272B953B69639020CE17274 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		743989F5965D8FD3F49B733ECACA8EE8 /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mztools.c; path = SSZipArchive/minizip/mztools.c; sourceTree = "<group>"; };
-		76E176E3A0391F2E12BF02619644A6E2 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = SSZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
-		7D31C20D89E95277840ACCBF1A179AF5 /* aesopt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aesopt.h; path = SSZipArchive/aes/aesopt.h; sourceTree = "<group>"; };
-		7E9FA1CDC97248A67012EFC58A689B2A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		854C6666B120289F74F4DB6527547D4C /* SSZipCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipCommon.h; path = SSZipArchive/SSZipCommon.h; sourceTree = "<group>"; };
-		85945C16A822F510EC23200A3ECA17E8 /* brg_endian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_endian.h; path = SSZipArchive/aes/brg_endian.h; sourceTree = "<group>"; };
-		869B9A077EC9B301A4C35244E50D2269 /* SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSZipArchive-dummy.m"; sourceTree = "<group>"; };
-		87E844293128BF4DD7241B983E6F8C95 /* hmac.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hmac.c; path = SSZipArchive/aes/hmac.c; sourceTree = "<group>"; };
-		8F5696EDAE6F2C428BD88C70F43DC96E /* Toast-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-prefix.pch"; sourceTree = "<group>"; };
-		906B21A08F30CB4170EF21E8A9FF1D19 /* ReachabilitySwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReachabilitySwift-dummy.m"; sourceTree = "<group>"; };
-		908CA91D19F275AB57DF1DDAC77AA14E /* aescrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aescrypt.c; path = SSZipArchive/aes/aescrypt.c; sourceTree = "<group>"; };
-		92C9C081482BA3453E48D4B706C828FA /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = SSZipArchive/minizip/crypt.h; sourceTree = "<group>"; };
+		741055D35AE64B69D92E733D6CBFC4C4 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = SSZipArchive/minizip/zip.c; sourceTree = "<group>"; };
+		770B7E049F75D1363DBFBBD672C6D28F /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = SSZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
+		78519020DFF8F95F823A46D55EEEE689 /* aeskey.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aeskey.c; path = SSZipArchive/aes/aeskey.c; sourceTree = "<group>"; };
+		7BDF271F7AF9387F4C24158E3BB29A56 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = SSZipArchive/minizip/crypt.h; sourceTree = "<group>"; };
+		7F128AB914F977E0D65D43B72E944C74 /* prng.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = prng.h; path = SSZipArchive/aes/prng.h; sourceTree = "<group>"; };
+		8860EDA14A9556E5C39FFABF83B43380 /* fileenc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fileenc.h; path = SSZipArchive/aes/fileenc.h; sourceTree = "<group>"; };
+		88F9780C8436FFBA19E7B9383C837F77 /* TabPageViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TabPageViewController.modulemap; sourceTree = "<group>"; };
+		8A572B2B19E32DCDE461BBB7BB3603B4 /* ReachabilitySwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.xcconfig; sourceTree = "<group>"; };
+		8B12E2FFD9D1E7017835C24E2852F82B /* TabPageViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TabPageViewController-umbrella.h"; sourceTree = "<group>"; };
+		8DC3593A9316F6A247BC2F105569CDD9 /* TabPageViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TabPageViewController.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93B879B5DD961213665AE4EB22CBAE03 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		944CBCC332F980C3F53A3C43857AD5A8 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		9A335479F098D4404DED08F5FAAE3CA8 /* fileenc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fileenc.h; path = SSZipArchive/aes/fileenc.h; sourceTree = "<group>"; };
-		9A66AB137E70AB42AD71E3D612EBCFC8 /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = SSZipArchive/aes/hmac.h; sourceTree = "<group>"; };
-		9BED37855C34A5EDEB1D78B302E4D3CD /* TabPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabPageViewController.swift; path = Pod/Classes/TabPageViewController.swift; sourceTree = "<group>"; };
-		9D6CBF35327CD4EC00D4CE3FF3EA03D8 /* Toast-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Toast-Swift.modulemap"; sourceTree = "<group>"; };
+		9794D68CE0B9F9B7D25130727DF16B5C /* SSZipCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipCommon.h; path = SSZipArchive/SSZipCommon.h; sourceTree = "<group>"; };
+		9FCDE2721A1CD997461506C6F0D084D1 /* SSZipArchive-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-umbrella.h"; sourceTree = "<group>"; };
 		A1D27141F73F380EDC138FC3AA189CCE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		A37D9EBF99545F8FB1E54DFE94B05441 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = SSZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
-		A4334A875830CE6F0427F232BE0F5F0A /* TabView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TabView.xib; path = Pod/Classes/TabView.xib; sourceTree = "<group>"; };
 		A4D0DCBF38EE5322B22BC34B81175592 /* Toast_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toast_Swift.framework; path = "Toast-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A80F7B5CD806F2561BA88FF0729BB38E /* prng.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = prng.h; path = SSZipArchive/aes/prng.h; sourceTree = "<group>"; };
-		AA2E2784175134A3BFC40FB2565D06ED /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = SSZipArchive/minizip/zip.c; sourceTree = "<group>"; };
+		A5CDC2BF5611B29BC33F58365FB625FB /* aesopt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aesopt.h; path = SSZipArchive/aes/aesopt.h; sourceTree = "<group>"; };
+		A6372AE211AF169B9DE6A3EDC07E0ABA /* TabCollectionCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabCollectionCell.swift; path = Pod/Classes/TabCollectionCell.swift; sourceTree = "<group>"; };
+		A8C1824D7EE3A49FF5008B736C7B2ACD /* aestab.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aestab.h; path = SSZipArchive/aes/aestab.h; sourceTree = "<group>"; };
 		AC1BF8C0CB976BBCE816EAA8F5BC5787 /* TabPageViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TabPageViewController.framework; path = TabPageViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC87B452E7E40B4FD690432F3EB618A7 /* sha1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sha1.c; path = SSZipArchive/aes/sha1.c; sourceTree = "<group>"; };
 		AEE69D2458544B128ED1A5FD581EEFFA /* Pods-BanglaDictionary-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BanglaDictionary-resources.sh"; sourceTree = "<group>"; };
 		AFD2D50706ADC3B283F30B53BB8B08D2 /* Pods-BanglaDictionary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BanglaDictionary-dummy.m"; sourceTree = "<group>"; };
-		B4F4B8003B17C300D4B00E6DFC43F9B4 /* prng.c */ = {isa = PBXFileReference; includeInIndex = 1; name = prng.c; path = SSZipArchive/aes/prng.c; sourceTree = "<group>"; };
-		B6FF7C295E2B4115A4E2094A186E6579 /* TabPageViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TabPageViewController-dummy.m"; sourceTree = "<group>"; };
-		B7FE1355E7DDB03D21743F6171B29A98 /* pwd2key.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pwd2key.c; path = SSZipArchive/aes/pwd2key.c; sourceTree = "<group>"; };
-		BA6DD5FA2199A599E6692D0268B4D196 /* TabPageViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TabPageViewController-prefix.pch"; sourceTree = "<group>"; };
-		BACC42F4896CEBAF8C6BE57971BE9208 /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Toast/Toast.swift; sourceTree = "<group>"; };
+		B0ED0DDA7901B94384B71BF6507FE8E6 /* TabPageOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabPageOption.swift; path = Pod/Classes/TabPageOption.swift; sourceTree = "<group>"; };
+		B267328C8835D99DF5F9A0E3F782E3E1 /* aes_via_ace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes_via_ace.h; path = SSZipArchive/aes/aes_via_ace.h; sourceTree = "<group>"; };
+		B2680F6C918AF9F07BBAC0CABCB53B7B /* SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSZipArchive-dummy.m"; sourceTree = "<group>"; };
+		BD3E10AC556386FCD27A2752854FC6B0 /* brg_endian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_endian.h; path = SSZipArchive/aes/brg_endian.h; sourceTree = "<group>"; };
+		BD482EACB83AE599CE34E014B67B7720 /* TabPageViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TabPageViewController-prefix.pch"; sourceTree = "<group>"; };
 		BE91684DF41AC473A22BE06935BC262E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C117FA89E2E0BF200E7926426D3C5FB3 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = SSZipArchive/minizip/zip.h; sourceTree = "<group>"; };
-		C1BE8075BD7941DCA83518232E23429C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C239825362DE6023A5FBB81A97D8BC90 /* TabPageViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; name = TabPageViewController.storyboard; path = Pod/Classes/TabPageViewController.storyboard; sourceTree = "<group>"; };
-		C864A2F18927E3BCC1E7FF217811F710 /* fileenc.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fileenc.c; path = SSZipArchive/aes/fileenc.c; sourceTree = "<group>"; };
+		C735D5AD470067347EA4EE3C98A8A643 /* SSZipArchive.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SSZipArchive.modulemap; sourceTree = "<group>"; };
 		C869A3EFBAFA00CD4562C7F5D8424591 /* Pods-BanglaDictionary-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BanglaDictionary-frameworks.sh"; sourceTree = "<group>"; };
-		CEFF4D9DC68B4286CF6180291400C08B /* entropy.c */ = {isa = PBXFileReference; includeInIndex = 1; name = entropy.c; path = SSZipArchive/aes/entropy.c; sourceTree = "<group>"; };
-		D0A425372E78EA4C16CBED0F3E20CDD0 /* aeskey.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aeskey.c; path = SSZipArchive/aes/aeskey.c; sourceTree = "<group>"; };
-		D179E654ED6B3E96A754EC3F210E629B /* TabCollectionCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TabCollectionCell.xib; path = Pod/Classes/TabCollectionCell.xib; sourceTree = "<group>"; };
+		CAF50C9270401844AC09BAACB2B172FA /* TabPageViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; name = TabPageViewController.storyboard; path = Pod/Classes/TabPageViewController.storyboard; sourceTree = "<group>"; };
+		CCC1C47CE3631AF1933ED9A58400A60A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCDEC811C42F3D0E6525D1CA61423963 /* sha1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = SSZipArchive/aes/sha1.h; sourceTree = "<group>"; };
+		CECB926FF52BB0ADEBCB2273886C59A5 /* entropy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = entropy.h; path = SSZipArchive/aes/entropy.h; sourceTree = "<group>"; };
+		D3C794D9E1F8554E0E7858001CE84AD6 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		D4642F218C98ADA025A037E9F1B1FDA1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D61C0320A558037E36BF235515F4D7FB /* pwd2key.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pwd2key.h; path = SSZipArchive/aes/pwd2key.h; sourceTree = "<group>"; };
 		D7B42048C5E14C317087C779C8346181 /* ReachabilitySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ReachabilitySwift.framework; path = ReachabilitySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8B1698744B403270933A51569E7F611 /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = SSZipArchive/ZipArchive.h; sourceTree = "<group>"; };
-		DC904C5741BBD500E34A1CBA86886643 /* aestab.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aestab.c; path = SSZipArchive/aes/aestab.c; sourceTree = "<group>"; };
-		DE88ADDDDA6B01CC623B10AB80D9DFEB /* sha1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sha1.c; path = SSZipArchive/aes/sha1.c; sourceTree = "<group>"; };
-		E6B0117208FF173CE58A2BC767BA3A00 /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
-		E74EA26CE16FA2A8B6F6889F2A7872C2 /* TabPageViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TabPageViewController-umbrella.h"; sourceTree = "<group>"; };
+		E2EA4D3E69F349F30F595899B3162DC3 /* brg_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_types.h; path = SSZipArchive/aes/brg_types.h; sourceTree = "<group>"; };
+		E8EA38634564C6CDDA96300F9C07A7E0 /* ReachabilitySwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-umbrella.h"; sourceTree = "<group>"; };
+		EDC3CFA66D2255587F0BF07AADB2AC17 /* Toast-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-prefix.pch"; sourceTree = "<group>"; };
 		EEE7718EBC98E1DBAFFA14824981DE19 /* Pods-BanglaDictionary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BanglaDictionary.release.xcconfig"; sourceTree = "<group>"; };
-		F400610848F5C9B99A21C7953CA62ED3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F928F1973F8F2164267EEE8F1B9BDC9B /* Toast-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-umbrella.h"; sourceTree = "<group>"; };
+		F16E1113342BAB1E739A18D3922B06B6 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		F1D8B6741473101372CB78CAF401ECC6 /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mztools.c; path = SSZipArchive/minizip/mztools.c; sourceTree = "<group>"; };
+		F977E74A3A03EE39F93FBD81F06A30AF /* hmac.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hmac.c; path = SSZipArchive/aes/hmac.c; sourceTree = "<group>"; };
+		F9C3BEA8AF47975631E8F56AC78A8E32 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = SSZipArchive/minizip/zip.h; sourceTree = "<group>"; };
+		FD089D7AE9D4D35D713F4B3337C4CB86 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		FFE564F0F808FA97E99F5DE6B6713891 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,49 +266,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04B0687A7994EF1633138CFF73CF1E3B /* SSZipArchive */ = {
-			isa = PBXGroup;
-			children = (
-				4250DFCDCFF745535798396219AA7C65 /* aes.h */,
-				0FE6AFD45E62E7A6EF40C045E7E4D239 /* aes_via_ace.h */,
-				908CA91D19F275AB57DF1DDAC77AA14E /* aescrypt.c */,
-				D0A425372E78EA4C16CBED0F3E20CDD0 /* aeskey.c */,
-				7D31C20D89E95277840ACCBF1A179AF5 /* aesopt.h */,
-				DC904C5741BBD500E34A1CBA86886643 /* aestab.c */,
-				37BCFDF1C61A549709B5BF452B32FB6D /* aestab.h */,
-				85945C16A822F510EC23200A3ECA17E8 /* brg_endian.h */,
-				11277356236149398D6FEA648B345AEC /* brg_types.h */,
-				92C9C081482BA3453E48D4B706C828FA /* crypt.h */,
-				CEFF4D9DC68B4286CF6180291400C08B /* entropy.c */,
-				339A917D661848A04E0944485BA7B58E /* entropy.h */,
-				C864A2F18927E3BCC1E7FF217811F710 /* fileenc.c */,
-				9A335479F098D4404DED08F5FAAE3CA8 /* fileenc.h */,
-				87E844293128BF4DD7241B983E6F8C95 /* hmac.c */,
-				9A66AB137E70AB42AD71E3D612EBCFC8 /* hmac.h */,
-				440B34C5F7E8E327E211B21468389964 /* ioapi.c */,
-				76E176E3A0391F2E12BF02619644A6E2 /* ioapi.h */,
-				743989F5965D8FD3F49B733ECACA8EE8 /* mztools.c */,
-				369CA266B4346AAEBB2985CA88BDE073 /* mztools.h */,
-				B4F4B8003B17C300D4B00E6DFC43F9B4 /* prng.c */,
-				A80F7B5CD806F2561BA88FF0729BB38E /* prng.h */,
-				B7FE1355E7DDB03D21743F6171B29A98 /* pwd2key.c */,
-				11FF6810541234B87D4D2C2494C4A079 /* pwd2key.h */,
-				DE88ADDDDA6B01CC623B10AB80D9DFEB /* sha1.c */,
-				296EA6D43515E5512673F197A20E19AB /* sha1.h */,
-				4084D83029597A0BF243E7F472ECB339 /* SSZipArchive.h */,
-				E6B0117208FF173CE58A2BC767BA3A00 /* SSZipArchive.m */,
-				854C6666B120289F74F4DB6527547D4C /* SSZipCommon.h */,
-				A37D9EBF99545F8FB1E54DFE94B05441 /* unzip.c */,
-				63258B893CE931E0BB8DED577C8A87AF /* unzip.h */,
-				AA2E2784175134A3BFC40FB2565D06ED /* zip.c */,
-				C117FA89E2E0BF200E7926426D3C5FB3 /* zip.h */,
-				D8B1698744B403270933A51569E7F611 /* ZipArchive.h */,
-				FFE4F034BE34D57BC6DA462A03BCDD0A /* Support Files */,
-			);
-			name = SSZipArchive;
-			path = SSZipArchive;
-			sourceTree = "<group>";
-		};
 		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,24 +274,50 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1E0C8BD247A280C1E0599DA941A3A5CE /* ReachabilitySwift */ = {
+		1915730D07D0B4019CFD0909598D79B1 /* Google-Mobile-Ads-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				4F6EC4EB3BDEABC960C9DFEF7C434622 /* Reachability.swift */,
-				F373FA34E2B5C42FEC6233F5B10DE1F7 /* Support Files */,
+				6AC2CCC826F723A486F9C0AF5FBCE83B /* Frameworks */,
 			);
-			name = ReachabilitySwift;
-			path = ReachabilitySwift;
+			name = "Google-Mobile-Ads-SDK";
+			path = "Google-Mobile-Ads-SDK";
 			sourceTree = "<group>";
 		};
-		24E2110EA149351066BCEFDF33CC70EE /* Resources */ = {
+		1B8217F28A51159731EF529560E23CA2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D179E654ED6B3E96A754EC3F210E629B /* TabCollectionCell.xib */,
-				C239825362DE6023A5FBB81A97D8BC90 /* TabPageViewController.storyboard */,
-				A4334A875830CE6F0427F232BE0F5F0A /* TabView.xib */,
+				59CEE536BF03CDDA08567C3970ABFBAA /* Info.plist */,
+				3CA3F94021F260ACCB3E0D3585A11ACA /* SwiftyJSON.modulemap */,
+				35377EA0FB231BEBA1E8E9F1D0B69B3E /* SwiftyJSON.xcconfig */,
+				068CE19D0FED2FFB46D3DD263850CB1B /* SwiftyJSON-dummy.m */,
+				F16E1113342BAB1E739A18D3922B06B6 /* SwiftyJSON-prefix.pch */,
+				D3C794D9E1F8554E0E7858001CE84AD6 /* SwiftyJSON-umbrella.h */,
 			);
-			name = Resources;
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		2152B0D97B8281C4B78BA7064EA4C7F0 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				FD089D7AE9D4D35D713F4B3337C4CB86 /* SwiftyJSON.swift */,
+				1B8217F28A51159731EF529560E23CA2 /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		224B4E113646F3462439A9DE422CFC9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1915730D07D0B4019CFD0909598D79B1 /* Google-Mobile-Ads-SDK */,
+				486BD18392CD10F9A584A21A1D779B3A /* ReachabilitySwift */,
+				52D79D6D5F42CF340D88CE76912149A2 /* SSZipArchive */,
+				2152B0D97B8281C4B78BA7064EA4C7F0 /* SwiftyJSON */,
+				8159A4B7619D5516548F2D4CBA18B5B6 /* TabPageViewController */,
+				3FCCA7C8D1DCF09ED5B778A18FC2985A /* Toast-Swift */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		2B49AFB0C35A4CEDEF47F8D7557900D2 /* Pods-BanglaDictionary */ = {
@@ -365,20 +349,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		323399ED8A38B845202376FED5FCEC4F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7E9FA1CDC97248A67012EFC58A689B2A /* Info.plist */,
-				13A56D36CD48512C88538D18A2E17D54 /* SwiftyJSON.modulemap */,
-				33F4AA2D73986BE3B5B6F4E4F5FEAF3D /* SwiftyJSON.xcconfig */,
-				308B3C9BED69EA156C6B16BE194EE7A7 /* SwiftyJSON-dummy.m */,
-				944CBCC332F980C3F53A3C43857AD5A8 /* SwiftyJSON-prefix.pch */,
-				026906D5C66F5F2B301F121F38083807 /* SwiftyJSON-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
-			sourceTree = "<group>";
-		};
 		3411B39CB13AAA3C4A0EB1734B081328 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,18 +357,89 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		70DB0E4AC7568A13CCEE0915CC93488D /* Support Files */ = {
+		3FCCA7C8D1DCF09ED5B778A18FC2985A /* Toast-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				3415D42E9177F4F4F909E612D1C73444 /* Info.plist */,
-				9D6CBF35327CD4EC00D4CE3FF3EA03D8 /* Toast-Swift.modulemap */,
-				45D53388D6A5C79CD161F71A85117394 /* Toast-Swift.xcconfig */,
-				6D022D475D9298E90B0B6AA312DFD983 /* Toast-Swift-dummy.m */,
-				8F5696EDAE6F2C428BD88C70F43DC96E /* Toast-Swift-prefix.pch */,
-				F928F1973F8F2164267EEE8F1B9BDC9B /* Toast-Swift-umbrella.h */,
+				183CC37C1320D444B7094ADA30386B24 /* Toast.swift */,
+				4F05AC72B4826626EE87213961CCC842 /* Support Files */,
+			);
+			name = "Toast-Swift";
+			path = "Toast-Swift";
+			sourceTree = "<group>";
+		};
+		486BD18392CD10F9A584A21A1D779B3A /* ReachabilitySwift */ = {
+			isa = PBXGroup;
+			children = (
+				5F5E09AF8F0CC71F7F113A77426A69E4 /* Reachability.swift */,
+				B8CFB9C1FBD53842DA9C87B58E976228 /* Support Files */,
+			);
+			name = ReachabilitySwift;
+			path = ReachabilitySwift;
+			sourceTree = "<group>";
+		};
+		4F05AC72B4826626EE87213961CCC842 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FB9BCD4E301028F25E070B4C313775A /* Info.plist */,
+				36A1E11897B8C3A85DDF2F38E7D21665 /* Toast-Swift.modulemap */,
+				058D4FEC1E17DAC899EC86FCA762CB3E /* Toast-Swift.xcconfig */,
+				3A4C2D3BBCE6E4F5F31AAC00CD426780 /* Toast-Swift-dummy.m */,
+				EDC3CFA66D2255587F0BF07AADB2AC17 /* Toast-Swift-prefix.pch */,
+				593714CFAB2C40FBE2DC81A680755970 /* Toast-Swift-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Toast-Swift";
+			sourceTree = "<group>";
+		};
+		52D79D6D5F42CF340D88CE76912149A2 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				61E68E24C53DF91513E5B1818513E157 /* aes.h */,
+				B267328C8835D99DF5F9A0E3F782E3E1 /* aes_via_ace.h */,
+				4EB461337241B55E86106774672F62D3 /* aescrypt.c */,
+				78519020DFF8F95F823A46D55EEEE689 /* aeskey.c */,
+				A5CDC2BF5611B29BC33F58365FB625FB /* aesopt.h */,
+				2ADB6B1816C9821521FC47309F399DD4 /* aestab.c */,
+				A8C1824D7EE3A49FF5008B736C7B2ACD /* aestab.h */,
+				BD3E10AC556386FCD27A2752854FC6B0 /* brg_endian.h */,
+				E2EA4D3E69F349F30F595899B3162DC3 /* brg_types.h */,
+				7BDF271F7AF9387F4C24158E3BB29A56 /* crypt.h */,
+				600FEE9D9408CD7F2AA5CCC19667DFB3 /* entropy.c */,
+				CECB926FF52BB0ADEBCB2273886C59A5 /* entropy.h */,
+				3A03C3BC7973CEED12EDA7E2C7AFF21A /* fileenc.c */,
+				8860EDA14A9556E5C39FFABF83B43380 /* fileenc.h */,
+				F977E74A3A03EE39F93FBD81F06A30AF /* hmac.c */,
+				1389D8E6D3B9D58C02D36AE7F07CBB55 /* hmac.h */,
+				770B7E049F75D1363DBFBBD672C6D28F /* ioapi.c */,
+				45EE5C6EE673C437C99A3CCA4F3204C3 /* ioapi.h */,
+				F1D8B6741473101372CB78CAF401ECC6 /* mztools.c */,
+				197CC4063A6D579DB1EAB6CF1FB55684 /* mztools.h */,
+				050CE2256F5218BA70E8A67A1F15687A /* prng.c */,
+				7F128AB914F977E0D65D43B72E944C74 /* prng.h */,
+				0D7E0506B13167B93252061357840A1F /* pwd2key.c */,
+				D61C0320A558037E36BF235515F4D7FB /* pwd2key.h */,
+				AC87B452E7E40B4FD690432F3EB618A7 /* sha1.c */,
+				CCDEC811C42F3D0E6525D1CA61423963 /* sha1.h */,
+				5AB186C81B4885B7B24E94E99AB196DE /* SSZipArchive.h */,
+				24E6C1924225F99D7EB1A6A352D06623 /* SSZipArchive.m */,
+				9794D68CE0B9F9B7D25130727DF16B5C /* SSZipCommon.h */,
+				57745301EE452762203B3CCB7EA454C6 /* unzip.c */,
+				5A11390C64B1300C1F6D11960D8A77BC /* unzip.h */,
+				741055D35AE64B69D92E733D6CBFC4C4 /* zip.c */,
+				F9C3BEA8AF47975631E8F56AC78A8E32 /* zip.h */,
+				5830C5F4F043CBC1AB5809D198F8F700 /* ZipArchive.h */,
+				BA8516E38A1FF2BF32699F1D6D7DF030 /* Support Files */,
+			);
+			name = SSZipArchive;
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		6AC2CCC826F723A486F9C0AF5FBCE83B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				570DBCF0524E8296D651E7344D09C902 /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -406,70 +447,62 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				E1482A4A0B715697F7FE9F81A7C87F76 /* Pods */,
+				224B4E113646F3462439A9DE422CFC9D /* Pods */,
 				F0DF62015C218AC3967AB1CD30C67431 /* Products */,
 				3411B39CB13AAA3C4A0EB1734B081328 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B2C4034532A7405DF3DD42B156FCE51B /* Support Files */ = {
+		8159A4B7619D5516548F2D4CBA18B5B6 /* TabPageViewController */ = {
 			isa = PBXGroup;
 			children = (
-				93B879B5DD961213665AE4EB22CBAE03 /* Info.plist */,
-				352B7150B3FB71823422A4DFCF36892F /* TabPageViewController.modulemap */,
-				29D75703C66BD462D2BB4A34E3359375 /* TabPageViewController.xcconfig */,
-				B6FF7C295E2B4115A4E2094A186E6579 /* TabPageViewController-dummy.m */,
-				BA6DD5FA2199A599E6692D0268B4D196 /* TabPageViewController-prefix.pch */,
-				E74EA26CE16FA2A8B6F6889F2A7872C2 /* TabPageViewController-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TabPageViewController";
-			sourceTree = "<group>";
-		};
-		C6489929A808A23A207E6B2CB99A99E9 /* Toast-Swift */ = {
-			isa = PBXGroup;
-			children = (
-				BACC42F4896CEBAF8C6BE57971BE9208 /* Toast.swift */,
-				70DB0E4AC7568A13CCEE0915CC93488D /* Support Files */,
-			);
-			name = "Toast-Swift";
-			path = "Toast-Swift";
-			sourceTree = "<group>";
-		};
-		DAFD2ED09979DF99117A0B324216546A /* TabPageViewController */ = {
-			isa = PBXGroup;
-			children = (
-				6CF969EC7BA99607858EF5D9972DD78A /* TabCollectionCell.swift */,
-				08E69731706012ACCF210A8556EDF710 /* TabPageOption.swift */,
-				9BED37855C34A5EDEB1D78B302E4D3CD /* TabPageViewController.swift */,
-				5AD916C7C1AA012B421FDC2A4C3586B2 /* TabView.swift */,
-				24E2110EA149351066BCEFDF33CC70EE /* Resources */,
-				B2C4034532A7405DF3DD42B156FCE51B /* Support Files */,
+				A6372AE211AF169B9DE6A3EDC07E0ABA /* TabCollectionCell.swift */,
+				B0ED0DDA7901B94384B71BF6507FE8E6 /* TabPageOption.swift */,
+				54597DB3D55FF535493422022CA7B151 /* TabPageViewController.swift */,
+				311B8C2E755C82C00DAB484FB1A55A94 /* TabView.swift */,
+				F02ED2791C9E6B3CF479D94D0482CA02 /* Resources */,
+				FE9689B6243121D715EAA4343B032998 /* Support Files */,
 			);
 			name = TabPageViewController;
 			path = TabPageViewController;
 			sourceTree = "<group>";
 		};
-		DE0FED5357982462F8FD8E0BB85924B8 /* SwiftyJSON */ = {
+		B8CFB9C1FBD53842DA9C87B58E976228 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				45426FC099BD10343FC5D59A1D82620E /* SwiftyJSON.swift */,
-				323399ED8A38B845202376FED5FCEC4F /* Support Files */,
+				681F2B3300B17FC062B30F6168C5AE3E /* Info.plist */,
+				48862F99FCE619C5935C56CB847BF086 /* ReachabilitySwift.modulemap */,
+				8A572B2B19E32DCDE461BBB7BB3603B4 /* ReachabilitySwift.xcconfig */,
+				20C18217BE55B3647F58A98A4F01CDC8 /* ReachabilitySwift-dummy.m */,
+				314196B95D00AB12648EDC6215DB98AF /* ReachabilitySwift-prefix.pch */,
+				E8EA38634564C6CDDA96300F9C07A7E0 /* ReachabilitySwift-umbrella.h */,
 			);
-			name = SwiftyJSON;
-			path = SwiftyJSON;
+			name = "Support Files";
+			path = "../Target Support Files/ReachabilitySwift";
 			sourceTree = "<group>";
 		};
-		E1482A4A0B715697F7FE9F81A7C87F76 /* Pods */ = {
+		BA8516E38A1FF2BF32699F1D6D7DF030 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1E0C8BD247A280C1E0599DA941A3A5CE /* ReachabilitySwift */,
-				04B0687A7994EF1633138CFF73CF1E3B /* SSZipArchive */,
-				DE0FED5357982462F8FD8E0BB85924B8 /* SwiftyJSON */,
-				DAFD2ED09979DF99117A0B324216546A /* TabPageViewController */,
-				C6489929A808A23A207E6B2CB99A99E9 /* Toast-Swift */,
+				CCC1C47CE3631AF1933ED9A58400A60A /* Info.plist */,
+				C735D5AD470067347EA4EE3C98A8A643 /* SSZipArchive.modulemap */,
+				53DC7147F27BE074C608F5A07F8FCEA9 /* SSZipArchive.xcconfig */,
+				B2680F6C918AF9F07BBAC0CABCB53B7B /* SSZipArchive-dummy.m */,
+				58F172EAE9DB73E462D957120448F595 /* SSZipArchive-prefix.pch */,
+				9FCDE2721A1CD997461506C6F0D084D1 /* SSZipArchive-umbrella.h */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/SSZipArchive";
+			sourceTree = "<group>";
+		};
+		F02ED2791C9E6B3CF479D94D0482CA02 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				236786EA4C3A3AC2D4C82655C2079C79 /* TabCollectionCell.xib */,
+				CAF50C9270401844AC09BAACB2B172FA /* TabPageViewController.storyboard */,
+				57F7A31278230B3A431FE7DC6BC184AB /* TabView.xib */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		F0DF62015C218AC3967AB1CD30C67431 /* Products */ = {
@@ -485,32 +518,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F373FA34E2B5C42FEC6233F5B10DE1F7 /* Support Files */ = {
+		FE9689B6243121D715EAA4343B032998 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F400610848F5C9B99A21C7953CA62ED3 /* Info.plist */,
-				3E1FAE13FC6852905762C5B359E46B48 /* ReachabilitySwift.modulemap */,
-				447A4CD719BB230A6A5B0B1501B15D19 /* ReachabilitySwift.xcconfig */,
-				906B21A08F30CB4170EF21E8A9FF1D19 /* ReachabilitySwift-dummy.m */,
-				12E079691178B20EFC63F5B3354741C1 /* ReachabilitySwift-prefix.pch */,
-				41E5E80A7A1E002ECD3D39D389C8B111 /* ReachabilitySwift-umbrella.h */,
+				FFE564F0F808FA97E99F5DE6B6713891 /* Info.plist */,
+				88F9780C8436FFBA19E7B9383C837F77 /* TabPageViewController.modulemap */,
+				8DC3593A9316F6A247BC2F105569CDD9 /* TabPageViewController.xcconfig */,
+				5A3A811973963A73C5A1D0A50F4BF5D0 /* TabPageViewController-dummy.m */,
+				BD482EACB83AE599CE34E014B67B7720 /* TabPageViewController-prefix.pch */,
+				8B12E2FFD9D1E7017835C24E2852F82B /* TabPageViewController-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/ReachabilitySwift";
-			sourceTree = "<group>";
-		};
-		FFE4F034BE34D57BC6DA462A03BCDD0A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C1BE8075BD7941DCA83518232E23429C /* Info.plist */,
-				07AD2F038ADE5619D08F65B045F1DD90 /* SSZipArchive.modulemap */,
-				71BA7B8BD2773A17DDEFDD029AE0635D /* SSZipArchive.xcconfig */,
-				869B9A077EC9B301A4C35244E50D2269 /* SSZipArchive-dummy.m */,
-				339C62399E20B509A18457A076067F6A /* SSZipArchive-prefix.pch */,
-				40D7566FE8FC9F86BCF00C464AB0F412 /* SSZipArchive-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SSZipArchive";
+			path = "../Target Support Files/TabPageViewController";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -883,7 +902,7 @@
 		};
 		460B399E1C7A80A13E1717E255E0F000 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33F4AA2D73986BE3B5B6F4E4F5FEAF3D /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 35377EA0FB231BEBA1E8E9F1D0B69B3E /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -995,7 +1014,7 @@
 		};
 		6FF36022378E867DC12B6B5429AF416E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45D53388D6A5C79CD161F71A85117394 /* Toast-Swift.xcconfig */;
+			baseConfigurationReference = 058D4FEC1E17DAC899EC86FCA762CB3E /* Toast-Swift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1027,7 +1046,7 @@
 		};
 		7CE73A564497403694E68C027B68B424 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29D75703C66BD462D2BB4A34E3359375 /* TabPageViewController.xcconfig */;
+			baseConfigurationReference = 8DC3593A9316F6A247BC2F105569CDD9 /* TabPageViewController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1060,7 +1079,7 @@
 		};
 		8B2B127B619066BCC6A3BD5773B94060 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71BA7B8BD2773A17DDEFDD029AE0635D /* SSZipArchive.xcconfig */;
+			baseConfigurationReference = 53DC7147F27BE074C608F5A07F8FCEA9 /* SSZipArchive.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1092,7 +1111,7 @@
 		};
 		9A87FB8427319AE0E6C32CA571E86DD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 447A4CD719BB230A6A5B0B1501B15D19 /* ReachabilitySwift.xcconfig */;
+			baseConfigurationReference = 8A572B2B19E32DCDE461BBB7BB3603B4 /* ReachabilitySwift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1125,7 +1144,7 @@
 		};
 		AE99209D66FD865E1615E2E71C07F494 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33F4AA2D73986BE3B5B6F4E4F5FEAF3D /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 35377EA0FB231BEBA1E8E9F1D0B69B3E /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1157,7 +1176,7 @@
 		};
 		B454C64E23DECFCA81C5CF718B4F4722 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45D53388D6A5C79CD161F71A85117394 /* Toast-Swift.xcconfig */;
+			baseConfigurationReference = 058D4FEC1E17DAC899EC86FCA762CB3E /* Toast-Swift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1230,7 +1249,7 @@
 		};
 		CE313F27ABE37E5FECA568C6BEE52A55 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29D75703C66BD462D2BB4A34E3359375 /* TabPageViewController.xcconfig */;
+			baseConfigurationReference = 8DC3593A9316F6A247BC2F105569CDD9 /* TabPageViewController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1262,7 +1281,7 @@
 		};
 		F1FB0B33FEFDC704F6C53773CE84BF79 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 447A4CD719BB230A6A5B0B1501B15D19 /* ReachabilitySwift.xcconfig */;
+			baseConfigurationReference = 8A572B2B19E32DCDE461BBB7BB3603B4 /* ReachabilitySwift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1294,7 +1313,7 @@
 		};
 		FFDDD96EF77DD41911333561B96EFE71 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71BA7B8BD2773A17DDEFDD029AE0635D /* SSZipArchive.xcconfig */;
+			baseConfigurationReference = 53DC7147F27BE074C608F5A07F8FCEA9 /* SSZipArchive.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

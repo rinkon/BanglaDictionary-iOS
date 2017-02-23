@@ -7,4 +7,5 @@ target 'BanglaDictionary' do
     pod 'ReachabilitySwift'
     pod 'Toast-Swift', '~> 2.0.0'
     pod 'SSZipArchive'
+    pod 'Google-Mobile-Ads-SDK'
 end
